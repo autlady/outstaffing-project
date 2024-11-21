@@ -1,50 +1,3 @@
-// @font-face {
-//   font-family: 'Calibri';
-//   src: local('Calibri Light Italic'), local('Calibri-LightItalic'),
-//     url('../fonts/Calibri-LightItalic.woff2') format('woff2');
-//   font-weight: 300;
-//   font-style: italic;
-// }
-
-// @font-face {
-//   font-family: 'Calibri';
-//   src: local('Calibri Bold'), local('Calibri-Bold'),
-//     url('../fonts/Calibri-Bold.woff2') format('woff2');
-//   font-weight: bold;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: 'Calibri';
-//   src: local('Calibri'),
-//     url('../fonts/Calibri.woff2') format('woff2');
-//   font-weight: normal;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: 'Montserrat';
-//   src: local('Montserrat Regular'), local('Montserrat-Regular'),
-//     url('../fonts/Montserrat-Regular.woff2') format('woff2');
-//   font-weight: normal;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: 'Montserrat';
-//   src: local('Montserrat Bold'), local('Montserrat-Bold'),
-//     url('../fonts/Montserrat-Bold.woff2') format('woff2');
-//   font-weight: bold;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: 'Inter';
-//   src: local('Inter Regular'), local('Inter-Regular'),
-//     url('../fonts/Inter-Regular.woff2') format('woff2');
-//   font-weight: normal;
-//   font-style: normal;
-// }
 
 * {
   box-sizing: border-box;
@@ -58,13 +11,10 @@ html {
   scroll-behavior: smooth;
 }
 
-// font-family: 'Inter', sans-serif;
-// font-family: 'Montserrat', sans-serif;
-
 html,
 body {
   margin: 0;
-  font-family: var(--font-main);
+  font-family: var(font-family);
   padding: 0;
   width: 100%;
 
