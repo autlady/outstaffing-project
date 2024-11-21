@@ -1,9 +1,0 @@
-@font-face {
-	font-family: 'Fira Sans Condensed Book';
-	src: url('../fonts/fira_sans_condensed_book.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/fira_sans_condensed_book.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/fira_sans_condensed_book.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/fira_sans_condensed_book.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/fira_sans_condensed_book.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/fira_sans_condensed_book.svg#fira_sans_condensed_book') format('svg'); /* Chrome < 4, Legacy iOS */
-}
