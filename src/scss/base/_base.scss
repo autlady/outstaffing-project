@@ -32,6 +32,7 @@ body {
 a,
 a:hover {
   text-decoration: none;
+  color: inherit;
 }
 
 ul {
@@ -97,13 +98,9 @@ select:-webkit-autofill:focus {
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 0 15px;
+  padding-inline: var(--container-padding);
 }
 
-.containerXL {
-  width: 100%;
-  max-width: 1530px;
-}
 
 .h1 {
   font-family: "Montserrat", sans-serif;
