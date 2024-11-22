@@ -1,0 +1,36 @@
+.btn {
+    display: inline-block;
+
+    padding: 0 32px;
+    height: 61px;
+
+    border-radius: 12px;
+    border: 2px solid #223642;
+
+    background-color: transparent;
+
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #223642;
+
+    font-family: inherit;
+    line-height: 61px;
+    white-space: nowrap;
+
+    transition: 0.2s ease-in;
+
+    @media (max-width: 1660px) {
+        border: 1.50px solid #223642;
+        border-radius: 8px;
+        height: 46px;
+        line-height: 46px;
+        font-size: 20px;
+    }
+}
+
+.btn--outstaff {
+    color: #fff;
+    background-color: #393a5a;
+    border: none;
+}

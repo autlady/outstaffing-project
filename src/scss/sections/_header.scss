@@ -6,6 +6,18 @@
     @media (max-width: 1440px) {
         padding-block: 24px;
     }
+
+    @media (max-width: 768px) {
+        padding-top: 46px;
+        padding-bottom: 46px;
+    }
+}
+
+.header .container {
+    @media (max-width: 768px) {
+        padding-left: 29px;
+        padding-right: 27px;
+    }
 }
 
 .header-wrapper {
@@ -20,7 +32,7 @@
     align-items: center;
     column-gap: 40px;
 
-    @media (max-width: 1440px) {
+    @media (max-width: 1660px) {
         column-gap: 30px;
     }
 
@@ -37,7 +49,7 @@
     width: 174px;
     height: 105px;
 
-    @media (max-width: 1440px) {
+    @media (max-width: 1660px) {
         width: 131px;
         height: 79px;
     }
@@ -45,6 +57,11 @@
     @media (max-width: 1300px) {
         width: 79px;
         height: 48px;
+    }
+
+    @media (max-width: 768px) {
+        width: 66px;
+        height: 40px;
     }
 }
 
@@ -55,6 +72,64 @@
 
     @media (max-width: 1300px) {
         display: flex;
+      }
+
+      @media (max-width: 768px) {
+        column-gap: 24px;
+      }
+}
+
+.header-content-mob
+.svg-tg,
+.svg-wa,
+.svg-mail-mob,
+.svg-phone-mob,
+.svg-search-mob {
+    fill: #ded9d9;
+    color: #ded9d9;
+}
+
+.header-content-mob .svg-wa {
+    width: 23px;
+    height: 24px;
+
+    @media (max-width: 480px) {
+        width: 19px;
+        height: 20px;
+      }
+}
+
+.header-content-mob .svg-tg {
+    width: 24px;
+    height: 24px;
+
+    @media (max-width: 480px) {
+        width: 19px;
+        height: 20px;
+      }
+}
+
+.header-content-mob .svg-mail-mob {
+    @media (max-width: 480px) {
+        width: 19px;
+        height: 16px;
+      }
+}
+
+.header-content-mob .svg-phone-mob {
+    width: 23px;
+    height: 23px;
+
+    @media (max-width: 480px) {
+        width: 19px;
+        height: 20px;
+      }
+}
+
+.header-content-mob .svg-search-mob {
+    @media (max-width: 480px) {
+        width: 19px;
+        height: 20px;
       }
 }
 
@@ -70,7 +145,7 @@
     align-items: center;
     column-gap: 28px;
 
-    @media (max-width: 1440px) {
+    @media (max-width: 1660px) {
         margin-bottom: 19px;
         column-gap: 20px;
     }
@@ -86,7 +161,7 @@
     color: var(--color-muted);
     white-space: nowrap;
 
-    @media (max-width: 1440px) {
+    @media (max-width: 1660px) {
         font-size: 16px;
         column-gap: 7px;
     }
@@ -105,7 +180,7 @@
 .contacts-item .phone:not(:last-child) {
     margin-right: 22px;
 
-    @media (max-width: 1440px) {
+    @media (max-width: 1660px) {
         margin-right: 16px;
     }
 }

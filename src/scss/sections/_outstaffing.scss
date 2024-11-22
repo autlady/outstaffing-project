@@ -1,0 +1,70 @@
+.outstaffing {}
+
+.outstaffing .container {
+
+}
+
+.outstaffing-content {
+    max-width: 854px;
+}
+
+.outstaffing-banner {
+    background-color: #f1f1f1;
+    border-radius: 70px;
+    padding-block: 105px;
+    padding-inline: 144px;
+    display: flex;
+    column-gap: 184px;
+
+    @media (max-width: 1660px) {
+        column-gap: 138px;
+        border-radius: 52px;
+    }
+}
+
+.outstaffing-logo {
+    width: 394px;
+    height: 440px;
+    flex-shrink: 0;
+
+    @media (max-width: 1660px) {
+        width: 296px;
+        height: 330px;
+    }
+
+    @media (max-width: 1364px) {
+        width: 107px;
+        height: 120px;
+    }
+
+    @media (max-width: 767px) {
+        width: 171px;
+        height: 187px;
+    }
+}
+
+.outstaffing__text {
+    margin-top: 25px;
+    font-size: 24px;
+    color: #464040;
+
+    @media (max-width: 1660px) {
+        font-size: 18px;
+    }
+}
+
+.outstaffing__text + .outstaffing__text {
+    margin-top: 20px;
+
+    @media (max-width: 1660px) {
+        margin-top: 15px;
+    }
+}
+
+.banner-btns {
+    margin-top: 38px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    column-gap: 20px;
+}

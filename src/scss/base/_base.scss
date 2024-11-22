@@ -80,7 +80,6 @@ button {
 }
 
 input[type="submit"] {
-  padding: 0;
   cursor: pointer;
 }
 
@@ -99,6 +98,10 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
+main {
+  background-color: var(--bg-color);
+}
+
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
@@ -110,11 +113,15 @@ select:-webkit-autofill:focus {
 }
 
 
-.h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: normal;
+.headline {
+  font-weight: 600;
+  font-size: 79px;
+  color: #1c1919;
+  text-transform: uppercase;
+
+  @media (max-width: 1660px) {
+    font-size: 60px;
+}
 }
 
 .h2 {

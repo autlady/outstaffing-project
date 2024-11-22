@@ -18,7 +18,7 @@
     -ms-flex-negative: 0;
     flex-shrink: 0;
 
-    @media (max-width: 1440px) {
+    @media (max-width: 1660px) {
         width: 39px;
         height: 24px;
     }
@@ -27,6 +27,11 @@
         width: 31px;
         height: 20px;
     }
+
+    @media (max-width: 767px) {
+      width: 26px;
+      height: 17px;
+  }
   }
 
   .menu-toggle span {
@@ -36,7 +41,7 @@
     background-color: #f0eded;
     z-index: 1;
 
-    @media (max-width: 1440px) {
+    @media (max-width: 1660px) {
         width: 39px;
         height: 3px;
     }
@@ -45,6 +50,9 @@
         width: 31px;
     }
 
+    @media (max-width: 767px) {
+      width: 26px;
+  }
   }
 
   .menu-toggle span:after {
@@ -55,9 +63,11 @@
     background-color: #f0eded;
     right: 0;
 
-    @media (max-width: 1440px) {
+    @media (max-width: 1660px) {
         height: 3px;
     }
+
+
   }
 
   .menu-toggle span:before {
@@ -68,33 +78,42 @@
     right: 0;
     background-color: #f0eded;
 
-    @media (max-width: 1440px) {
+    @media (max-width: 1660px) {
         height: 3px;
     }
+
   }
 
   .menu-toggle span:after {
     top: -13px;
 
-    @media (max-width: 1440px) {
+    @media (max-width: 1660px) {
         top: -10px;
     }
 
     @media (max-width: 1300px) {
         top: -8px;
     }
+
+    @media (max-width: 767px) {
+      top: -7px;
+  }
   }
 
   .menu-toggle span:before {
     bottom: -13px;
 
-    @media (max-width: 1440px) {
+    @media (max-width: 1660px) {
         bottom: -10px;
     }
 
     @media (max-width: 1300px) {
         bottom: -8px;
     }
+
+    @media (max-width: 767px) {
+      bottom: -7px;
+  }
   }
 
 //   .menu-toggle.active {

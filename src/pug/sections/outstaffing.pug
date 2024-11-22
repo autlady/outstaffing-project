@@ -1,0 +1,20 @@
+// section-outstaffing
+section.outstaffing
+    .container
+        .outstaffing-banner
+            .outstaffing-logo
+                picture
+                    // для ретина до 1364 включительно
+                    source(srcset="./img/outstaff/outstaff-logo-mob@2x.webp" media="(max-width: 1364px) and (min-resolution: 192dpi)" width="171" height="187")
+                    // для обычных до 1364 включительно
+                    source(srcset="./img/outstaff/outstaff-logo-mob.webp" media="(max-width: 1364px)" width="171" height="187")
+                    // для десктопов ретина
+                    source(srcset="./img/outstaff/outstaff-logo@2x.webp" media="(min-resolution: 192dpi)" width="390" height="440")
+                    // для обычных десктопов
+                    img(src="./img/outstaff/outstaff-logo.webp" width="390" height="440" alt="logo")
+            .outstaffing-content
+                h1.headline Аутстаффинг персонала
+                p.outstaffing__text Среди множества инновационных подходов к управлению кадровым ресурсами, аутстаффинг персонала выделяется своей уникальной способностью менять облик современного бизнеса. Этот метод управления трудовыми ресурсами лишен формальностей и стандартных ограничений, связанных с самостоятельным учетом наемных работников
+                .banner-btns
+                    a.btn Услуги и цены
+                    a.btn.btn--outstaff Оставить заявку
