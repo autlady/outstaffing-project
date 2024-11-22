@@ -110,6 +110,10 @@ main {
   @media (max-width: 1300px) {
     padding-inline: 106px;
   }
+
+  @media (max-width: 767px) {
+    padding-inline: 9px;
+  }
 }
 
 
@@ -121,7 +125,20 @@ main {
 
   @media (max-width: 1660px) {
     font-size: 60px;
+  }
+
+  @media (max-width: 1364px) {
+    font-family: var(--second-family);
+    font-size: 36px;
+    line-height: 1.11;
+    font-variant: small-caps;
+    color: #223642;
 }
+
+    @media (max-width: 767px) {
+      font-size: 40px;
+      line-height: 1;
+    }
 }
 
 .h2 {

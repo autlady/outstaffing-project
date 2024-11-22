@@ -7,6 +7,10 @@
         padding-block: 24px;
     }
 
+    @media (max-width: 1023px) {
+        padding-block: 12px;
+    }
+
     @media (max-width: 768px) {
         padding-top: 46px;
         padding-bottom: 46px;
