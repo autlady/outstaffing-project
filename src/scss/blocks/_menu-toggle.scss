@@ -17,6 +17,16 @@
     position: relative;
     -ms-flex-negative: 0;
     flex-shrink: 0;
+
+    @media (max-width: 1440px) {
+        width: 39px;
+        height: 24px;
+    }
+
+    @media (max-width: 1300px) {
+        width: 31px;
+        height: 20px;
+    }
   }
 
   .menu-toggle span {
@@ -25,6 +35,16 @@
     width: 52px;
     background-color: #f0eded;
     z-index: 1;
+
+    @media (max-width: 1440px) {
+        width: 39px;
+        height: 3px;
+    }
+
+    @media (max-width: 1300px) {
+        width: 31px;
+    }
+
   }
 
   .menu-toggle span:after {
@@ -34,6 +54,10 @@
     height: 4px;
     background-color: #f0eded;
     right: 0;
+
+    @media (max-width: 1440px) {
+        height: 3px;
+    }
   }
 
   .menu-toggle span:before {
@@ -43,14 +67,34 @@
     height: 4px;
     right: 0;
     background-color: #f0eded;
+
+    @media (max-width: 1440px) {
+        height: 3px;
+    }
   }
 
   .menu-toggle span:after {
     top: -13px;
+
+    @media (max-width: 1440px) {
+        top: -10px;
+    }
+
+    @media (max-width: 1300px) {
+        top: -8px;
+    }
   }
 
   .menu-toggle span:before {
     bottom: -13px;
+
+    @media (max-width: 1440px) {
+        bottom: -10px;
+    }
+
+    @media (max-width: 1300px) {
+        bottom: -8px;
+    }
   }
 
 //   .menu-toggle.active {

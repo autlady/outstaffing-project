@@ -2,6 +2,10 @@
     padding-block: 32px;
     background-color: var(--bg-color);
     font-family: var(--second-family);
+
+    @media (max-width: 1440px) {
+        padding-block: 24px;
+    }
 }
 
 .header-wrapper {
@@ -15,6 +19,14 @@
     display: flex;
     align-items: center;
     column-gap: 40px;
+
+    @media (max-width: 1440px) {
+        column-gap: 30px;
+    }
+
+    @media (max-width: 1300px) {
+        column-gap: 24px;
+    }
 }
 
 .header__logo {
@@ -24,6 +36,32 @@
 .header__logo .svg-logo {
     width: 174px;
     height: 105px;
+
+    @media (max-width: 1440px) {
+        width: 131px;
+        height: 79px;
+    }
+
+    @media (max-width: 1300px) {
+        width: 79px;
+        height: 48px;
+    }
+}
+
+.header-content-mob {
+    display: none;
+    align-items: center;
+    column-gap: 36px;
+
+    @media (max-width: 1300px) {
+        display: flex;
+      }
+}
+
+.header-content {
+    @media (max-width: 1300px) {
+        display: none;
+      }
 }
 
 .header-contacts {
@@ -31,6 +69,13 @@
     display: flex;
     align-items: center;
     column-gap: 28px;
+
+    @media (max-width: 1440px) {
+        margin-bottom: 19px;
+        column-gap: 20px;
+    }
+
+
 }
 
 .contacts-item {
@@ -40,6 +85,11 @@
     font-size: 20px;
     color: var(--color-muted);
     white-space: nowrap;
+
+    @media (max-width: 1440px) {
+        font-size: 16px;
+        column-gap: 7px;
+    }
 }
 
 .contacts-item a {
@@ -54,6 +104,10 @@
 
 .contacts-item .phone:not(:last-child) {
     margin-right: 22px;
+
+    @media (max-width: 1440px) {
+        margin-right: 16px;
+    }
 }
 
 .contacts-item .svg-mail,
@@ -61,6 +115,11 @@
 .svg-phone,
 .svg-clock {
     color: var(--color-muted);
+
+    @media (max-width: 1440px) {
+        width: 16px;
+        height: 13px;
+    }
 }
 
 .header-bottom {
@@ -68,6 +127,12 @@
     align-items: center;
     justify-content: end;
     column-gap: 43px;
+    font-size: 24px;
+
+    @media (max-width: 1440px) {
+        column-gap: 32px;
+        font-size: 18px;
+    }
 }
 
 .menu {
@@ -75,8 +140,11 @@
     align-items: center;
     column-gap: 41px;
     font-weight: 500;
-    font-size: 24px;
     color: #ded9d9;
+
+    @media (max-width: 1440px) {
+        column-gap: 31px;
+    }
 }
 
 .menu a {
@@ -93,6 +161,12 @@
     align-items: center;
     font-style: italic;
     font-weight: 300;
-    font-size: 24px;
     color: #ded9d9;
+}
+
+.header__search .svg-search {
+    @media (max-width: 1440px) {
+        width: 18px;
+        height: 18px;
+    }
 }

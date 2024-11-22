@@ -103,6 +103,10 @@ select:-webkit-autofill:focus {
   max-width: var(--container-width);
   margin: 0 auto;
   padding-inline: var(--container-padding);
+
+  @media (max-width: 1300px) {
+    padding-inline: 106px;
+  }
 }
 
 
