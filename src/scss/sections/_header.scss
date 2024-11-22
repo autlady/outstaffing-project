@@ -11,6 +11,21 @@
     gap: 20px;
 }
 
+.header-left {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.header__logo {
+    flex-shrink: 0;
+}
+
+.header__logo .svg-logo {
+    width: 174px;
+    height: 105px;
+}
+
 .header-contacts {
     margin-bottom: 25px;
     display: flex;
