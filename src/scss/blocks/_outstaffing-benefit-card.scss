@@ -1,0 +1,92 @@
+.outstaffing-benefit-card {
+    position: relative;
+    max-width: 565px;
+    width: 100%;
+    padding-inline: 20px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+
+    @media (max-width: 1023px) {
+        padding-top: 20px;
+    }
+
+    @media (max-width: 767px) {
+        max-width: 100%;
+    }
+}
+
+.outstaffing-benefit-card__img {
+    width: 71px;
+    height: 60px;
+    margin-bottom: 5px;
+
+    svg {
+        @media (max-width: 1023px) {
+            opacity: 0.1;
+        }
+    }
+
+    @media (max-width: 1660px) {
+        width: 54px;
+        height: 46px;
+    }
+
+    @media (max-width: 1023px) {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        transform: translateX(-125%);
+    }
+}
+
+.outstaffing-benefit-card__img .svg-group {
+    width: 71px;
+    height: 60px;
+
+    @media (max-width: 1660px) {
+        width: 54px;
+        height: 46px;
+    }
+
+    @media (max-width: 1023px) {
+        // opacity: 0.1;
+        width: 124px;
+        height: 104px;
+    }
+}
+
+.outstaffing-benefit-card__title {
+    font-weight: 500;
+    font-size: 36px;
+    color: #223642;
+    opacity: 0.7;
+
+    @media (max-width: 1806px) {
+        font-size: 27px;
+    }
+
+    @media (max-width: 1023px) {
+        font-size: 20px;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #3b5361;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 24px;
+    }
+}
+
+.outstaffing-benefit-card__text {
+    display: none;
+    margin-bottom: 52px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #858585;
+
+    @media (max-width: 1023px) {
+        display: block;
+    }
+}

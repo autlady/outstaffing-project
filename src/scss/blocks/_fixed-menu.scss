@@ -30,12 +30,16 @@
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        width: 100%;
+        width: calc(100% - 106px - 106px);
         z-index: 5;
         padding-block: 13px;
         backdrop-filter: blur(22.799999237060547px);
         background-color: rgba(243, 243, 243, 0.45);
         border-radius: 35px 35px 0 0;
+    }
+
+    @media (max-width: 767px) {
+        width: 100%;
     }
 }
 
@@ -90,5 +94,124 @@
         width: 41px;
         height: 41px;
     }
+}
 
+.logo-menu-cot {
+    width: 45px;
+    height: 26px;
+
+    @media (max-width: 1660px) {
+        width: 33px;
+        height: 20px;
+    }
+
+    @media (max-width: 1023px) {
+        width: 40px;
+        height: 21px;
+    }
+
+    @media (max-width: 767px) {
+        width: 29px;
+        height: 16px;
+    }
+}
+
+.logo-menu-unimed {
+    width: 43px;
+    height: 36px;
+
+    @media (max-width: 1660px) {
+        width: 32px;
+        height: 27px;
+    }
+
+    @media (max-width: 1023px) {
+        width: 48px;
+        height: 40px;
+    }
+
+    @media (max-width: 767px) {
+        width: 34px;
+        height: 29px;
+    }
+}
+
+.logo-menu-center {
+    width: 45px;
+    height: 45px;
+
+    @media (max-width: 1660px) {
+        width: 34px;
+        height: 34px;
+    }
+
+    @media (max-width: 1023px) {
+        width: 44px;
+        height: 44px;
+    }
+
+    @media (max-width: 767px) {
+        width: 33px;
+        height: 33px;
+    }
+}
+
+.logo-menu-school {
+    width: 51px;
+    height: 35px;
+
+    @media (max-width: 1660px) {
+        width: 38px;
+        height: 26px;
+    }
+
+    @media (max-width: 1023px) {
+        width: 47px;
+        height: 32px;
+    }
+
+    @media (max-width: 767px) {
+        width: 34px;
+        height: 29px;
+    }
+}
+
+.logo-menu-outstaff {
+    width: 47px;
+    height: 48px;
+
+    @media (max-width: 1660px) {
+        width: 35px;
+        height: 36px;
+    }
+
+    @media (max-width: 1023px) {
+        width: 38px;
+        height: 42px;
+    }
+
+    @media (max-width: 767px) {
+        width: 28px;
+        height: 30px;
+    }
+}
+
+.logo-menu-security {
+    width: 44px;
+    height: 46px;
+
+    @media (max-width: 1660px) {
+        width: 33px;
+        height: 34px;
+    }
+
+    @media (max-width: 1023px) {
+        width: 42px;
+        height: 44px;
+    }
+
+    @media (max-width: 767px) {
+        width: 27px;
+        height: 29px;
+    }
 }
