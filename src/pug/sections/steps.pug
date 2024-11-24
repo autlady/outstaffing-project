@@ -1,0 +1,17 @@
+// steps
+section.steps
+    .container
+        .steps__title
+            h2.section-title.section-title--white Вывод персонала за штат в четыре шага
+        // slider
+        .swiper.steps-slider
+            .swiper-wrapper
+                .swiper-slide
+                    +step('one', 'Заключаем договор оказания услуг')
+                .swiper-slide
+                    +step('two', 'Переводим персонал <br> в штат нашей организации')
+                .swiper-slide
+                    +step('three', 'Осуществляем  <br> мероприятия по допуску  <br> персонала к работе')
+                .swiper-slide
+                    +step('four', 'Направляем  <br> переведенный персонал <br> для производства работ')
+            .swiper-pagination

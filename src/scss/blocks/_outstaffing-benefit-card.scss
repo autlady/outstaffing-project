@@ -51,9 +51,53 @@
     }
 
     @media (max-width: 1023px) {
-        // opacity: 0.1;
         width: 124px;
         height: 104px;
+    }
+
+    @media (max-width: 767px) {
+        width: 143px;
+        height: 120px;
+    }
+}
+
+.outstaffing-benefit-card__img .svg-wallet {
+    width: 57px;
+    height: 60px;
+
+    @media (max-width: 1660px) {
+        width: 44px;
+        height: 46px;
+    }
+
+    @media (max-width: 1023px) {
+        width: 107px;
+        height: 111px;
+    }
+
+    @media (max-width: 767px) {
+        width: 132px;
+        height: 137px;
+    }
+}
+
+.outstaffing-benefit-card__img .svg-hands {
+    width: 69px;
+    height: 60px;
+
+    @media (max-width: 1660px) {
+        width: 53px;
+        height: 46px;
+    }
+
+    @media (max-width: 1023px) {
+        width: 107px;
+        height: 111px;
+    }
+
+    @media (max-width: 767px) {
+        width: 150px;
+        height: 131px;
     }
 }
 

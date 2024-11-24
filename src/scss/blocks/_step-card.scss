@@ -1,0 +1,34 @@
+.step-card {
+    position: relative;
+    max-width: 397px;
+    width: 100%;
+    height: 272px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 30px;
+    z-index: 5;
+
+    // @media (max-width: 1023px) {
+    //     padding-top: 20px;
+    // }
+
+    @media (max-width: 767px) {
+        max-width: 100%;
+    }
+}
+
+.step-card__img {
+    position: absolute;
+    left: 25px;
+    bottom: 21px;
+    z-index: 1;
+}
+
+.step-card__title {
+    font-weight: 600;
+    font-size: 29px;
+    color: #1c1919;
+    text-align: center;
+}

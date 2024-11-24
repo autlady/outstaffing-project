@@ -1,0 +1,7 @@
+mixin step(img, title)
+    // step-card
+    .step-card
+        .step-card__img
+            svg(class = "svg-" + img)
+                use(href="./img/spriteSvg.svg#svg-" + img)
+        h3.step-card__title !{title}

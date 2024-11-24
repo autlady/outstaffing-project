@@ -1,0 +1,9 @@
+mixin outstaffing-service(img, title)
+    // outstaffing-service-card
+    .outstaffing-service-card
+        .outstaffing-service-card__img
+            svg(class = "svg-" + img)
+                use(href="./img/spriteSvg.svg#svg-" + img)
+        h3.outstaffing-service-card__title !{title}
+        ul.outstaffing-service-card__list
+            block

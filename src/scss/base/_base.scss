@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -132,46 +131,36 @@ main {
     line-height: 1.11;
     font-variant: small-caps;
     color: #223642;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 40px;
+    line-height: 1;
+  }
 }
 
-    @media (max-width: 767px) {
-      font-size: 40px;
-      line-height: 1;
-    }
-}
-
-.h2 {
-  position: relative;
-  font-family: "Montserrat", sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: normal;
+.section-title {
+  font-weight: 600;
+  font-size: 40px;
   text-transform: uppercase;
-  text-align: center;
+
+
 }
 
-.h2:after {
-  content: attr(data-title);
-  text-transform: uppercase;
-  white-space: nowrap;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 82px;
-  color: rgba(0, 0, 0, 0.05);
-  z-index: -1;
+.section-title--white {
+  color: var(--color-white);
+
+  @media (max-width: 1660px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 1023px) {
+    font-family: var(--second-family);
+    font-size: 29px;
+    line-height: 1.24;
+  }
 }
 
-.h3 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: normal;
-  text-align: end;
+.section-title--dark {
+  color: #1c1919;
 }
-

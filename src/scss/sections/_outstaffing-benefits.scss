@@ -15,6 +15,10 @@
     width: auto!important;
 }
 
+.swiper-wrapper {
+    padding-bottom: 40px;
+}
+
 .outstaffing-benefits-slider .swiper-wrapper {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -30,17 +34,16 @@
     }
 }
 
-.outstaffing-benefits-slider .swiper-pagination {
-    position: absolute;
-    bottom: 0;
-    z-index: 2;
-  }
+.swiper-pagination {
+    position: relative;
+    bottom: -4px;
+}
 
 .swiper-pagination-bullet {
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    background-color: #898989;
+    background-color: #9c9c9c;
   }
 
   .swiper-pagination-bullet-active {

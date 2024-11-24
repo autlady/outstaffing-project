@@ -1,0 +1,17 @@
+.outstaffing-services {
+    padding-top: 68px;
+    background-color: var(--color-white);
+}
+
+.outstaffing-services__title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.outstaffing-services-slider .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 22px;
+    row-gap: 21px;
+}

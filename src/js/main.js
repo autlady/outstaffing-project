@@ -47,4 +47,19 @@ const swiper = new Swiper(".outstaffing-benefits-slider", {
   },
 });
 
+const swiperSteps = new Swiper(".steps-slider", {
+  breakpoints: {
+    320: {
+      enabled: true,
+      slidesPerView: 1,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    },
+    768: {
+      enabled: false,
+    },
+  },
+});
+
 
