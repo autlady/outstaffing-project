@@ -11,14 +11,12 @@
     width: 100%;
 }
 
-.swiper-slide {
-
-
-    @media (min-width: 1024px) {
+.outstaffing-benefits-slider .swiper-slide {
+    @media (min-width: 1301px) {
         width: auto!important;
     }
 
-    @media (min-width: 768px) and (max-width: 1023px) {
+    @media (min-width: 768px) and (max-width: 1300px) {
         height: unset;
     }
 
@@ -32,9 +30,7 @@
 }
 
 .outstaffing-benefits-slider .swiper-wrapper {
-    // display: flex;
-
-    @media (min-width: 1024px) {
+    @media (min-width: 1301px) {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         column-gap: 15px;

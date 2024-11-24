@@ -42,7 +42,7 @@ const swiper = new Swiper(".outstaffing-benefits-slider", {
     767: {
       enabled: true,
     },
-    1024: {
+    1301: {
       enabled: false,
     },
   },
