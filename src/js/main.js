@@ -30,16 +30,17 @@
 // });
 
 const swiper = new Swiper(".outstaffing-benefits-slider", {
+  slidesPerView: 2,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  spaceBetween: 30,
   breakpoints: {
     320: {
       enabled: false,
     },
     767: {
       enabled: true,
-      slidesPerView: 2,
-      pagination: {
-        el: '.swiper-pagination',
-      },
     },
     1024: {
       enabled: false,
@@ -48,15 +49,33 @@ const swiper = new Swiper(".outstaffing-benefits-slider", {
 });
 
 const swiperSteps = new Swiper(".steps-slider", {
+  slidesPerView: 1,
+  pagination: {
+    el: '.swiper-pagination',
+  },
   breakpoints: {
     320: {
       enabled: true,
-      slidesPerView: 1,
-      pagination: {
-        el: '.swiper-pagination',
-      },
     },
     768: {
+      enabled: false,
+    },
+  },
+});
+
+const swiperOutstaffServices = new Swiper(".outstaffing-services-slider", {
+  slidesPerView: 1,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      grid: {
+        rows: 2,
+      },
+    },
+    1200: {
       enabled: false,
     },
   },

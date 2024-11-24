@@ -1,0 +1,21 @@
+.request-form-block.none
+    button(class="btn-close-modal" data-modal-close)
+    form(class="request-form")
+        input(type="hidden" name="request" value="request")
+        .call-form-subtitle Укажите свой контактный телефон и мы перезвоним вам
+        .form-item.form-item-mb15
+            input(class="form-input" type="text" name="site" placeholder="Ваш сайт")
+        .form-item.form-item-mb15
+            input(class="form-input" type="text" name="name" placeholder="Ваше имя")
+        .form-item.form-item-mb32
+            input(class="form-input" type="text" name="tel" placeholder="Ваш номер телефона")
+        .form-item
+            label.checkbox
+                input(type="checkbox" name="privacy").real-checkbox
+                span.custom-checkbox
+                span.call-form-privacy
+                    | Нажимая на кнопку, Вы даёте согласие на #[a.link(href="#!") обработку своих персональных данных]
+                    br
+                    | в соответствии c нашей #[a.link(href="#!") Политикой конфиденциальности.]
+        .form-item
+            button(type="submit" class="btn-order submit-btn") Узнать цену

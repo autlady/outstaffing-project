@@ -20,6 +20,18 @@
     font-size: 28px;
     text-transform: uppercase;
     color: var(--color-white);
+
+    @media (max-width: 1660px) {
+        font-size: 21px;
+    }
+
+    @media (max-width: 1023px) {
+        font-size: 20px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 24px;
+    }
 }
 
 
@@ -43,4 +55,12 @@
 .outstaffing-service-card__list p {
     font-size: 20px;
     color: #fff;
+
+    @media (max-width: 1660px) {
+        font-size: 15px;
+    }
+
+    @media (max-width: 1023px) {
+        font-size: 16px;
+    }
 }
