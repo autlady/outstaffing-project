@@ -50,6 +50,7 @@ const swiper = new Swiper(".outstaffing-benefits-slider", {
 
 const swiperSteps = new Swiper(".steps-slider", {
   slidesPerView: 1,
+  spaceBetween: 30,
   pagination: {
     el: '.swiper-pagination',
   },
