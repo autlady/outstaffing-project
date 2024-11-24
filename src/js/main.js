@@ -1,85 +1,113 @@
-// const toggleMenu = document.querySelector('menu-toggle');
+document.addEventListener("DOMContentLoaded", function (){
 
-// if (toggleMenu){
-//     toggleMenu.addEventListener('click', function(){
+  let specificSwiperBen = null; // Для хранения экземпляра конкретного Swiper
+  function initSpecificSwiperBen() {
+    const windowWidth = window.innerWidth;
 
-//         if(this.classList.contains('active')){
-//             this.classList.remove('active');
-//         }else{
-//             this.classList.add('active');
-//         }
-//     })
-// }
+    // Уникальный селектор для конкретного слайдера
+    const swiperContainerBen = document.querySelector(".outstaffing-benefits-slider");
 
+    // Проверяем, нужно ли инициализировать слайдер
 
+    if (windowWidth >= 768 && windowWidth <= 1301 && swiperContainerBen && !specificSwiperBen) {
+      specificSwiperBen = new Swiper(".outstaffing-benefits-slider", {
+          slidesPerView: 2,
+            pagination: {
+              el: '.swiper-pagination',
+            },
+            spaceBetween: 30,
+      });
+    }
 
-// const swiper = new Swiper('#products-slider', {
+    // Уничтожаем Swiper, если ширина больше 1199px
+    if (windowWidth < 768 && windowWidth > 1301 && specificSwiperBen) {
+      specificSwiperBen.destroy(true, true);
+      specificSwiperBen = null; // Обнуляем экземпляр
+    }
+  }
 
-//   slidesPerView: 3,
-//   spaceBetween: 32,
-//   loop: true,
-
-//   pagination: {
-//     el: '#products-slider-pagination',
-//   },
-
-//   navigation: {
-//     nextEl: '#btn-next',
-//     prevEl: '#btn-prev',
-//   },
-// });
-
-const swiper = new Swiper(".outstaffing-benefits-slider", {
-  slidesPerView: 2,
-  pagination: {
-    el: '.swiper-pagination',
-  },
-  spaceBetween: 30,
-  breakpoints: {
-    320: {
-      enabled: false,
-    },
-    767: {
-      enabled: true,
-    },
-    1301: {
-      enabled: false,
-    },
-  },
-});
-
-const swiperSteps = new Swiper(".steps-slider", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  pagination: {
-    el: '.swiper-pagination',
-  },
-  breakpoints: {
-    320: {
-      enabled: true,
-    },
-    768: {
-      enabled: false,
-    },
-  },
-});
-
-const swiperOutstaffServices = new Swiper(".outstaffing-services-slider", {
-  slidesPerView: 1,
-  pagination: {
-    el: '.swiper-pagination',
-  },
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-      grid: {
-        rows: 2,
-      },
-    },
-    1200: {
-      enabled: false,
-    },
-  },
-});
+  // Инициализация при загрузке страницы
+  initSpecificSwiperBen();
+  // Повторная проверка при изменении размера окна
+  window.addEventListener("resize", initSpecificSwiperBen);
+  /************************************* */
 
 
+  let specificSwiper = null; // Для хранения экземпляра конкретного Swiper
+
+  function initSpecificSwiper() {
+    const windowWidth = window.innerWidth;
+
+    // Уникальный селектор для конкретного слайдера
+    const swiperContainer = document.querySelector(".outstaffing-services-slider");
+
+    // Проверяем, нужно ли инициализировать слайдер
+    if (windowWidth <= 1199 && swiperContainer && !specificSwiper) {
+      specificSwiper = new Swiper(".outstaffing-services-slider", {
+        slidesPerView: 1,
+        spaceBetween: 16,
+        grid: {
+          rows: 2, // Пример настройки сетки
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    }
+
+    // Уничтожаем Swiper, если ширина больше 1199px
+    if (windowWidth > 1199 && specificSwiper) {
+      specificSwiper.destroy(true, true);
+      specificSwiper = null; // Обнуляем экземпляр
+    }
+  }
+
+  // Инициализация при загрузке страницы
+  initSpecificSwiper();
+
+  // Повторная проверка при изменении размера окна
+  window.addEventListener("resize", initSpecificSwiper);
+
+// STEPS SLIDER
+
+  let specificSwiperSteps = null; // Для хранения экземпляра конкретного Swiper
+
+  function initSpecificSwiperSteps() {
+    const windowWidth = window.innerWidth;
+
+    // Уникальный селектор для конкретного слайдера
+    const swiperContainerSteps = document.querySelector(".steps-slider");
+
+    // Проверяем, нужно ли инициализировать слайдер
+    if (windowWidth <= 767 && swiperContainerSteps && !specificSwiperSteps) {
+      specificSwiperSteps = new Swiper(".steps-slider", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    }
+
+    // Уничтожаем Swiper, если ширина больше 1199px
+    if (windowWidth > 768 && specificSwiperSteps) {
+      specificSwiperSteps.destroy(true, true);
+      specificSwiperSteps = null; // Обнуляем экземпляр
+    }
+  }
+
+  // Инициализация при загрузке страницы
+  initSpecificSwiperSteps();
+
+  // Повторная проверка при изменении размера окна
+  window.addEventListener("resize", initSpecificSwiperSteps);
+
+  })

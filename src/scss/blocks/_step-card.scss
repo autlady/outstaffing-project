@@ -12,11 +12,20 @@
     overflow: hidden;
 
     @media (max-width: 1660px) {
+        border-radius: 20px;
         height: 204px;
     }
 
     @media (max-width: 1440px) {
         max-width: 100%;
+    }
+
+    @media (max-width: 1023px) {
+        border-radius: 26px;
+    }
+
+    @media (max-width: 767px) {
+        border-radius: 30px;
     }
 }
 

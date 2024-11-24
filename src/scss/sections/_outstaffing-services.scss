@@ -9,9 +9,42 @@
     margin-bottom: 48px;
 }
 
+.outstaffing-services-slider {
+
+    @media (max-width: 1199px) {
+        height: 650px;
+        padding-bottom: 32px;
+    }
+
+    @media (max-width: 767px) {
+        height: 590px;
+        padding-bottom: 10px;
+    }
+}
+
 .outstaffing-services-slider .swiper-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: 22px;
-    row-gap: 21px;
+    padding-bottom: 0;
+
+    @media (min-width: 1200px) {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+}
+
+.outstaffing-services-slider .swiper-slide {
+    @media (min-width: 1200px) {
+        width: auto!important;
+        margin-right: 0!important;
+    }
+
+    @media (max-width: 1199px) {
+        // height: unset;
+        // height: calc((100% - 30px) / 2) !important;
+        height: 274px!important;
+    }
+
+    @media (max-width: 767px) {
+        height: 264px!important;
+    }
 }

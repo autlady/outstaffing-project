@@ -1,12 +1,21 @@
 .outstaffing-service-card {
     position: relative;
     padding-left: 40px;
+    padding-right: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 258px;
     border-radius: 30px;
     background: #223642;
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+        height: 274px;
+    }
+
+    @media (max-width: 767px) {
+        height: 264px;
+    }
 }
 
 .outstaffing-service-card__img {
