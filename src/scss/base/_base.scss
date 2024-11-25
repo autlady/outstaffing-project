@@ -90,9 +90,8 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  border-bottom: 1px solid red;
-  -webkit-text-fill-color: #ffffff;
-  -webkit-box-shadow: 0 0 0px 1000px #01203c inset;
+  -webkit-text-fill-color: #333;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
   transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -170,3 +169,36 @@ main {
     font-size: 29px;
   }
 }
+
+//modal
+// .fade-block {
+//   position: fixed;
+//   z-index: 30;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background-color: rgba(51, 51, 51, 0.46);
+// }
+
+// .modal-window {
+//   padding: 140px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background-color: rgba(51, 51, 51, 0.46);
+
+
+//   @media (max-width: 1023px) {
+//     padding: 60px;
+//   }
+
+//   @media (max-width: 575px) {
+//     padding: 15px;
+//   }
+// }

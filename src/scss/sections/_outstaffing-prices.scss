@@ -149,7 +149,7 @@ tbody {
     }
 }
 
-tbody:after{
+tbody:after {
     content:'';
     position: absolute;
     bottom: 0;
@@ -157,7 +157,7 @@ tbody:after{
     top: 34px;
     right: 0;
     display: block;
-    border-radius:16px ;
+    border-radius: 16px;
     border: 1px solid #a6a6a6;
 
     @media (max-width: 1660px) {
@@ -200,26 +200,32 @@ tbody:before {
 
 
 .outstaffing-prices th {
-    border-radius: 20px;
-    background-color: var(--bg-color);
-    padding-top: 23px;
-    padding-bottom: 17px;
+    // border-radius: 20px;
 
-    @media (max-width: 1660px) {
-        border-radius: 15px;
-        padding-block: 15px;
-    }
+    // padding-top: 23px;
+    // padding-bottom: 17px;
 
-    @media (max-width: 1023px) {
-        border-radius: 12px;
-    }
+    // @media (max-width: 1660px) {
+    //     border-radius: 15px;
+    //     padding-block: 15px;
+    // }
 
-    @media (max-width: 767px) {
-        border-radius: 8px;
-        padding-block: 10px;
-    }
+    // @media (max-width: 1023px) {
+    //     border-radius: 12px;
+    // }
+
+    // @media (max-width: 767px) {
+    //     border-radius: 8px;
+    //     padding-block: 10px;
+    // }
 
     p {
+        min-height: 74px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        background-color: var(--bg-color);
         font-weight: 500;
         font-size: 28px;
         line-height: 1.2;
@@ -228,11 +234,41 @@ tbody:before {
 
         @media (max-width: 1660px) {
             font-size: 20px;
+            border-radius: 15px;
+        }
+
+        @media (max-width: 1023px) {
+            border-radius: 12px;
         }
 
         @media (max-width: 888px) {
             font-size: 16px;
+            border-radius: 8px;
         }
+    }
+}
+
+.outstaffing-prices th:first-child {
+    padding-right: 15px;
+
+    @media (max-width: 1660px) {
+        padding-right: 8px;
+    }
+
+    @media (max-width: 888px) {
+        padding-right: 3.5px;
+    }
+}
+
+.outstaffing-prices th:nth-child(2) {
+    padding-left: 15px;
+
+    @media (max-width: 1660px) {
+        padding-left: 8px;
+    }
+
+    @media (max-width: 888px) {
+        padding-left: 3.5px;
     }
 }
 
