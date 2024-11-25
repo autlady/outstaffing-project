@@ -6,6 +6,8 @@
     @media (max-width: 1660px) {
         border-radius: 70px 70px 0 0;
         padding: 60px 55px 51px 55px;
+
+
     }
 
     @media (max-width: 1023px) {
@@ -61,6 +63,8 @@
 
 
 .outstaffing-prices p small {
+    display: block;
+    margin-top: 16px;
     font-size: 20px;
     line-height: normal;
     color: #949494;
@@ -71,6 +75,7 @@
     }
 
     @media (max-width: 1023px) {
+        margin-top: 20px;
         font-size: 20px;
         line-height: 1.4;
         letter-spacing: -0.01em;
@@ -79,13 +84,6 @@
     @media (max-width: 767px) {
         font-size: 16px;
         line-height: 1.25;
-    }
-}
-
-.outstaffing-prices p:last-child {
-    margin-top: 16px;
-    @media (max-width: 1023px) {
-        margin-top: 20px;
     }
 }
 
@@ -106,10 +104,8 @@ table {
 
 
 tbody {
+    position: relative;
     background-color: var(--color-white);
-    border-radius: 20px;
-    overflow: hidden;
-
 
     td {
         padding: 29px 33px;
@@ -127,20 +123,55 @@ tbody {
         }
     }
 
-    td {
-        border-left: 1px solid #a6a6a6;
-    }
-
-    td:nth-child(2) {
+    td:first-child {
         border-right: 1px solid #a6a6a6;
-    }
 
-    tr:first-child {
-        border-top: 1px solid #a6a6a6;
+
+        @media (max-width: 1023px) {
+            border-right: 2px solid #a6a6a6;
+        }
+
+        @media (max-width: 767px) {
+            border-right: 1px solid #a6a6a6;
+        }
     }
 
     tr {
         border-bottom: 1px solid #a6a6a6;
+
+        @media (max-width: 1023px) {
+            border-bottom: 2px solid #a6a6a6;
+        }
+    }
+
+    tr:last-child {
+        border-bottom: none;
+    }
+}
+
+tbody:after{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 34px;
+    right: 0;
+    display: block;
+    border-radius:16px ;
+    border: 1px solid #a6a6a6;
+
+    @media (max-width: 1660px) {
+        top: 23px;
+    }
+
+    @media (max-width: 1023px) {
+        top: 12px;
+        border: 2px solid #a6a6a6;
+    }
+
+    @media (max-width: 767px) {
+        top: 10px;
+        border: 1px solid #a6a6a6;
     }
 }
 
@@ -151,17 +182,22 @@ tbody tr:nth-child(2n) {
 tbody:before {
     content: "@";
     display: block;
-    line-height: 24px;
+    line-height: 34px;
     text-indent: -99999px;
+
+    @media (max-width: 1660px) {
+        line-height: 23px;
+    }
+
+    @media (max-width: 1023px) {
+        line-height: 12px;
+    }
+
+    @media (max-width: 767px) {
+        line-height: 10px;
+    }
 }
 
-thead {
-    // margin-bottom: 34px;
-}
-
-thead tr {
-    // border-spacing: 20px;
-}
 
 .outstaffing-prices th {
     border-radius: 20px;
@@ -235,4 +271,3 @@ thead tr {
 .outstaffing-prices td:nth-child(2n) {
     text-align: center;
 }
-
