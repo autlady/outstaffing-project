@@ -1,0 +1,209 @@
+.prices-wrapper {
+    padding: 80px 72px 68px 72px;
+    background-color: var(--color-white);
+    border-radius: 70px 70px 0 0;
+
+    @media (max-width: 1660px) {
+        border-radius: 70px 70px 0 0;
+        padding: 60px 55px 51px 55px;
+    }
+
+    @media (max-width: 1023px) {
+        border-radius: 45px 45px 0 0;
+        padding: 38px 61px 72px 61px;
+    }
+
+    @media (max-width: 767px) {
+        border-radius: 30px 30px 0 0;
+        padding: 32px 16px 72px 16px;
+    }
+}
+
+.outstaffing-prices__title {
+    margin-bottom: 20px;
+
+    @media (max-width: 1660px) {
+        margin-bottom: 13px;
+    }
+
+    @media (max-width: 1023px) {
+        margin-bottom: 28px;
+    }
+}
+
+.outstaffing-prices p {
+    font-size: 24px;
+    line-height: 1.2;
+    color: #6a6a6a;
+
+    @media (max-width: 1660px) {
+        font-size: 18px;
+    }
+
+    @media (max-width: 1023px) {
+        font-size: 20px;
+        line-height: 1.4;
+        letter-spacing: -0.01em;
+    }
+}
+
+
+.outstaffing-prices p small {
+    font-size: 20px;
+    line-height: normal;
+    color: #949494;
+
+    @media (max-width: 1660px) {
+        font-size: 16px;
+    }
+
+    @media (max-width: 1023px) {
+        font-size: 20px;
+        line-height: 1.4;
+        letter-spacing: -0.01em;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+
+tbody {
+    background-color: var(--color-white);
+    border-radius: 20px;
+    overflow: hidden;
+
+
+    td {
+        padding: 29px 33px;
+
+        @media (max-width: 1660px) {
+            padding: 21px 25px;
+        }
+
+        @media (max-width: 1023px) {
+            padding: 16px;
+        }
+
+        @media (max-width: 767px) {
+            padding: 10px 12px;
+        }
+    }
+
+    td {
+        border-left: 1px solid #a6a6a6;
+    }
+
+    td:nth-child(2) {
+        border-right: 1px solid #a6a6a6;
+    }
+
+    tr:first-child {
+        border-top: 1px solid #a6a6a6;
+    }
+
+    tr {
+        border-bottom: 1px solid #a6a6a6;
+    }
+}
+
+tbody tr:nth-child(2n) {
+    background-color: #e4e4e4;
+}
+
+tbody:before {
+    content: "@";
+    display: block;
+    line-height: 24px;
+    text-indent: -99999px;
+}
+
+thead {
+    // margin-bottom: 34px;
+}
+
+thead tr {
+    // border-spacing: 20px;
+}
+
+.outstaffing-prices th {
+    border-radius: 20px;
+    background-color: var(--bg-color);
+    padding-top: 23px;
+    padding-bottom: 17px;
+
+    @media (max-width: 1660px) {
+        border-radius: 15px;
+        padding-block: 15px;
+    }
+
+    @media (max-width: 1023px) {
+        border-radius: 12px;
+    }
+
+    @media (max-width: 767px) {
+        border-radius: 8px;
+        padding-block: 10px;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 1.2;
+        color: #fff;
+        text-transform: uppercase;
+
+        @media (max-width: 1660px) {
+            font-size: 20px;
+        }
+
+        @media (max-width: 888px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.outstaffing-prices td {
+    font-size: 24px;
+    line-height: 1.2;
+    color: #000;
+
+    @media (max-width: 1660px) {
+        font-size: 18px;
+    }
+
+    @media (max-width: 1023px) {
+        font-size: 20px;
+        line-height: 1.4;
+        letter-spacing: -0.01em;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: normal;
+        letter-spacing: normal;
+    }
+}
+
+.outstaffing-prices td:first-child {
+    @media (max-width: 1023px) {
+        color: #6a6a6a;
+    }
+
+    @media (max-width: 767px) {
+        color: #000;
+    }
+}
+
+.outstaffing-prices td:nth-child(2n) {
+    text-align: center;
+}
+
