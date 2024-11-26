@@ -1,4 +1,4 @@
-.request-form-block.none
+.request-form-block
     button(class="btn-close-modal" data-modal-close)
         svg.svg-close
             use(href="./img/spriteSvg.svg#svg-close")
@@ -14,18 +14,23 @@
         .form-item.form-item-mb22
             input(class="form-input" required type="email" name="email" placeholder="Введите Email *")
         // fieldset
+        //- fieldset.form-fieldset
+        //-     .form-fieldset__content
+        //-         .form-fieldset__btn
+        //-             label(class="form-label" for="file")
+        //-                 input(class="inputfile" id="file" type="file" name="selectFile")
+        //-                 span Загрузите штатное расписание
+        //-         p Файл не выбран
         fieldset.form-fieldset
             .form-fieldset__content
-                .form-fieldset__btn
-                    label(class="form-label" for="file")
-                        input(class="inputfile" id="file" type="file" name="selectFile")
-                        span Загрузите штатное расписание
-                p Файл не выбран
+                input(class="inputfile" id="file" type="file" name="selectFile")
+                label(class="form-label" for="file") Загрузите штатное расписание
+                span Файл не выбран
         .form-item
             label.checkbox
                 input(type="checkbox" name="privacy").real-checkbox
                 span.custom-checkbox
-                span.request-form-privacy Согласен на обработку персональных данных *
+                span.request-form-privacy Согласен на обработку персональных данных&nbsp;*
             p.required-text #[span *] - поля, обязательные для заполнения
         .form-item.form-item-btn
             button(type="submit" class="btn-submit") Отправить заявку

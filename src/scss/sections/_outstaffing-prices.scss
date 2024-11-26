@@ -149,12 +149,11 @@ tbody {
     }
 }
 
-tbody:after {
-    content:'';
+.fake-border {
     position: absolute;
     bottom: 0;
     left: 0;
-    top: 34px;
+    top: 0px;
     right: 0;
     display: block;
     border-radius: 16px;
