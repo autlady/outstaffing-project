@@ -131,4 +131,10 @@
     &:hover, &:active {
         background-color: lighten($color: #375a64, $amount: 15%);
     }
+
+    @media (max-width: 1023px) {
+        height: 32px;
+        line-height: 32px;
+        font-size: 12px;
+    }
 }

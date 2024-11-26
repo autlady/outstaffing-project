@@ -1,0 +1,117 @@
+// aside-menu
+.aside-menu
+    // TOP
+    .aside-menu-top
+        // logo
+        a(href="index.html").aside-menu__logo
+            svg.svg-logo
+                use(href="./img/logo.svg#svg-logo")
+        button(class="btn-close-menu")
+            svg.svg-close
+                use(href="./img/spriteSvg.svg#svg-close")
+
+    // NAV
+    .menu-wrapper
+        ul.menu-list
+            li.menu-item
+                button.menu-link О компании
+                    svg.svg-next
+                        use(href="./img/spriteSvg.svg#svg-next")
+                ul.submenu
+                    li О нас
+                    li Вакансии
+                    li Учебный центр
+                    li Отзывы
+                    li ТОП - проектов
+                    li Спецпредложения
+            li.menu-item
+                button.menu-link Центр охраны труда
+                    svg.svg-next
+                        use(href="./img/spriteSvg.svg#svg-next")
+                ul.submenu
+                    li Оценка профессиональных рисков
+                    li Специальная оценка условий труда
+                    li Производственный контроль
+                    li Аутсорсинг охраны труда
+                    li Аудит охраны труда
+                    li Разработка документов/построение СУОТ
+                    li Сопровождение при проверках ГИТ
+                    li Расследование несчастных случаев
+            li.menu-item
+                button.menu-link Медицинский центр
+                    svg.svg-next
+                        use(href="./img/spriteSvg.svg#svg-next")
+                ul.submenu
+                    li Все виды медицинских осмотров
+                    li Обязательное психиатрическое освидетельствование
+                    li Предрейсовые (предсменные) медицинские осмотры
+                    li Личные медицинские книжки
+                    li Водительская комиссия
+                    li Оружейная комиссия
+                    li Справки и заключения
+                    li Вакцинация
+            li.menu-item
+                button.menu-link Учебный центр
+                    svg.svg-next
+                        use(href="./img/spriteSvg.svg#svg-next")
+                ul.submenu
+                    li Обучение по охране труда
+                    li Повышение квалификации
+                    li Обучение рабочим профессиям
+                    li Работы на высоте
+                    li Первая помощь
+                    li Пожарная безопасность
+                    li ГО и ЧС
+                    li Экологическая безопасность
+                    li Электробезопасность
+                    li Профессиональная переподготовка
+                    li Промышленная безопасность
+            li.menu-item
+                a(href="#!").menu-link Школа охранников
+            li.menu-item
+                a(href="#!").menu-link Экологические услуги
+            li.menu-item
+                button.menu-link Справочник специалиста
+                    svg.svg-next
+                        use(href="./img/spriteSvg.svg#svg-next")
+                ul.submenu
+                    li Термины и определения
+                    li Новости и статьи
+            li.menu-item
+                a(href="#!").menu-link Контакты
+
+    // BOTTOM
+    .aside-menu-bottom
+        // search
+        .search
+            .search__icon
+                svg.svg-search
+                    use(href="./img/spriteSvg.svg#svg-search")
+            input(type="text" class="search__input" placeholder="Введите запрос")
+        button(class="aside-menu-modal-btn" data-modal-button="modal") Оставить заявку
+        // social-icons
+        .aside-menu__social
+            a(href="#!").aside-menu__social-item
+                svg.svg-wa
+                    use(href="./img/spriteSvg.svg#svg-wa")
+            a(href="#!").aside-menu__social-item
+                svg.svg-tg
+                    use(href="./img/spriteSvg.svg#svg-tg")
+            a(href="#!").aside-menu__social-item
+                svg.svg-vk
+                    use(href="./img/spriteSvg.svg#svg-vk")
+            a(href="#!").aside-menu__social-item
+                img(src="./img/icons/zen.webp" width="34" height="35" alt="icon")
+            a(href="#!").aside-menu__social-item.youtube
+                svg.svg-youtube
+                    use(href="./img/spriteSvg.svg#svg-youtube")
+        // contacts
+        .aside-menu__contacts
+            .aside-menu__contacts-item
+                a(href="mailto:info@gk-trud.ru") info@gk-trud.ru
+            .aside-menu__contacts-item
+                a(href="tel:88001013312") 8 800 101 33 12
+                span  - работаем по всей России
+            .aside-menu__contacts-item
+                a(href="tel:88126407822") 8 812 640 78 22
+                span  - тел. в Санкт-Петербурге

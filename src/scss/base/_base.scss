@@ -195,10 +195,14 @@ main {
 
 
   @media (max-width: 1660px) {
+    align-items: flex-start;
+    padding-top: 40px;
     padding: 60px;
+    overflow-y: auto;
   }
 
   @media (max-width: 767px) {
+    align-items: center;
     padding: 15px;
   }
 }
