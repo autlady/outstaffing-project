@@ -1,7 +1,6 @@
 /*========GAMBURGER======*/
 
 .burger {
-    z-index: 15;
     cursor: pointer;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -39,7 +38,6 @@
     height: 4px;
     width: 52px;
     background-color: #f0eded;
-    z-index: 1;
 
     @media (max-width: 1660px) {
         width: 39px;

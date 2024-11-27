@@ -1,11 +1,20 @@
 // aside-menu
-.aside-menu.none
+.aside-menu
     // TOP
     .aside-menu-top
         // logo
         a(href="index.html").aside-menu__logo
             svg.svg-logo
                 use(href="./img/logo.svg#svg-logo")
+        //contact-icons
+        .aside-menu__icons
+            a(href="#!").aside-menu__icons-item
+                svg.svg-mail-mob
+                    use(href="./img/spriteSvg.svg#svg-mail")
+            a(href="#!").aside-menu__icons-item
+                svg.svg-phone-mob
+                    use(href="./img/spriteSvg.svg#svg-phone")
+        //button - close
         button(class="btn-close-menu")
             svg.svg-close
                 use(href="./img/spriteSvg.svg#svg-close")
@@ -14,7 +23,7 @@
     .menu-wrapper
         ul.menu-list
             li.menu-item
-                button.menu-link О компании
+                a(href="#!").menu-link О компании
                     svg.svg-next
                         use(href="./img/spriteSvg.svg#svg-next")
                 ul.submenu
@@ -25,7 +34,7 @@
                     li ТОП - проектов
                     li Спецпредложения
             li.menu-item
-                button.menu-link Центр охраны труда
+                a(href="#!").menu-link Центр охраны труда
                     svg.svg-next
                         use(href="./img/spriteSvg.svg#svg-next")
                 ul.submenu
@@ -38,7 +47,7 @@
                     li Сопровождение при проверках ГИТ
                     li Расследование несчастных случаев
             li.menu-item
-                button.menu-link Медицинский центр
+                a(href="#!").menu-link Медицинский центр
                     svg.svg-next
                         use(href="./img/spriteSvg.svg#svg-next")
                 ul.submenu
@@ -51,7 +60,7 @@
                     li Справки и заключения
                     li Вакцинация
             li.menu-item
-                button.menu-link Учебный центр
+                a(href="#!").menu-link Учебный центр
                     svg.svg-next
                         use(href="./img/spriteSvg.svg#svg-next")
                 ul.submenu
@@ -71,7 +80,7 @@
             li.menu-item
                 a(href="#!").menu-link Экологические услуги
             li.menu-item
-                button.menu-link Справочник специалиста
+                a(href="#!").menu-link Справочник специалиста
                     svg.svg-next
                         use(href="./img/spriteSvg.svg#svg-next")
                 ul.submenu
@@ -115,3 +124,21 @@
             .aside-menu__contacts-item
                 a(href="tel:88126407822") 8 812 640 78 22
                 span  - тел. в Санкт-Петербурге
+        .aside-menu__contacts-mob
+            .aside-menu__contacts-mob-item
+                svg.svg-phone
+                    use(href="./img/spriteSvg.svg#svg-phone")
+                a(href="tel:88126407822") 8 812 640 78 22
+            .aside-menu__contacts-mob-item
+                svg.svg-phone
+                    use(href="./img/spriteSvg.svg#svg-phone")
+                a(href="tel:88001013312") 8 800 101 33 12
+            .aside-menu__contacts-mob-text Звонок по России БЕСПЛАТНЫЙ
+            .aside-menu__contacts-mob-item
+                svg.svg-mail
+                    use(href="./img/spriteSvg.svg#svg-mail")
+                a(href="mailto:info@gk-trud.ru") info@gk-trud.ru
+            .aside-menu__contacts-mob-item
+                svg.svg-clock
+                    use(href="./img/spriteSvg.svg#svg-clock")
+                span РЕЖИМ РАБОТЫ: Пн-Пт 09:00-18:00
