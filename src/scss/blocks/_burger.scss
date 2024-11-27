@@ -1,6 +1,6 @@
 /*========GAMBURGER======*/
 
-.menu-toggle {
+.burger {
     z-index: 15;
     cursor: pointer;
     -webkit-box-pack: center;
@@ -34,7 +34,7 @@
   }
   }
 
-  .menu-toggle span {
+  .burger span {
     position: relative;
     height: 4px;
     width: 52px;
@@ -55,7 +55,7 @@
   }
   }
 
-  .menu-toggle span:after {
+  .burger span:after {
     content: "";
     position: absolute;
     left: 0;
@@ -70,7 +70,7 @@
 
   }
 
-  .menu-toggle span:before {
+  .burger span:before {
     content: "";
     position: absolute;
     left: 0;
@@ -84,7 +84,7 @@
 
   }
 
-  .menu-toggle span:after {
+  .burger span:after {
     top: -13px;
 
     @media (max-width: 1660px) {
@@ -100,7 +100,7 @@
   }
   }
 
-  .menu-toggle span:before {
+  .burger span:before {
     bottom: -13px;
 
     @media (max-width: 1660px) {
@@ -116,30 +116,6 @@
   }
   }
 
-//   .menu-toggle.active {
-//     border: 2px solid #FFF;
-//   }
 
-//   .menu-toggle.active::before {
-//     margin: -2px;
-//   }
 
-  .menu-toggle.active span {
-    background-color: transparent !important;
-  }
 
-  .menu-toggle.active span:after {
-    top: 0px;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-
-  .menu-toggle.active span:before {
-    bottom: 0px;
-    background-color: #185CFF;
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    width: 100%;
-  }

@@ -110,10 +110,4 @@ document.addEventListener("DOMContentLoaded", function (){
   // Повторная проверка при изменении размера окна
   window.addEventListener("resize", initSpecificSwiperSteps);
 
-
-//   const tbody = document.querySelector('tbody');
-// const beforeElement = document.createElement('div');
-// beforeElement.classList.add('fake-border');
-// tbody.prepend(beforeElement);
-
   })

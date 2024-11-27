@@ -87,10 +87,8 @@
     }
 }
 
-table {
+.table {
     width: 100%;
-    table-layout: fixed;
-    border-collapse: collapse;
     margin-bottom: 17px;
 
     @media (max-width: 1660px) {
@@ -102,223 +100,141 @@ table {
     }
 }
 
-
-tbody {
-    position: relative;
-    background-color: var(--color-white);
-
-    td {
-        padding: 29px 33px;
-
-        @media (max-width: 1660px) {
-            padding: 21px 25px;
-        }
-
-        @media (max-width: 1023px) {
-            padding: 16px;
-        }
-
-        @media (max-width: 767px) {
-            padding: 10px 12px;
-        }
-    }
-
-    td:first-child {
-        border-right: 1px solid #a6a6a6;
-
-
-        @media (max-width: 1023px) {
-            border-right: 2px solid #a6a6a6;
-        }
-
-        @media (max-width: 767px) {
-            border-right: 1px solid #a6a6a6;
-        }
-    }
-
-    tr {
-        border-bottom: 1px solid #a6a6a6;
-
-        @media (max-width: 1023px) {
-            border-bottom: 2px solid #a6a6a6;
-        }
-    }
-
-    tr:last-child {
-        border-bottom: none;
-    }
-}
-
-.table-border {
-    position: relative;
-}
-
-// .table-border:before {
-//     content:"";
-//     position: absolute;
-//     bottom: 0;
-//     left: 0;
-//     top: calc(100% - 108px);
-//     right: 0;
-//     display: block;
-//     border-radius: 16px;
-//     border: 5px solid red;
-// }
-
-// .fake-border {
-//     position: absolute;
-//     bottom: 0;
-//     left: 0;
-//     top: 0px;
-//     right: 0;
-//     display: block;
-//     border-radius: 16px;
-//     border: 1px solid #a6a6a6;
-
-//     @media (max-width: 1660px) {
-//         top: 23px;
-//     }
-
-//     @media (max-width: 1023px) {
-//         top: 12px;
-//         border: 2px solid #a6a6a6;
-//     }
-
-//     @media (max-width: 767px) {
-//         top: 10px;
-//         border: 1px solid #a6a6a6;
-//     }
-// }
-
-tbody tr:nth-child(2n) {
-    background-color: #e4e4e4;
-}
-
-tbody:before {
-    content: "@";
-    display: block;
-    line-height: 34px;
-    text-indent: -99999px;
+.table-head {
+    margin-bottom: 34px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 21px;
 
     @media (max-width: 1660px) {
-        line-height: 23px;
+        margin-bottom: 23px;
+        column-gap: 15px;
     }
 
     @media (max-width: 1023px) {
-        line-height: 12px;
+        margin-bottom: 12px;
+        column-gap: 16px;
     }
 
     @media (max-width: 767px) {
-        line-height: 10px;
+        margin-bottom: 10px;
+        column-gap: 7px;
     }
 }
 
+.table-head__sell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 23px;
+    padding-bottom: 17px;
+    padding-inline: 15px;
+    width: 50%;
+    border-radius: 20px;
+    background-color: var(--bg-color);
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
 
-.outstaffing-prices th {
-    // border-radius: 20px;
-
-    // padding-top: 23px;
-    // padding-bottom: 17px;
-
-    // @media (max-width: 1660px) {
-    //     border-radius: 15px;
-    //     padding-block: 15px;
-    // }
-
-    // @media (max-width: 1023px) {
-    //     border-radius: 12px;
-    // }
-
-    // @media (max-width: 767px) {
-    //     border-radius: 8px;
-    //     padding-block: 10px;
-    // }
-
-    p {
-        min-height: 74px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 20px;
-        background-color: var(--bg-color);
-        font-weight: 500;
-        font-size: 28px;
-        line-height: 1.2;
-        color: #fff;
-        text-transform: uppercase;
-
-        @media (max-width: 1660px) {
-            font-size: 20px;
-            border-radius: 15px;
-        }
-
-        @media (max-width: 1023px) {
-            border-radius: 12px;
-        }
-
-        @media (max-width: 888px) {
-            font-size: 16px;
-            border-radius: 8px;
-        }
-    }
-}
-
-.outstaffing-prices th:first-child {
-    padding-right: 15px;
 
     @media (max-width: 1660px) {
-        padding-right: 8px;
+        font-size: 20px;
+        border-radius: 15px;
+    }
+
+    @media (max-width: 1023px) {
+        border-radius: 12px;
     }
 
     @media (max-width: 888px) {
-        padding-right: 3.5px;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+    @media (max-width: 447px) {
+        padding: 10px 5px;
     }
 }
 
-.outstaffing-prices th:nth-child(2) {
-    padding-left: 15px;
+.table-body {
+    border: 1px solid #a6a6a6;
+    border-radius: 20px;
 
-    @media (max-width: 1660px) {
-        padding-left: 8px;
+    @media (max-width: 1023px) {
+        border: 2px solid #a6a6a6;
     }
 
-    @media (max-width: 888px) {
-        padding-left: 3.5px;
+    @media (max-width: 767px) {
+        border: 1px solid #a6a6a6;
     }
 }
 
-.outstaffing-prices td {
+.table-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.table-row__sell {
+    display: flex;
+    align-items: center;
+    padding: 39px 33px;
+    width: 50%;
     font-size: 24px;
     line-height: 1.2;
     color: #000;
 
     @media (max-width: 1660px) {
+        padding: 21px 25px;
         font-size: 18px;
     }
 
     @media (max-width: 1023px) {
+        padding: 16px;
         font-size: 20px;
         line-height: 1.4;
         letter-spacing: -0.01em;
+        color: #6a6a6a;
     }
 
     @media (max-width: 767px) {
         font-size: 16px;
         line-height: normal;
         letter-spacing: normal;
-    }
-}
-
-.outstaffing-prices td:first-child {
-    @media (max-width: 1023px) {
-        color: #6a6a6a;
-    }
-
-    @media (max-width: 767px) {
         color: #000;
     }
 }
 
-.outstaffing-prices td:nth-child(2n) {
+.table-row:nth-child(2n) {
+    background-color: #e4e4e4
+}
+
+.table-row:not(:last-child) {
+    border-bottom: 1px solid #a6a6a6;
+
+    @media (max-width: 1023px) {
+        border-bottom: 2px solid #a6a6a6;
+    }
+}
+
+.table-row__sell.text-center {
+    justify-content: center;
+    border-left: 1px solid #a6a6a6;
+
+    @media (max-width: 1023px) {
+        color: #000;
+        border-left: 2px solid #a6a6a6;
+    }
+
+    @media (max-width: 767px) {
+        border-left: 1px solid #a6a6a6;
+    }
+}
+
+.text-center {
     text-align: center;
 }
