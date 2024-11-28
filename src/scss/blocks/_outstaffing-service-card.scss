@@ -53,6 +53,7 @@
     font-size: 28px;
     text-transform: uppercase;
     color: var(--color-white);
+    z-index: 1;
 
     @media (max-width: 1660px) {
         font-size: 21px;
@@ -95,6 +96,7 @@
 .outstaffing-service-card__list p {
     font-size: 20px;
     color: #fff;
+    z-index: 1;
 
     @media (max-width: 1660px) {
         font-size: 15px;

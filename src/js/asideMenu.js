@@ -42,7 +42,13 @@ for (let link of linkAsideMenu) {
         let submenu = this.nextElementSibling;
         if (window.innerWidth < 1200) {
             if (submenu) {
-                // asideMenuBlock.querySelector('.open').classList.remove('open');
+
+                document.querySelectorAll('.menu-item .open').forEach((item) => {
+                    if (item !== submenu) {
+                        item.classList.remove('open');
+                        item.closest(".menu-item").classList.remove('menu-item-bg');
+                    }
+                });
 
                 submenu.classList.toggle("open");
                 submenu.closest(".menu-item").classList.toggle('menu-item-bg');
