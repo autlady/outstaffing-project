@@ -8,6 +8,7 @@
     transform: translateX(-130%);
     transition: .3s;
     overflow: hidden;
+    z-index: 5;
 }
 
 .aside-menu-wrapper.active {
@@ -224,6 +225,7 @@
     @media (max-width: 1199px) {
         padding: 10px 15px;
         border-bottom: none;
+
     }
 }
 
@@ -276,6 +278,12 @@
 
     @media (max-width: 767px) {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .menu-item-bg .menu-link .svg-next {
+        transform: rotate(-90deg);
     }
 }
 
