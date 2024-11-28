@@ -138,3 +138,42 @@
         font-size: 12px;
     }
 }
+
+.btn-submit-white {
+    display: inline-block;
+
+    padding: 0 44px;
+    height: 62px;
+
+    color: #fff;
+    background-color: var(--color-white);
+    border: none;
+
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+
+    border-radius: 13px;
+
+    text-transform: uppercase;
+
+    line-height: 62px;
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition: 0.2s ease-in;
+
+    &:hover, &:active {
+        background-color: lighten($color: #223642, $amount: 15%);
+        color: var(--color-white);
+    }
+
+    @media (max-width: 1023px) {
+        height: 32px;
+        line-height: 32px;
+        font-size: 12px;
+    }
+
+}

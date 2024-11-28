@@ -1,0 +1,27 @@
+form.cta-form
+    input(type="hidden" name="cta form" value="cta form")
+    .form-item.form-item--border.form-item-mb36
+        input(class="cta-form-input" type="text" name="username" placeholder="Александр")
+        span.fake-placeholder Имя
+    .form-item.form-item--border.form-item-mb36
+        input(class="cta-form-input" type="text" name="username" placeholder="+7()")
+        span.fake-placeholder Номер телефона
+    .form-item.form-item--border.form-item-mb18
+        .dropdown
+            span.fake-placeholder Запрашиваемая услуга
+            button.dropdown__button
+                span Выберите услугу
+            ul.dropdown__list
+                li.dropdown__list-item(data-value="item1") Услуга1
+                li.dropdown__list-item(data-value="item2") Услуга2
+                li.dropdown__list-item(data-value="item3") Услуга3
+                li.dropdown__list-item(data-value="item4") Услуга4
+                li.dropdown__list-item(data-value="item5") Услуга5
+            input(type="text" name="selet-category" value="" class="dropdown__input-hidden")
+    .form-item.form-item-center
+        label.checkbox
+            input(type="checkbox" name="privacy").real-checkbox
+            span.custom-checkbox.custom-checkbox--dark
+            span.cta-form-privacy Я согласен на обработку персональных данных
+    .form-item.form-item-btn-white
+        button(type="submit" class="btn-submit-white") Отправить

@@ -1,0 +1,32 @@
+.cta {
+    padding-top: 77px;
+    padding-bottom: 33px;
+    background-color: #f1f1f1;
+}
+
+.cta-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.cta-content {
+    padding-top: 40px;
+    width: 445px;
+}
+
+.cta__title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cta__text {
+    font-size: 24px;
+    line-height: 1.33;
+    text-align: center;
+    color: #6a6a6a;
+}
+
+.cta-form-wrapper {
+    width: 50%;
+}
