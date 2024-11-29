@@ -1,3 +1,22 @@
+.cta-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & > .form-item {
+    max-width: 642px;
+    width: 100%;
+
+    @media (max-width: 1284px) {
+      max-width: 100%;
+    }
+  }
+}
+
+.cta-form .form-item {
+  margin-inline: auto;
+}
+
 .cta-form-input {
     display: block;
     width: 100%;
@@ -21,6 +40,12 @@
         font-size: 24px;
         height: 64px;
     }
+}
+
+.cta-form-input::placeholder {
+  @media (max-width: 767px) {
+    color: #c5c5c5;
+  }
 }
 
 .form-item--border {
@@ -66,12 +91,27 @@
     background-color: #b8b8b8;
 }
 
+.cta-form .checkbox {
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 931px) {
+    justify-content: flex-start;
+  }
+}
+
+
 .custom-checkbox--dark {
     width: 33px;
     height: 33px;
     border: 3px solid #818181;
     border-radius: 1px;
     background-color: #f1f1f1;
+    @media (max-width: 1023px) {
+      width: 26px;
+      height: 26px;
+      border: 2px solid #818181;
+    }
 }
 
 .cta-form-privacy {
@@ -84,6 +124,7 @@
 
 .dropdown {
     position: relative;
+    width: 100%;
   }
 
   .dropdown__button {
@@ -110,6 +151,10 @@
         padding: 0 26px;
         font-size: 24px;
         height: 64px;
+    }
+
+    @media (max-width: 767px) {
+      color: #c5c5c5;
     }
   }
 
@@ -152,6 +197,16 @@
     border-radius: 9px;
     width: 100%;
     z-index: 1;
+    font-size: 20px;
+
+    @media (max-width: 1660px) {
+      font-size: 15px;
+
+      @media (max-width: 1023px) {
+        top: 65px;
+        font-size: 24px;
+    }
+  }
   }
 
   .dropdown__list--visible {
