@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (){
 
+    // OUTSTAFFING BENEFITS SLIDER
   let specificSwiperBen = null; // Для хранения экземпляра конкретного Swiper
   function initSpecificSwiperBen() {
     const windowWidth = window.innerWidth;
@@ -33,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function (){
   /************************************* */
 
 
+  // OUTSTAFFING SERVICE SLIDER
   let specificSwiper = null; // Для хранения экземпляра конкретного Swiper
 
   function initSpecificSwiper() {
@@ -109,5 +111,45 @@ document.addEventListener("DOMContentLoaded", function (){
 
   // Повторная проверка при изменении размера окна
   window.addEventListener("resize", initSpecificSwiperSteps);
+
+  // ADVANTAGES SLIDER
+
+  let specificSwiperAdv = null; // Для хранения экземпляра конкретного Swiper
+
+  function initSpecificSwiperAdv() {
+    const windowWidth = window.innerWidth;
+
+    // Уникальный селектор для конкретного слайдера
+    const swiperContainerAdv = document.querySelector(".advantages-slider");
+
+    // Проверяем, нужно ли инициализировать слайдер
+    if (windowWidth <= 1199 && swiperContainerAdv && !specificSwiperAdv) {
+      specificSwiperAdv = new Swiper(".advantages-slider", {
+        slidesPerView: 1,
+        spaceBetween: 16,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          931: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    }
+
+    // Уничтожаем Swiper, если ширина больше 1199px
+    if (windowWidth > 1199 && specificSwiperAdv) {
+      specificSwiperAdv.destroy(true, true);
+      specificSwiperAdv = null; // Обнуляем экземпляр
+    }
+  }
+
+  // Инициализация при загрузке страницы
+  initSpecificSwiperAdv();
+
+  // Повторная проверка при изменении размера окна
+  window.addEventListener("resize", initSpecificSwiperAdv);
 
   })
