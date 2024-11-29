@@ -1,6 +1,8 @@
-.cta {
-    padding-block: 33px;
+.cta .section-wrapper {
+    position: relative;
+    padding-bottom: 33px;
     background-color: #f1f1f1;
+    overflow: hidden;
 
     @media (max-width: 1023px) {
         padding-top: 40px;
@@ -27,7 +29,7 @@
         justify-content: space-between;
     }
 
-    @media (max-width: 1284px) {
+    @media (max-width: 1330px) {
         flex-direction: column;
     }
 }
@@ -36,7 +38,7 @@
     max-width: 445px;
     margin-inline: auto;
 
-    @media (max-width: 1284px) {
+    @media (max-width: 1330px) {
         max-width: 100%;
     }
 }
@@ -55,7 +57,7 @@
 
 .cta-row__col {
     width: 50%;
-    @media (max-width: 1284px) {
+    @media (max-width: 1330px) {
         width: 100%;
     }
 
@@ -72,4 +74,26 @@
     @media (max-width: 932px) {
         max-width: 100%;
       }
+}
+
+.cta__bg-left {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    @media (max-width: 1330px) {
+        display: none;
+    }
+}
+
+.cta__bg-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    @media (max-width: 1330px) {
+        display: none;
+    }
 }

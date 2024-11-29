@@ -1,0 +1,15 @@
+.advantages-wrapper {
+    padding-top: 40px;
+    background-color: var(--color-white);
+    border-radius: 0 0 70px 70px;
+}
+
+.advantages__title {
+    margin-bottom: 57px;
+    text-align: center;
+}
+
+.advantages-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

@@ -1,0 +1,23 @@
+// advantages
+section.advantages
+    .container
+        .advantages-wrapper
+            .advantages__title
+                h2.section-title Преимущества обращения в нашу компанию
+            .advantages-row
+                // slider
+                .swiper.advantages-slider
+                    .swiper-wrapper
+                        .swiper-slide
+                            +advantage('confidence', 'Ваша уверенность', 'Наша главная цель - обеспечить уверенность клиентов в каждом шаге. Мы работаем открыто и в полном соответствии с трудовым и налоговым законодательством РФ')
+                        .swiper-slide
+                            +advantage('reward', 'Аккредитация', 'Группа Компаний “Труд” - аккредитованное частное агентство занятости, оказывающее услуги по аутстаффингу не только в Санкт-Петербурге, но и в других регионах РФ')
+                        .swiper-slide
+                            +advantage('headphones', 'Полное сопровождение', 'Группа Компаний "Труд" предлагает своим партнерам не просто услугу аутстаффинга, а полноценное сопровождение на всех этапах. Мы непременно находим решение, которое позволит нашим Клиентам получить максимальную выгоду от сотрудничества с нами')
+                .advantages__img
+                    picture
+                        source(srcset="./img/outstaff/advantage-mob@2x.webp" media="(max-width: 767px) and (min-resolution: 192dpi)" width="356" height="253")
+                        source(srcset="./img/outstaff/advantage-mob.webp" media="(max-width: 767px)" width="356" height="253")
+                        source(srcset="./img/outstaff/advantage@2x.webp" media="(min-resolution: 192dpi)" width="638" height="452")
+                        img(src="./img/outstaff/advantage.webp" width="638" height="452" alt="staff")
+

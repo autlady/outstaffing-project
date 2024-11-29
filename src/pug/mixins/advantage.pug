@@ -1,0 +1,9 @@
+mixin advantage(img, title, text)
+    // advantage-card
+    .advantage-card
+        .advantage-card-top
+            .advantage-card__img
+                svg(class = "svg-" + img)
+                    use(href="./img/spriteSvg.svg#svg-" + img)
+            h3.advantage-card__title !{title}
+        p.advantage-card__text !{text}

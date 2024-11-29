@@ -1,16 +1,20 @@
 // cta
-section.cta
+section.cta.none
     .container
-        .cta-row
-            .cta-row__col
-                .cta-content
-                    // TEXT
-                    .cta__title
-                        h2.section-title Вы все еще думаете?
-                    p.cta__text Оставьте заявку, и наш менеджер свяжется с Вами, окажет необходимые консультации и ответит на все интересующие вопросы
-                // FORM
-            .cta-row__col
-                .cta-form-wrapper
-                    include ../blocks/cta-form.pug
+        .section-wrapper
+            .cta__bg-left
+                img(src="./img/outstaff/outstaff-bg.webp" width="741" height="539" alt="bg")
+            .cta__bg-right
+                img(src="./img/outstaff/outstaff-bg2.webp" width="728" height="476" alt="bg")
+            .cta-row
+                .cta-row__col
+                    .cta-content
+                        // TEXT
+                        .cta__title
+                            h2.section-title Вы все еще думаете?
+                        p.cta__text Оставьте заявку, и наш менеджер свяжется с Вами, окажет необходимые консультации и ответит на все интересующие вопросы
+                .cta-row__col
+                    .cta-form-wrapper
+                        include ../blocks/cta-form.pug
 
 
