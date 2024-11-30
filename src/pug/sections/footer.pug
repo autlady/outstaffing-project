@@ -1,9 +1,11 @@
 // FOOTER
 footer.footer
     .container
+        //FOOTER TOP
         .footer-row
             // footer-column
             .footer-col
+                //LOGO
                 a(href="#!").footer__logo
                     svg.svg-logo
                         use(href="./img/logo.svg#svg-logo")
@@ -17,17 +19,17 @@ footer.footer
             // footer-nav
             ul.footer-nav
                 li
-                    a(href="#!").footer-nav__link О нас&nbsp;#[svg.svg-down #[use(href="./img/spriteSvg.svg#svg-down")]]
-                        //- svg.svg-down
-                        //-     use(href="./img/spriteSvg.svg#svg-down")
+                    a(href="#!").footer-nav__link О нас
+                        svg.svg-down
+                            use(href="./img/spriteSvg.svg#svg-down")
                 li
                     a(href="#!").footer-nav__link Контакты
                         svg.svg-down
                             use(href="./img/spriteSvg.svg#svg-down")
                 li
-                    a(href="#!").footer-nav__link Центр охраны труда&nbsp;#[svg.svg-down #[use(href="./img/spriteSvg.svg#svg-down")]]
-                        //- svg.svg-down
-                        //-     use(href="./img/spriteSvg.svg#svg-down")
+                    a(href="#!").footer-nav__link Центр охраны труда
+                        svg.svg-down
+                            use(href="./img/spriteSvg.svg#svg-down")
                 li
                     a(href="#!").footer-nav__link Учебный центр
                         svg.svg-down
@@ -56,23 +58,20 @@ footer.footer
                             use(href="./img/spriteSvg.svg#svg-down")
             // footer-contacts
             .footer-contacts
-                .footer-contacts__item г. Санкт-Петербург, ул. Курская, 19
-                .footer-contacts__item
-                    a(href="tel:88126407822") 8 812 640 78 22
-                .footer-contacts__item
-                    a(href="tel:88001013312") 8 800 101 33 12
-                .footer-contacts__item-text Звонок по России БЕСПЛАТНЫЙ
-                .footer-contacts__item
-                    a(href="mailto:info@gk-trud.ru") info@gk-trud.ru
-                .footer-contacts__item-text
+                p.footer-contacts__item г. Санкт-Петербург, ул. Курская, 19
+                a(href="tel:88126407822").footer-contacts__item 8 812 640 78 22
+                a(href="tel:88001013312").footer-contacts__item 8 800 101 33 12
+                p.footer-contacts__item.footer-contacts__item--mb19 Звонок по России БЕСПЛАТНЫЙ
+                a(href="mailto:info@gk-trud.ru").footer-contacts__item info@gk-trud.ru
+                p.footer-contacts__item
                     strong Режим работы:
-                .footer-contacts__item-text Пн-Пт 9:00-18:00
-                .footer-contacts__item-text Сб-Вс - выходные дни
-            // footer-col
-            .footer-col
+                p.footer-contacts__item Пн-Пт 9:00-18:00
+                p.footer-contacts__item Сб-Вс - выходные дни
+            // footer-col-social
+            .footer-col-social
                 .footer-social
                     a(href="#!").footer-social__item
-                        img(src="./img/icons/zen.webp" width="34" height="35" alt="icon")
+                        img(src="./img/icons/zen.webp" width="38" height="39" alt="icon")
                     a(href="#!").footer-social__item
                         svg.svg-rutube
                             use(href="./img/spriteSvg.svg#svg-rutube")
@@ -85,10 +84,12 @@ footer.footer
                     a(href="#!").footer-social__item
                         svg.svg-vk
                             use(href="./img/spriteSvg.svg#svg-vk")
+                //QR
                 .footer-qr
                     p.footer-qr__text Присоединяйтесь в наш телеграм-канал!
                     .footer-qr__img
                         img(src="./img/outstaff/qr.webp" width="135" height="135" alt="qr")
+        //FOOTER BOTTOM
         .footer-bottom
             p.footer__copyright &copy; 2024 ГК ТРУД Общество с ограниченной ответственностью “Группа компаний “Труд”
             p.footer__copyright.footer__copyright--detail Настоящий сайт является объектом авторского права «Группы компаний «Труд». Копирование, размножение, или иное использование материала без письменного разрешения автора не допускается
