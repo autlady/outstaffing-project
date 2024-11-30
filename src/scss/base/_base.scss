@@ -102,7 +102,16 @@ select:-webkit-autofill:focus {
 }
 
 main {
+  padding-bottom: 113px;
   background-color: var(--bg-color);
+
+  @media (max-width: 1660px) {
+    padding-bottom: 72px;
+  }
+
+  @media (max-width: 1023px) {
+    padding-bottom: 40px;
+  }
 }
 
 .container {

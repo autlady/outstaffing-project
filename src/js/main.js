@@ -35,21 +35,18 @@ document.addEventListener("DOMContentLoaded", function (){
 
 
   // OUTSTAFFING SERVICE SLIDER
-  let specificSwiper = null; // Для хранения экземпляра конкретного Swiper
+  let specificSwiper = null;
 
   function initSpecificSwiper() {
     const windowWidth = window.innerWidth;
-
-    // Уникальный селектор для конкретного слайдера
     const swiperContainer = document.querySelector(".outstaffing-services-slider");
 
-    // Проверяем, нужно ли инициализировать слайдер
     if (windowWidth <= 1199 && swiperContainer && !specificSwiper) {
       specificSwiper = new Swiper(".outstaffing-services-slider", {
         slidesPerView: 1,
         spaceBetween: 16,
         grid: {
-          rows: 2, // Пример настройки сетки
+          rows: 2,
         },
         pagination: {
           el: ".swiper-pagination",
@@ -64,30 +61,23 @@ document.addEventListener("DOMContentLoaded", function (){
       });
     }
 
-    // Уничтожаем Swiper, если ширина больше 1199px
     if (windowWidth > 1199 && specificSwiper) {
       specificSwiper.destroy(true, true);
-      specificSwiper = null; // Обнуляем экземпляр
+      specificSwiper = null;
     }
   }
 
-  // Инициализация при загрузке страницы
   initSpecificSwiper();
-
-  // Повторная проверка при изменении размера окна
   window.addEventListener("resize", initSpecificSwiper);
 
 // STEPS SLIDER
 
-  let specificSwiperSteps = null; // Для хранения экземпляра конкретного Swiper
+  let specificSwiperSteps = null;
 
   function initSpecificSwiperSteps() {
     const windowWidth = window.innerWidth;
-
-    // Уникальный селектор для конкретного слайдера
     const swiperContainerSteps = document.querySelector(".steps-slider");
 
-    // Проверяем, нужно ли инициализировать слайдер
     if (windowWidth <= 767 && swiperContainerSteps && !specificSwiperSteps) {
       specificSwiperSteps = new Swiper(".steps-slider", {
         slidesPerView: 1,
@@ -99,30 +89,23 @@ document.addEventListener("DOMContentLoaded", function (){
       });
     }
 
-    // Уничтожаем Swiper, если ширина больше 1199px
     if (windowWidth > 768 && specificSwiperSteps) {
       specificSwiperSteps.destroy(true, true);
-      specificSwiperSteps = null; // Обнуляем экземпляр
+      specificSwiperSteps = null;
     }
   }
 
-  // Инициализация при загрузке страницы
   initSpecificSwiperSteps();
-
-  // Повторная проверка при изменении размера окна
   window.addEventListener("resize", initSpecificSwiperSteps);
 
   // ADVANTAGES SLIDER
 
-  let specificSwiperAdv = null; // Для хранения экземпляра конкретного Swiper
+  let specificSwiperAdv = null;
 
   function initSpecificSwiperAdv() {
     const windowWidth = window.innerWidth;
-
-    // Уникальный селектор для конкретного слайдера
     const swiperContainerAdv = document.querySelector(".advantages-slider");
 
-    // Проверяем, нужно ли инициализировать слайдер
     if (windowWidth <= 1199 && swiperContainerAdv && !specificSwiperAdv) {
       specificSwiperAdv = new Swiper(".advantages-slider", {
         slidesPerView: 1,
@@ -139,17 +122,13 @@ document.addEventListener("DOMContentLoaded", function (){
       });
     }
 
-    // Уничтожаем Swiper, если ширина больше 1199px
     if (windowWidth > 1199 && specificSwiperAdv) {
       specificSwiperAdv.destroy(true, true);
-      specificSwiperAdv = null; // Обнуляем экземпляр
+      specificSwiperAdv = null;
     }
   }
 
-  // Инициализация при загрузке страницы
   initSpecificSwiperAdv();
-
-  // Повторная проверка при изменении размера окна
   window.addEventListener("resize", initSpecificSwiperAdv);
 
   })
