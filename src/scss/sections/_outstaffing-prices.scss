@@ -1,5 +1,5 @@
 .prices-wrapper {
-    padding: 80px 72px 68px 72px;
+    padding: 80px 72px 0px 72px;
     background-color: var(--color-white);
     border-radius: 70px 70px 0 0;
 
@@ -47,6 +47,7 @@
     font-size: 24px;
     line-height: 1.2;
     color: #6a6a6a;
+    max-width: 1455px;
 
     @media (max-width: 1660px) {
         font-size: 18px;
@@ -179,7 +180,7 @@
 .table-row__sell {
     display: flex;
     align-items: center;
-    padding: 39px 33px;
+    padding: 28px 33px;
     width: 50%;
     font-size: 24px;
     line-height: 1.2;

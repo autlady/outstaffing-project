@@ -27,6 +27,9 @@
     column-gap: 184px;
 
     @media (max-width: 1660px) {
+        padding-top: 80px;
+        padding-bottom: 90px;
+        padding-inline: 110px;
         column-gap: 138px;
         border-radius: 52px;
     }
@@ -74,11 +77,13 @@
 }
 
 .outstaffing__text {
+    max-width: 800px;
     margin-top: 25px;
     font-size: 24px;
     color: #464040;
 
     @media (max-width: 1660px) {
+        max-width: 700px;
         font-size: 18px;
     }
 

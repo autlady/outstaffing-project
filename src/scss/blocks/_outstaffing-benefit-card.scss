@@ -9,6 +9,12 @@
     background-color: #fff;
     border-radius: 20px;
 
+    @media (max-width: 1440px) {
+        padding-top: 30px;
+        padding-bottom: 15px;
+        padding-inline: 15px;
+    }
+
     @media (max-width: 1300px) {
         padding-top: 20px;
     }

@@ -24,7 +24,7 @@
     transition: 0.2s ease-in;
 
     &:hover, &:active {
-        background-color: #223642;
+        background-color: var(--bg-color);
         color: var(--color-white);
     }
 
@@ -168,6 +168,13 @@
     &:hover, &:active {
         background-color: lighten($color: #223642, $amount: 15%);
         color: var(--color-white);
+    }
+
+    @media (max-width: 1440px) {
+        height: 47px;
+        line-height: 47px;
+        font-size: 18px;
+        padding: 0 33px;
     }
 
     @media (max-width: 932px) {

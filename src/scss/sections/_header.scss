@@ -1,9 +1,15 @@
 .header {
+    // position: sticky;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    // z-index: 5;
     padding-block: 32px;
     background-color: var(--bg-color);
     font-family: var(--second-family);
 
     @media (max-width: 1440px) {
+        padding-inline: 25px;
         padding-block: 24px;
     }
 
@@ -34,7 +40,7 @@
 .header-left {
     display: flex;
     align-items: center;
-    column-gap: 40px;
+    column-gap: 25px;
 
     @media (max-width: 1660px) {
         column-gap: 30px;
@@ -146,6 +152,7 @@
 }
 
 .header-contacts {
+    padding-top: 23px;
     margin-bottom: 25px;
     display: flex;
     align-items: center;

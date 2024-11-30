@@ -38,6 +38,11 @@
     max-width: 445px;
     margin-inline: auto;
 
+    @media (max-width: 1440px) {
+        // padding-top: 25px;
+        max-width: 360px;
+    }
+
     @media (max-width: 1330px) {
         max-width: 100%;
     }
@@ -46,6 +51,12 @@
 .cta__title {
     margin-bottom: 20px;
     text-align: center;
+
+    .section-title {
+        @media (max-width: 1440px) {
+            font-size: 32px;
+        }
+    }
 }
 
 .cta__text {
@@ -53,6 +64,10 @@
     line-height: 1.33;
     text-align: center;
     color: #6a6a6a;
+
+    @media (max-width: 1440px) {
+        font-size: 18px;
+    }
 }
 
 .cta-row__col {
@@ -69,6 +84,10 @@
     @media (max-width: 1660px) {
         margin-inline: auto;
         max-width: 482px;
+    }
+
+    @media (max-width: 1440px) {
+        padding-top: 70px;
     }
 
     @media (max-width: 932px) {

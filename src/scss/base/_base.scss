@@ -119,6 +119,10 @@ main {
   margin: 0 auto;
   padding-inline: var(--container-padding);
 
+  @media (max-width: 1440px) {
+    padding-inline: 72px;
+  }
+
   @media (max-width: 1300px) {
     padding-inline: 106px;
   }
@@ -142,6 +146,29 @@ main {
 
   @media (max-width: 767px) {
       padding: 32px 16px 72px 16px;
+  }
+}
+
+.cta .section-wrapper {
+  padding-top: 73px;
+
+  @media (max-width: 1440px) {
+    padding-top: 0;
+  }
+}
+
+.staff .section-wrapper {
+  padding-top: 76px;
+  padding-bottom: 0px;
+
+  @media (max-width: 1440px) {
+    padding-top: 52px;
+  }
+}
+
+.outstaffing-services .section-wrapper {
+  @media (max-width: 1440px) {
+    padding-top: 0;
   }
 }
 
