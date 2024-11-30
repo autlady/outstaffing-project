@@ -9,11 +9,15 @@ footer.footer
                 a(href="#!").footer__logo
                     svg.svg-logo
                         use(href="./img/logo.svg#svg-logo")
-                p.footer__text ООО “Группа компаний “Труд”
-                p.footer__text ОГРН 1177847309969
-                p.footer__text ИНН 7810707150
+                p.footer__text.footer__text--mb40 ООО “ГРУППА КОМПАНИЙ “Труд”
+                p.footer__text ОГРН
+                    span  1177847309969
+                p.footer__text ИНН
+                    span  7810707150
                 p.footer__text КПП 781601001
-                p.footer__text Р/С 40702810432070011053
+                p.footer__text БИК
+                    span  044030786
+                p.footer__text.footer__text--mb25 Р/С 40702810432070011053
                 p.footer__text ФИЛИАЛ “САНКТ-ПЕТЕРБУРГСКИЙ”
                 p.footer__text АО “АЛЬФА-БАНК” г. САНКТ-ПЕТЕРБУРГ
             // footer-nav
@@ -56,18 +60,48 @@ footer.footer
                     a(href="#!").footer-nav__link Школа охранников
                         svg.svg-down
                             use(href="./img/spriteSvg.svg#svg-down")
-            // footer-contacts
+            // CONTACTS
             .footer-contacts
+                p.footer-contacts__title Контакты
                 p.footer-contacts__item г. Санкт-Петербург, ул. Курская, 19
-                a(href="tel:88126407822").footer-contacts__item 8 812 640 78 22
-                a(href="tel:88001013312").footer-contacts__item 8 800 101 33 12
-                p.footer-contacts__item.footer-contacts__item--mb19 Звонок по России БЕСПЛАТНЫЙ
-                a(href="mailto:info@gk-trud.ru").footer-contacts__item info@gk-trud.ru
-                p.footer-contacts__item
+                .footer-social-mob
+                    a(href="#!").footer-social__item
+                        img(src="./img/icons/zen.webp" width="38" height="39" alt="icon")
+                    a(href="#!").footer-social__item
+                        svg.svg-rutube
+                            use(href="./img/spriteSvg.svg#svg-rutube")
+                    a(href="#!").footer-social__item
+                        svg.svg-tg
+                            use(href="./img/spriteSvg.svg#svg-tg")
+                    a(href="#!").footer-social__item
+                        svg.svg-wa
+                            use(href="./img/spriteSvg.svg#svg-wa")
+                    a(href="#!").footer-social__item
+                        svg.svg-vk
+                            use(href="./img/spriteSvg.svg#svg-vk")
+                .footer-contacts__item
+                    svg.svg-phone
+                        use(href="./img/spriteSvg.svg#svg-phone")
+                    a(href="tel:88126407822") 8 812 640 78 22
+                .footer-contacts__item
+                    svg.svg-phone
+                        use(href="./img/spriteSvg.svg#svg-phone")
+                    a(href="tel:88001013312") 8 800 101 33 12
+                p.footer-contacts__item.footer-contacts__item--mb20 Звонок по России БЕСПЛАТНЫЙ
+                .footer-contacts__item
+                    svg.svg-mail
+                        use(href="./img/spriteSvg.svg#svg-mail")
+                    a(href="mailto:info@gk-trud.ru") info@gk-trud.ru
+                p.footer-contacts__item.footer-contacts__item--hours
                     strong Режим работы:
-                p.footer-contacts__item Пн-Пт 9:00-18:00
-                p.footer-contacts__item Сб-Вс - выходные дни
-            // footer-col-social
+                p.footer-contacts__item.footer-contacts__item--hours Пн-Пт 9:00-18:00
+                p.footer-contacts__item.footer-contacts__item--hours Сб-Вс - выходные дни
+                .footer-contacts__item.footer-contacts__item--mob
+                    svg.svg-clock
+                        use(href="./img/spriteSvg.svg#svg-clock")
+                    span РЕЖИМ РАБОТЫ: Пн-Пт 09:00 - 18:00
+
+            // SOCIAL ICONS
             .footer-col-social
                 .footer-social
                     a(href="#!").footer-social__item
@@ -91,5 +125,5 @@ footer.footer
                         img(src="./img/outstaff/qr.webp" width="135" height="135" alt="qr")
         //FOOTER BOTTOM
         .footer-bottom
-            p.footer__copyright &copy; 2024 ГК ТРУД Общество с ограниченной ответственностью “Группа компаний “Труд”
+            p.footer__copyright.footer__copyright--txt &copy; 2024 ГК ТРУД Общество с ограниченной ответственностью “Группа компаний “Труд”
             p.footer__copyright.footer__copyright--detail Настоящий сайт является объектом авторского права «Группы компаний «Труд». Копирование, размножение, или иное использование материала без письменного разрешения автора не допускается
