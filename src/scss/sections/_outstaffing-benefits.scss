@@ -23,7 +23,7 @@
     width: 100%;
 }
 
-.outstaffing-benefits-slider .swiper-slide {
+.benefits-slider .swiper-slide {
     @media (min-width: 1301px) {
         width: auto!important;
         margin-right: 0!important;
@@ -43,7 +43,7 @@
     padding-bottom: 40px;
 }
 
-.outstaffing-benefits-slider .swiper-wrapper {
+.benefits-slider .swiper-wrapper {
     @media (min-width: 1301px) {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));

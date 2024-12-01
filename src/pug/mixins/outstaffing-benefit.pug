@@ -1,8 +1,0 @@
-mixin outstaffing-benefit(img, title, text)
-    // benefit-card
-    .outstaffing-benefit-card&attributes(attributes)
-        .outstaffing-benefit-card__img
-            svg(class = "svg-" + img)
-                use(href="./img/spriteSvg.svg#svg-" + img)
-        p.outstaffing-benefit-card__text !{text}
-        h3.outstaffing-benefit-card__title !{title}

@@ -1,17 +1,17 @@
 document.addEventListener("DOMContentLoaded", function (){
 
-    // OUTSTAFFING BENEFITS SLIDER
+    // BENEFITS SLIDER
   let specificSwiperBen = null; // Для хранения экземпляра конкретного Swiper
   function initSpecificSwiperBen() {
     const windowWidth = window.innerWidth;
 
     // Уникальный селектор для конкретного слайдера
-    const swiperContainerBen = document.querySelector(".outstaffing-benefits-slider");
+    const swiperContainerBen = document.querySelector(".benefits-slider");
 
     // Проверяем, нужно ли инициализировать слайдер
 
     if (windowWidth >= 768 && windowWidth <= 1301 && swiperContainerBen && !specificSwiperBen) {
-      specificSwiperBen = new Swiper(".outstaffing-benefits-slider", {
+      specificSwiperBen = new Swiper(".benefits-slider", {
           slidesPerView: 2,
             pagination: {
               el: '.swiper-pagination',

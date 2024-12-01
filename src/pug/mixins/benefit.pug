@@ -1,0 +1,8 @@
+mixin benefit(img, title, text)
+    // benefit-card
+    .benefit-card&attributes(attributes)
+        .benefit-card__img
+            svg(class = "svg-" + img)
+                use(href="./img/spriteSvg.svg#svg-" + img)
+        p.benefit-card__text !{text}
+        h3.benefit-card__title !{title}
