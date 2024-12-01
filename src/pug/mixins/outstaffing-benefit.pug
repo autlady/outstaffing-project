@@ -1,6 +1,6 @@
 mixin outstaffing-benefit(img, title, text)
     // benefit-card
-    .outstaffing-benefit-card
+    .outstaffing-benefit-card&attributes(attributes)
         .outstaffing-benefit-card__img
             svg(class = "svg-" + img)
                 use(href="./img/spriteSvg.svg#svg-" + img)
