@@ -1,0 +1,38 @@
+// section-cot
+section.cot
+    .container
+        // fixed-menu
+        .fixed-menu
+            .menu-block
+                a(href="cot.html").menu-block-link
+                    img(src="./img/logo-menu/logo-menu01.webp" width="45" height="27" alt="link" class="logo-menu-cot")
+                a(href="#!").menu-block-link
+                    img(src="./img/logo-menu/logo-menu02.webp" width="43" height="36" alt="link" class="logo-menu-unimed")
+                a(href="#!").menu-block-link
+                    img(src="./img/logo-menu/logo-menu03.webp" width="45" height="45" alt="link" class="logo-menu-center")
+                a(href="#!").menu-block-link
+                    img(src="./img/logo-menu/logo-menu04.webp" width="51" height="35" alt="link" class="logo-menu-school")
+                a(href="index.html").menu-block-link
+                    img(src="./img/logo-menu/logo-menu05.webp" width="47" height="48" alt="link" class="logo-menu-outstaff")
+                a(href="#!").menu-block-link
+                    img(src="./img/logo-menu/logo-menu06.webp" width="44" height="46" alt="link" class="logo-menu-security")
+        .banner.banner--cot
+            // cot-logo
+            .cot-logo
+                picture
+                    source(srcset="./img/cot/cot-logo-mob@2x.webp" media="(max-width: 1364px) and (min-resolution: 192dpi)" width="103" height="141")
+                    source(srcset="./img/cot/cot-logo-mob.webp" media="(max-width: 1364px)" width="103" height="141")
+                    source(srcset="./img/cot/cot-logo@2x.webp" media="(min-resolution: 192dpi)" width="276" height="392")
+                    img(src="./img/cot/cot-logo.webp" width="276" height="392" alt="logo")
+            // cot-content
+            .cot-content
+                h1.headline Центр охраны труда
+                p.banner__text.banner__text--cot Мы предлагаем полный комплекс услуг в области охраны труда: от проведения специальной оценки условий труда до расследования несчастных случаев.
+                p.banner__text.banner__text--cot Наши специалисты обладают высоким уровнем профессионализма, что позволяет определить оптимальную стратегию и найти верное решение для самых сложных задач. Сотрудничество с нами – это гарантия достижения целей и реализации поставленных задач!
+                .banner-btns
+                    a.btn Услуги и цены
+                    a(class="btn-banner btn-banner--yellow" data-modal-button="modal") Оставить заявку
+//modal
+div(class="fade-block hidden" data-modal="modal" id="modal")
+    .modal-window
+       include ../blocks/request-form.pug

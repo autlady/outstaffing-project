@@ -42,7 +42,7 @@
     }
 }
 
-.btn-outstaff {
+.btn-banner {
     display: inline-block;
 
     padding: 0 32px;
@@ -69,7 +69,6 @@
     }
 
     @media (max-width: 1660px) {
-        border: 1.50px solid #223642;
         border-radius: 8px;
         height: 46px;
         line-height: 46px;
@@ -103,6 +102,15 @@
         color: #223642;
         background-color: rgba(255, 255, 255, 0.56);
         border: none;
+    }
+}
+
+.btn-banner--yellow {
+    background-color: #f9bd6e;
+    border: none;
+
+    &:hover, &:active {
+        background-color: darken($color: #f9bd6e, $amount: 15%);
     }
 }
 

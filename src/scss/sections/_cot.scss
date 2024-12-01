@@ -1,0 +1,60 @@
+.banner--cot {
+    padding-block: 132px;
+    padding-inline: 146px;
+    column-gap: 301px;
+
+    @media (max-width: 1660px) {
+        padding-block: 95px;
+        padding-left: 142px;
+        column-gap: 165px;
+    }
+
+    @media (max-width: 1023px) {
+        padding-top: 20px;
+        column-gap: 20px;
+        column-gap: 78px;
+    }
+}
+
+.cot-logo {
+    width: 276px;
+    height: 392px;
+    flex-shrink: 0;
+
+    @media (max-width: 1660px) {
+        width: 208px;
+        height: 295px;
+    }
+
+    @media (max-width: 1364px) {
+        padding-top: 21px;
+        width: 45px;
+        height: 61px;
+    }
+
+    @media (max-width: 1023px) {
+        padding-top: 5px;
+    }
+
+    @media (max-width: 767px) {
+        padding-top: 0;
+        width: 103px;
+        height: 141px;
+    }
+}
+
+.cot-content {
+    .headline {
+        @media (max-width: 430px) {
+            max-width: 342px;
+        }
+    }
+}
+
+.banner__text--cot {
+    max-width: 834px;
+
+    @media (max-width: 1384px) {
+        max-width: 854px;
+    }
+}
