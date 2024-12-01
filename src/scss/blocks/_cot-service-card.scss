@@ -1,0 +1,158 @@
+.cot-service-card {
+    height: 356px;
+    position: relative;
+    overflow: hidden;
+    padding: 40px 40px 36px 40px;
+    border-radius: 30px;
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+
+    @media (max-width: 1820px) {
+        height: 320px;
+        padding: 30px 30px 23px 30px;
+        border-radius: 23px;
+    }
+
+    @media (max-width: 1660px) {
+        height: 268px;
+    }
+
+    @media (max-width: 1023px) {
+        height: 252px;
+        padding: 20px 14px 20px 14px;
+        border-radius: 12px;
+    }
+
+    @media (max-width: 767px) {
+        height: 376px;
+        padding: 20px 20px 20px 20px;
+    }
+}
+
+.cot-service-card__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 232px;
+    height: 232px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    @media (max-width: 1660px) {
+        width: 175px;
+        height: 175px;
+    }
+
+    @media (max-width: 1023px) {
+        width: 180px;
+        height: 180px;
+    }
+
+    @media (max-width: 767px) {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.cot-service-card__title {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #3b5361;
+
+    @media (max-width: 1660px) {
+        font-size: 21px;
+    }
+
+    @media (max-width: 1023px) {
+        font-size: 20px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 24px;
+    }
+}
+
+.cot-service-card__text {
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #000;
+
+    @media (max-width: 1660px) {
+        font-size: 16px;
+    }
+
+    @media (max-width: 1023px) {
+        line-height: 1.25;
+    }
+
+    @media (max-width: 767px) {
+        line-height: 1.5;
+    }
+}
+
+.cot-service-card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.cot-service-card__price {
+    position: relative;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 32px;
+    color: #3b5361;
+
+    @media (max-width: 1660px) {
+        font-size: 24px;
+    }
+
+    @media (max-width: 1023px) {
+        font-size: 21px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 20px;
+    }
+}
+
+.cot-service-card__link {
+    position: relative;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 28px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #b8b8b8;
+    transition: 0.3s ease-in;
+
+    &:hover, &:active {
+        color: var(--color-muted);
+    }
+
+    @media (max-width: 1660px) {
+        font-size: 24px;
+    }
+
+    @media (max-width: 1023px) {
+        font-size: 21px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 20px;
+    }
+}

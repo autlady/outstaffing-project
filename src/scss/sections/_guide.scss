@@ -1,0 +1,25 @@
+.guide__title {
+    text-align: center;
+    margin-bottom: 32px;
+
+    @media (max-width: 1660px) {
+        margin-bottom: 22px;
+    }
+
+    @media (max-width: 1023px) {
+        margin-bottom: 32px;
+    }
+}
+
+.guide-bottom {
+    display: flex;
+    justify-content: end;
+}
+
+.guide__link {
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #bfbfbf;
+}

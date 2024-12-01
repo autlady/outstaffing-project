@@ -71,6 +71,43 @@ document.addEventListener("DOMContentLoaded", function (){
   initSpecificSwiper();
   window.addEventListener("resize", initSpecificSwiper);
 
+  // COT SERVICE SLIDER
+  let specificSwiperCot = null;
+
+  function initSpecificSwiperCot() {
+    const windowWidth = window.innerWidth;
+    const swiperContainerCot = document.querySelector(".cot-services-slider");
+
+    if (windowWidth <= 1367 && swiperContainerCot && !specificSwiperCot) {
+      specificSwiperCot = new Swiper(".cot-services-slider", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        grid: {
+          rows: 2,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        breakpoints: {
+          768: {
+            spaceBetween: 16,
+            slidesPerView: 2,
+          },
+        },
+      });
+    }
+
+    if (windowWidth > 1367 && specificSwiperCot) {
+      specificSwiperCot.destroy(true, true);
+      specificSwiperCot = null;
+    }
+  }
+
+  initSpecificSwiperCot();
+  window.addEventListener("resize", initSpecificSwiperCot);
+
 // STEPS SLIDER
 
   let specificSwiperSteps = null;

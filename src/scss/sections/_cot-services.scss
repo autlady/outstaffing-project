@@ -1,0 +1,89 @@
+.cot-services__title {
+    margin-bottom: 32px;
+    text-align: center;
+
+    @media (max-width: 1660px) {
+        margin-bottom: 23px;
+    }
+
+    @media (max-width: 1023px) {
+        margin-bottom: 32px;
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 22px;
+    }
+}
+
+
+.cot-services-slider {
+    @media (max-width: 1366px) {
+        height: 650px;
+        padding-bottom: 54px;
+    }
+
+    @media (max-width: 767px) {
+        height: 590px;
+        padding-bottom: 10px;
+    }
+}
+
+.cot-services-slider .swiper-wrapper {
+    padding-bottom: 0;
+
+    @media (min-width: 1367px) {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 17px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    @media (min-width: 1819px) {
+        gap: 60px;
+    }
+}
+
+.cot-services-slider .swiper-slide {
+    @media (min-width: 1367px) {
+        width: auto!important;
+        margin-right: 0!important;
+        height: auto;
+        display: flex;
+    }
+
+    @media (max-width: 1368px) {
+        height: 252px!important;
+    }
+
+    @media (max-width: 767px) {
+        height: 310px!important;
+    }
+}
+
+.cot-services__info {
+    margin-top: 55px;
+
+    @media (max-width: 1023px) {
+        margin-top: 20px;
+    }
+
+    @media (max-width: 767px) {
+        margin-top: 72px;
+    }
+}
+
+.cot-services__info p {
+
+    font-size: 20px;
+    color: #aaa;
+
+    @media (max-width: 1660px) {
+        font-size: 16px;
+    }
+
+    @media (max-width: 1023px) {
+        line-height: 1.25;
+    }
+}
+

@@ -1,0 +1,44 @@
+// guide
+section.guide
+    .container
+        .guide__title
+            h2.section-title.section-title--white Справочник специалиста по охране труда
+        // slider
+        .swiper.guide-slider
+            .swiper-wrapper
+                .swiper-slide
+                    //card
+                    .guide-card
+                        .guide-card__img
+                            picture
+                                source(srcset="./img/cot/guide01-mob@2x.webp" media="(max-width: 767px) and (min-resolution: 192dpi)" width="345" height="287")
+                                source(srcset="./img/cot/guide01-mob.webp" media="(max-width: 767px)" width="345" height="287")
+                                source(srcset="./img/cot/guide01@2x.webp" media="(min-resolution: 192dpi)" width="494" height="412")
+                                img(src="./img/cot/guide01.webp" width="494" height="412" alt="staff")
+                        a(href="#!").guide-card__title Отличие совместительства от совмещения
+                .swiper-slide
+                    //card
+                    .guide-card
+                        .guide-card__img
+                            picture
+                                source(srcset="./img/cot/guide02-mob@2x.webp" media="(max-width: 767px) and (min-resolution: 192dpi)" width="345" height="287")
+                                source(srcset="./img/cot/guide02-mob.webp" media="(max-width: 767px)" width="345" height="287")
+                                source(srcset="./img/cot/guide02@2x.webp" media="(min-resolution: 192dpi)" width="494" height="412")
+                                img(src="./img/cot/guide02.webp" width="494" height="412" alt="staff")
+                        a(href="#!").guide-card__title Отличие совместительства от совмещения
+                .swiper-slide
+                    //card
+                    .guide-card
+                        .guide-card__img
+                            picture
+                                source(srcset="./img/cot/guide03-mob@2x.webp" media="(max-width: 767px) and (min-resolution: 192dpi)" width="345" height="287")
+                                source(srcset="./img/cot/guide03-mob.webp" media="(max-width: 767px)" width="345" height="287")
+                                source(srcset="./img/cot/guide03@2x.webp" media="(min-resolution: 192dpi)" width="494" height="412")
+                                img(src="./img/cot/guide03.webp" width="494" height="412" alt="staff")
+                        a(href="#!").guide-card__title Отличие совместительства от совмещения
+            .swiper-pagination
+        // link
+        .guide-bottom
+            a(href="#!").guide__link Смотреть все
+                svg.svg-arrow-right
+                    use(href="./img/spriteSvg.svg#svg-arrow-right")
