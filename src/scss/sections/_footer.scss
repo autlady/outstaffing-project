@@ -15,6 +15,10 @@
     @media (max-width: 1270px) {
         padding-top: 28px;
     }
+
+    @media (max-width: 430px) {
+        padding-inline: 10px;
+    }
 }
 
 .footer-row {
@@ -42,6 +46,10 @@
         padding-inline: 10px;
         flex-direction: column;
         row-gap: 14px;
+    }
+
+    @media (max-width: 430px) {
+        padding-inline: 0;
     }
 }
 
@@ -146,6 +154,10 @@
 
 .footer__text + .footer__text {
     margin-top: 5px;
+
+    @media (max-width: 430px) {
+        margin-top: 0px;
+    }
 }
 
 .footer__text--mb40 {
@@ -155,6 +167,10 @@
 
     @media (max-width: 638px) {
         margin-bottom: 8px;
+    }
+
+    @media (max-width: 430px) {
+        margin-bottom: 5px;
     }
 }
 
@@ -233,8 +249,15 @@
     }
 
     a {
+
+        transition: 0.3s ease-in;
+
         @media (max-width: 1270px) {
             color: #01a7ff;
+        }
+
+        &:hover {
+            color: var(--color-muted);
         }
 
     }

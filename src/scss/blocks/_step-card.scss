@@ -21,11 +21,17 @@
     }
 
     @media (max-width: 1023px) {
+        padding-inline: 20px;
+        height: 240px;
         border-radius: 26px;
     }
 
     @media (max-width: 767px) {
         border-radius: 30px;
+    }
+
+    @media (max-width: 430px) {
+        height: 283px;
     }
 }
 
@@ -72,5 +78,9 @@
 
     @media (max-width: 1400px) {
         font-size: 24px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 28px;
     }
 }

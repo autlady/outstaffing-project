@@ -27,6 +27,7 @@
     }
 
     @media (max-width: 1023px) {
+        max-width: 350px;
         margin-bottom: 28px;
     }
 }
@@ -204,6 +205,10 @@
         line-height: normal;
         letter-spacing: normal;
         color: #000;
+    }
+
+    @media (max-width: 430px) {
+        padding: 9px;
     }
 }
 

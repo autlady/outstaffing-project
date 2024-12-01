@@ -14,12 +14,13 @@
     }
 
     @media (max-width: 1023px) {
+        padding-inline: 0px;
         padding-block: 12px;
     }
 
     @media (max-width: 768px) {
         padding-top: 46px;
-        padding-bottom: 46px;
+        padding-bottom: 18px;
     }
 }
 

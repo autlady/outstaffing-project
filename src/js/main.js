@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function (){
     if (windowWidth <= 1199 && swiperContainer && !specificSwiper) {
       specificSwiper = new Swiper(".outstaffing-services-slider", {
         slidesPerView: 1,
-        spaceBetween: 16,
+        spaceBetween: 32,
         grid: {
           rows: 2,
         },
@@ -55,6 +55,7 @@ document.addEventListener("DOMContentLoaded", function (){
 
         breakpoints: {
           768: {
+            spaceBetween: 16,
             slidesPerView: 2,
           },
         },
