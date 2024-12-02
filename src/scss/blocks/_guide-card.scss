@@ -2,13 +2,17 @@
     position: relative;
     background-color: #f2f7fa;
     border-radius: 20px;
-    padding: 32px 28px;
+    overflow: hidden;
+    padding-inline: 22px;
 }
 
 .guide-card__title {
     max-width: 404px;
-    position: relative;
-    z-index: 1;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 3;
     font-weight: 500;
     font-size: 28px;
     text-transform: uppercase;
@@ -21,6 +25,20 @@
     }
 }
 
-// .guide-card__img {
-//     position: absolute;
-// }
+.guide-card__img {
+    position: relative;
+    z-index: 1;
+    mix-blend-mode: multiply;
+}
+
+.guide-card::after {
+    content: "";
+    display: block;
+    height: 197px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background: linear-gradient(360deg, #fff 39.93%, rgba(255, 255, 255, 0) 100%);
+}

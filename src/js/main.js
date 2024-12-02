@@ -169,4 +169,37 @@ document.addEventListener("DOMContentLoaded", function (){
   initSpecificSwiperAdv();
   window.addEventListener("resize", initSpecificSwiperAdv);
 
+  // GUIDE SLIDER
+  let specificSwiperGuide = null; // Для хранения экземпляра конкретного Swiper
+  function initSpecificSwiperGuide() {
+  const windowWidth = window.innerWidth;
+
+  // Уникальный селектор для конкретного слайдера
+  const swiperContainerGuide = document.querySelector(".guide-slider");
+
+  // Проверяем, нужно ли инициализировать слайдер
+
+  if (windowWidth >= 768 && windowWidth <= 1301 && swiperContainerGuide && !specificSwiperGuide) {
+    specificSwiperGuide = new Swiper(".guide-slider", {
+        slidesPerView: 2,
+          pagination: {
+            el: '.swiper-pagination',
+          },
+          spaceBetween: 30,
+    });
+  }
+
+    // Уничтожаем Swiper, если ширина больше 1199px
+    if (windowWidth < 768 && windowWidth > 1301 && specificSwiperGuide) {
+      specificSwiperGuide.destroy(true, true);
+      specificSwiperGuide = null; // Обнуляем экземпляр
+    }
+  }
+
+  // Инициализация при загрузке страницы
+  initSpecificSwiperGuide();
+  // Повторная проверка при изменении размера окна
+  window.addEventListener("resize", initSpecificSwiperGuide);
+  /************************************* */
+
   })

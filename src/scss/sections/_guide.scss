@@ -23,3 +23,33 @@
     text-decoration: underline;
     color: #bfbfbf;
 }
+
+.guide-slider .swiper-slide {
+    @media (min-width: 1301px) {
+        width: auto!important;
+        margin-right: 0!important;
+    }
+
+    @media (min-width: 768px) and (max-width: 1300px) {
+        height: unset;
+    }
+
+    @media (max-width: 767px) {
+        width: auto!important;
+        margin-right: 0!important;
+    }
+}
+
+.guide-slider .swiper-wrapper {
+    @media (min-width: 1301px) {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        column-gap: 15px;
+    }
+
+    @media (max-width: 767px) {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        row-gap: 20px;
+    }
+}
