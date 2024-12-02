@@ -3,29 +3,74 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px 65px;
+    padding: 30px 50px;
     border-radius: 20px;
     border: 4px solid #f2f7fa;
     z-index: 1;
+    height: 136px;
+
+    @media (max-width: 1865px) {
+        height: 102px;
+        padding-inline: 50px;
+        border-radius: 15px;
+        border: 3px solid #f2f7fa;
+    }
+
+    @media (max-width: 1462px) {
+        padding-inline: 20px;
+    }
+
+    @media (max-width: 1300px) {
+        padding-inline: 50px;
+    }
+
+    @media (max-width: 1023px) {
+        padding-inline: 30px;
+        height: 96px;
+    }
+
+    @media (max-width: 767px) {
+        border-radius: 12px;
+    }
 }
 
 .knowledge-card__img {
     background-color: #fff;
     position: absolute;
     z-index: 2;
-    top: -87px;
+    top: -92px;
     left: 0px;
     width: 117px;
     height: 117px;
     border-radius: 50%;
+    overflow: hidden;
 
 
     svg {
-position: relative;
-left: 30px;
-top: 10px;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        position: relative;
+        left: 23px;
+        top: 10px;
     }
-    // overflow: hidden;
+
+    @media (max-width: 1865px) {
+        top: -65px;
+        width: 88px;
+        height: 88px;
+
+        svg {
+            left: 15px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 82px;
+        height: 82px;
+    }
 }
 
 .knowledge-card__title {
@@ -35,4 +80,19 @@ top: 10px;
     text-decoration: underline;
     text-align: center;
     color: #fff;
+    transition: 0.3s ease-in;
+
+    &:hover, &:active {
+        color: var(--color-muted);
+    }
+
+    @media (max-width: 1865px) {
+        font-size: 24px;
+    }
+
+    @media (max-width: 1023px) {
+        font-size: 20px;
+    }
+
+
 }

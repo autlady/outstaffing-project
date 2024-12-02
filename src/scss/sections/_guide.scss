@@ -54,6 +54,11 @@
     text-transform: uppercase;
     text-decoration: underline;
     color: #bfbfbf;
+    transition: 0.3s ease-in;
+
+    &:hover, &:active {
+        color: var(--color-white);
+    }
 
     @media (max-width: 1660px) {
         text-decoration: none;

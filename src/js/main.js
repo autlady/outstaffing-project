@@ -70,6 +70,7 @@ document.addEventListener("DOMContentLoaded", function (){
 
   initSpecificSwiper();
   window.addEventListener("resize", initSpecificSwiper);
+  /************************************* */
 
   // COT SERVICE SLIDER
   let specificSwiperCot = null;
@@ -107,6 +108,7 @@ document.addEventListener("DOMContentLoaded", function (){
 
   initSpecificSwiperCot();
   window.addEventListener("resize", initSpecificSwiperCot);
+  /************************************* */
 
 // STEPS SLIDER
 
@@ -135,6 +137,7 @@ document.addEventListener("DOMContentLoaded", function (){
 
   initSpecificSwiperSteps();
   window.addEventListener("resize", initSpecificSwiperSteps);
+  /************************************* */
 
   // ADVANTAGES SLIDER
 
@@ -168,16 +171,13 @@ document.addEventListener("DOMContentLoaded", function (){
 
   initSpecificSwiperAdv();
   window.addEventListener("resize", initSpecificSwiperAdv);
+  /************************************* */
 
   // GUIDE SLIDER
-  let specificSwiperGuide = null; // Для хранения экземпляра конкретного Swiper
+  let specificSwiperGuide = null;
   function initSpecificSwiperGuide() {
   const windowWidth = window.innerWidth;
-
-  // Уникальный селектор для конкретного слайдера
   const swiperContainerGuide = document.querySelector(".guide-slider");
-
-  // Проверяем, нужно ли инициализировать слайдер
 
   if (windowWidth >= 768 && windowWidth <= 1301 && swiperContainerGuide && !specificSwiperGuide) {
     specificSwiperGuide = new Swiper(".guide-slider", {
@@ -188,18 +188,39 @@ document.addEventListener("DOMContentLoaded", function (){
           spaceBetween: 30,
     });
   }
-
-    // Уничтожаем Swiper, если ширина больше 1199px
     if (windowWidth < 768 && windowWidth > 1301 && specificSwiperGuide) {
       specificSwiperGuide.destroy(true, true);
-      specificSwiperGuide = null; // Обнуляем экземпляр
+      specificSwiperGuide = null;
     }
   }
 
-  // Инициализация при загрузке страницы
   initSpecificSwiperGuide();
-  // Повторная проверка при изменении размера окна
   window.addEventListener("resize", initSpecificSwiperGuide);
   /************************************* */
 
-  })
+    // Knowledge SLIDER
+    let specificSwiperKnowledge = null;
+    function initSpecificSwiperKnowledge() {
+    const windowWidth = window.innerWidth;
+    const swiperContainerKnowledge = document.querySelector(".knowledge-slider");
+
+    if (windowWidth >= 768 && windowWidth <= 1301 && swiperContainerKnowledge && !specificSwiperKnowledge) {
+      specificSwiperKnowledge = new Swiper(".knowledge-slider", {
+          slidesPerView: 2,
+            pagination: {
+              el: '.swiper-pagination',
+            },
+            spaceBetween: 30,
+      });
+    }
+      if (windowWidth < 768 && windowWidth > 1301 && specificSwiperKnowledge) {
+        specificSwiperKnowledge.destroy(true, true);
+        specificSwiperKnowledge = null;
+      }
+    }
+
+    initSpecificSwiperKnowledge();
+    window.addEventListener("resize", initSpecificSwiperKnowledge);
+    /************************************* */
+
+    })
