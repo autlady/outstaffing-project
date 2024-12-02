@@ -1,0 +1,16 @@
+// FORM
+form.cta-form.cta-form--dark
+    input(type="hidden" name="cta form" value="cta form")
+    .form-item.form-item--border.form-item-mb36
+        input(class="cta-form-input" type="text" name="username" placeholder="Александр")
+        span.fake-placeholder Имя
+    .form-item.form-item--border.form-item-mb36
+        input(class="cta-form-input" type="text" name="username" placeholder="+7()")
+        span.fake-placeholder Номер телефона
+    .form-item
+        label.checkbox
+            input(type="checkbox" name="privacy").real-checkbox
+            span.custom-checkbox.custom-checkbox--dark
+            span.cta-form-privacy Я согласен на обработку персональных данных
+    .form-item.form-item-btn-white
+        button(type="submit" class="btn-submit-white") Отправить

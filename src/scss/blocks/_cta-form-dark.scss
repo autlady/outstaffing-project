@@ -1,0 +1,26 @@
+.cta-form.cta-form--dark {
+    .cta-form-input {
+        background-color: #455966;
+        border: 1.7px solid #c1c1c1;
+        color: var(--color-white);
+    }
+
+    .cta-form-input::placeholder {
+        color: #d3d3d3;
+    }
+
+    .fake-placeholder {
+        background-color: #455966;
+        color: var(--color-white);
+    }
+
+    .custom-checkbox--dark {
+        background-color: #455966;
+        border: 2px solid #c1c1c1;
+        border-radius: 3px;
+    }
+
+    .cta-form-privacy {
+        color: #d3d3d3;
+    }
+}
