@@ -4,6 +4,15 @@
     border-radius: 20px;
     overflow: hidden;
     padding-inline: 22px;
+
+    @media (max-width: 1660px) {
+        border-radius: 15px;
+        padding-inline: 15px;
+    }
+
+    @media (max-width: 1023px) {
+        border-radius: 12px;
+    }
 }
 
 .guide-card__title {
@@ -23,6 +32,11 @@
     &:hover, &:active {
         color: var(--color-muted);
     }
+
+    @media (max-width: 1660px) {
+        text-decoration: none;
+        font-size: 20px;
+    }
 }
 
 .guide-card__img {
@@ -41,4 +55,8 @@
     bottom: 0;
     z-index: 2;
     background: linear-gradient(360deg, #fff 39.93%, rgba(255, 255, 255, 0) 100%);
+
+    @media (max-width: 1660px) {
+        height: 148px;
+    }
 }

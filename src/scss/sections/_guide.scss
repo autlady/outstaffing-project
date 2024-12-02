@@ -1,3 +1,19 @@
+.guide {
+    padding-bottom: 100px;
+
+    @media (max-width: 1660px) {
+        padding-bottom: 76px;
+    }
+
+    @media (max-width: 1023px) {
+        padding-bottom: 38px;
+    }
+
+    @media (max-width: 767px) {
+        padding-bottom: 40px;
+    }
+}
+
 .guide__title {
     text-align: center;
     margin-bottom: 32px;
@@ -7,13 +23,29 @@
     }
 
     @media (max-width: 1023px) {
+        max-width: 376px;
         margin-bottom: 32px;
+        text-align: left;
+    }
+
+    @media (max-width: 767px) {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    @media (max-width: 560px) {
+        max-width: 376px;
+        text-align: left;
     }
 }
 
 .guide-bottom {
     display: flex;
     justify-content: end;
+
+    @media (max-width: 767px) {
+        justify-content: center;
+    }
 }
 
 .guide__link {
@@ -22,6 +54,19 @@
     text-transform: uppercase;
     text-decoration: underline;
     color: #bfbfbf;
+
+    @media (max-width: 1660px) {
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    @media (max-width: 1300px) {
+        display: none;
+    }
+
+    @media (max-width: 767px) {
+        display: block;
+    }
 }
 
 .guide-slider .swiper-slide {
@@ -44,12 +89,24 @@
     @media (min-width: 1301px) {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        column-gap: 15px;
+        column-gap: 18px;
+    }
+
+    @media (min-width: 1661px) {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        column-gap: 59px;
     }
 
     @media (max-width: 767px) {
         display: grid;
+        justify-self: center;
+        grid-template-columns: repeat(1, 376px);
+        justify-content: center;
+        row-gap: 22px;
+    }
+
+    @media (max-width: 429px) {
         grid-template-columns: repeat(1, minmax(0, 1fr));
-        row-gap: 20px;
     }
 }

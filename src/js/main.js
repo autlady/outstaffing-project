@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function (){
     const windowWidth = window.innerWidth;
     const swiperContainerCot = document.querySelector(".cot-services-slider");
 
-    if (windowWidth <= 1367 && swiperContainerCot && !specificSwiperCot) {
+    if (windowWidth <= 1369 && swiperContainerCot && !specificSwiperCot) {
       specificSwiperCot = new Swiper(".cot-services-slider", {
         slidesPerView: 1,
         spaceBetween: 20,
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function (){
         },
 
         breakpoints: {
-          768: {
+          870: {
             spaceBetween: 16,
             slidesPerView: 2,
           },
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function (){
       });
     }
 
-    if (windowWidth > 1367 && specificSwiperCot) {
+    if (windowWidth > 1369 && specificSwiperCot) {
       specificSwiperCot.destroy(true, true);
       specificSwiperCot = null;
     }
