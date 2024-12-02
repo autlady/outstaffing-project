@@ -107,6 +107,10 @@
 .benefit-card--yellow {
     .benefit-card__title {
         color: #65737b;
+
+        @media (max-width: 1660px) {
+            color: #223642;
+        }
     }
 
     svg {

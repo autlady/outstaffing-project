@@ -1,0 +1,15 @@
+// knowledge
+section.knowledge
+    .container
+        .knowledge__title
+            h2.section-title.section-title--white База знаний
+        // slider
+        .swiper.knowledge-slider
+            .swiper-wrapper
+                .swiper-slide
+                    +knowledge-mix('docs-work', 'Образцы документов по охране труда')
+                .swiper-slide
+                    +knowledge-mix('docs-law', 'Нормативные образцы документов')
+                .swiper-slide
+                    +knowledge-mix('docs-terms', 'Термины и определения по охране труда')
+            .swiper-pagination

@@ -1,0 +1,7 @@
+mixin knowledge-mix(img, title)
+    // knowledge-card
+    .knowledge-card
+        .knowledge-card__img
+            svg(class = "svg-" + img)
+                use(href="./img/spriteSvg.svg#svg-" + img)
+        a(href="#!").knowledge-card__title !{title}

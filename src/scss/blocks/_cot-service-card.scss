@@ -51,6 +51,7 @@
     }
 
     @media (max-width: 1023px) {
+        right: -50px;
         width: 180px;
         height: 180px;
     }
@@ -100,6 +101,10 @@
 
     @media (max-width: 767px) {
         line-height: 1.5;
+    }
+
+    @media (max-width: 420px) {
+        max-width: 318px;
     }
 }
 
