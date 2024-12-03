@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function (){
           slidesPerView: 2,
             pagination: {
               el: '.swiper-pagination',
+              clickable: true,
             },
             spaceBetween: 30,
       });
@@ -184,6 +185,7 @@ document.addEventListener("DOMContentLoaded", function (){
         slidesPerView: 2,
           pagination: {
             el: '.swiper-pagination',
+            clickable: true,
           },
           spaceBetween: 30,
     });
@@ -209,6 +211,7 @@ document.addEventListener("DOMContentLoaded", function (){
           slidesPerView: 2,
             pagination: {
               el: '.swiper-pagination',
+              clickable: true,
             },
             spaceBetween: 30,
       });
@@ -239,6 +242,7 @@ document.addEventListener("DOMContentLoaded", function (){
 
     pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 
   breakpoints: {
@@ -246,7 +250,7 @@ document.addEventListener("DOMContentLoaded", function (){
       slidesPerView: 1,
       spaceBetween: 16,
     },
-    963: {
+    920: {
       slidesPerView: 2,
       spaceBetween: 16,
     },
@@ -259,5 +263,43 @@ document.addEventListener("DOMContentLoaded", function (){
     },
   },
 });
+
+  // REVIEWS slider
+
+  const swiperPartners = new Swiper('.partners-slider', {
+    // Optional parameters
+      slidesPerView: 1,
+      spaceBetween: 16,
+      loop: true,
+
+    // Navigation arrows
+      navigation: {
+        nextEl: '.program-slider-next',
+        prevEl: '.program-slider-prev',
+      },
+
+      pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 16,
+        grid: {
+          rows: 3,
+        },
+      },
+      963: {
+        slidesPerView: 3,
+        spaceBetween: 16,
+      },
+      1301: {
+        slidesPerView: 5,
+        // spaceBetween: 33,
+      },
+    },
+  });
 
     })

@@ -7,7 +7,7 @@
     margin-bottom: 84px;
 
     @media (max-width: 1660px) {
-        margin-bottom: 61px;
+        margin-bottom: 29px;
     }
 
     @media (max-width: 1023px) {
@@ -15,7 +15,7 @@
         text-align: left;
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 921px) {
         text-align: center;
     }
 
@@ -43,7 +43,7 @@
         height: 494px;
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 921px) {
         width: 376px;
         height: 532px;
     }
@@ -66,10 +66,12 @@
     @media (max-width: 1300px) {
         width: 718px;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 921px) {
         width: 376px;
     }
 }
+
+
 
 
 .reviews-slider .swiper-slide {
