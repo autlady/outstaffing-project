@@ -223,4 +223,41 @@ document.addEventListener("DOMContentLoaded", function (){
     window.addEventListener("resize", initSpecificSwiperKnowledge);
     /************************************* */
 
+  // REVIEWS slider
+
+  const swiperReviews = new Swiper('.reviews-slider', {
+  // Optional parameters
+    slidesPerView: 3,
+    spaceBetween: 16,
+    loop: true,
+
+  // Navigation arrows
+    navigation: {
+      nextEl: '.program-slider-next',
+      prevEl: '.program-slider-prev',
+    },
+
+    pagination: {
+    el: '.swiper-pagination',
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 16,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    1301: {
+      slidesPerView: 3,
+      spaceBetween: 33,
+    },
+    1664: {
+      spaceBetween: 44,
+    },
+  },
+});
+
     })

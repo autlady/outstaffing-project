@@ -1,0 +1,121 @@
+.reviews__title {
+    text-align: center;
+    margin-bottom: 84px;
+
+    @media (max-width: 1660px) {
+        margin-bottom: 61px;
+    }
+
+    @media (max-width: 1023px) {
+        margin-bottom: 32px;
+        text-align: left;
+    }
+
+    @media (max-width: 767px) {
+        text-align: center;
+    }
+
+    @media (max-width: 560px) {
+        text-align: left;
+    }
+}
+
+.review-img {
+    width: 430px;
+    height: 609px;
+
+    @media (max-width: 1664px) {
+        width: 324px;
+        height: 458px;
+    }
+
+    @media (max-width: 1664px) {
+        width: 324px;
+        height: 458px;
+    }
+
+    @media (max-width: 1300px) {
+        width: 351px;
+        height: 494px;
+    }
+
+    @media (max-width: 767px) {
+        width: 376px;
+        height: 532px;
+    }
+}
+
+.review-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.reviews-slider {
+    position: relative;
+    width: 1422px;
+    @media (max-width: 1664px) {
+        width: 1069px;
+    }
+
+    @media (max-width: 1300px) {
+        width: 718px;
+    }
+    @media (max-width: 767px) {
+        width: 376px;
+    }
+}
+
+
+.reviews-slider .swiper-slide {
+    margin-right: 0;
+}
+
+
+.program-slider-prev, .program-slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in;
+
+    svg {
+        color: #455966;
+
+        @media (max-width: 1660px) {
+            width: 12px;
+            height: 24px;
+        }
+    }
+
+    &:hover {
+        background-color: #D9D9D9;
+    }
+
+    @media (max-width: 1660px) {
+        width: 68px;
+        height: 68px;
+    }
+
+    @media (max-width: 1023px) {
+        display: none
+    }
+}
+
+
+.program-slider-prev {
+    left: -20px;
+    z-index: 6;
+}
+
+.program-slider-next {
+    right: -20px;
+    z-index: 6;
+}

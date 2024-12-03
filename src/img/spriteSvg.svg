@@ -287,7 +287,7 @@
 	<!-- prev -->
 	<symbol id="svg-prev" viewBox="0 0 20 36">
 	<g>
-  <path d="M18 2L2.35355 17.6464C2.15829 17.8417 2.15829 18.1583 2.35355 18.3536L18 34" stroke="#455966" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M18 2L2.35355 17.6464C2.15829 17.8417 2.15829 18.1583 2.35355 18.3536L18 34" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
   </g>
   	</symbol>
 
@@ -412,8 +412,6 @@
     </g>
   	</symbol>
 
-
-
 	<!-- docs-work -->
 	<symbol id="svg-docs-work" viewBox="0 0 81 105">
 		<g>
@@ -439,8 +437,8 @@
   	</symbol>
 
 		<!-- docs-law -->
-      <defs>
-    <filter id="filter0_d_2001_1617" x="6.05859" y="0" width="78.4116" height="97.4116" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+  <defs id="filter0_d_2001_1617" >
+    <filter x="6.05859" y="0" width="78.4116" height="97.4116" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
       <feFlood flood-opacity="0" result="BackgroundImageFix" />
       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
       <feOffset dy="4" />

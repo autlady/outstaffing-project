@@ -85,6 +85,11 @@
     font-variant: small-caps;
     color: #ded9d9;
     text-transform: uppercase;
+    transition: 0.3s ease-in;
+
+    &:hover, &:active {
+        color: var(--color-white);
+    }
 
     .svg-down {
         position: relative;
@@ -254,10 +259,14 @@
 
         @media (max-width: 1270px) {
             color: #01a7ff;
+
+            &:hover {
+                color: var(--color-muted);
+            }
         }
 
         &:hover {
-            color: var(--color-muted);
+            color: var(--color-white);
         }
 
     }
