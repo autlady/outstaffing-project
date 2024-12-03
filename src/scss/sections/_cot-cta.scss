@@ -6,7 +6,40 @@
 
 .cot-cta  .section-wrapper {
     background-color: #455966;
+    position: relative;
 }
+
+
+.cot-cta .section-wrapper::before {
+    content: "";
+    background-image: url('../img/cot/cta-bg.svg');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 43%;
+
+    @media (max-width: 1330px) {
+        display: none;
+    }
+}
+
+.cot-cta .section-wrapper::after {
+    content: "";
+    background-size: cover;
+    background-image: url('../img/cot/cta-bg2.svg');
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 43%;
+
+    @media (max-width: 1330px) {
+        display: none;
+    }
+}
+
 
 .cot-cta .cta__text {
     color: #c2c2c2;

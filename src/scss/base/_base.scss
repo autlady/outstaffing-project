@@ -20,6 +20,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+body::-webkit-scrollbar {
+  width: 17px;
+}
+
 .noscroll {
   overflow: hidden;
   touch-action: none;

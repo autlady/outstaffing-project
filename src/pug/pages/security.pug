@@ -1,0 +1,11 @@
+extends ../layouts/layout.pug
+
+block variables
+	-var title = "Охранная организация";
+
+block content
+	include ../sections/header.pug
+	main
+		include ../sections/security.pug
+		include ../sections/security-benefits.pug
+	include ../sections/footer.pug

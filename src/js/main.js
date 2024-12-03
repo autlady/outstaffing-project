@@ -236,8 +236,8 @@ document.addEventListener("DOMContentLoaded", function (){
 
   // Navigation arrows
     navigation: {
-      nextEl: '.program-slider-next',
-      prevEl: '.program-slider-prev',
+      nextEl: '.slider-next',
+      prevEl: '.slider-prev',
     },
 
     pagination: {
@@ -264,7 +264,7 @@ document.addEventListener("DOMContentLoaded", function (){
   },
 });
 
-  // REVIEWS slider
+  // PARTNERS slider
 
   const swiperPartners = new Swiper('.partners-slider', {
     // Optional parameters
@@ -272,10 +272,11 @@ document.addEventListener("DOMContentLoaded", function (){
       spaceBetween: 16,
       loop: true,
 
+
     // Navigation arrows
       navigation: {
-        nextEl: '.program-slider-next',
-        prevEl: '.program-slider-prev',
+        nextEl: '.slider-next-partners',
+        prevEl: '.slider-prev-partners',
       },
 
       pagination: {
@@ -285,21 +286,19 @@ document.addEventListener("DOMContentLoaded", function (){
 
     breakpoints: {
       320: {
-        slidesPerView: 1,
-        spaceBetween: 16,
         grid: {
           rows: 3,
         },
       },
-      963: {
+
+      768: {
         slidesPerView: 3,
         spaceBetween: 16,
       },
       1301: {
         slidesPerView: 5,
-        // spaceBetween: 33,
       },
     },
   });
 
-    })
+})

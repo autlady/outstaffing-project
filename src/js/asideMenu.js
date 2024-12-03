@@ -5,6 +5,12 @@ const btnCloseAsideMenu = document.querySelector('.btn-close-menu');
 const linkAsideMenu = document.querySelectorAll('.menu-link');
 const asideListItems = document.querySelectorAll('.menu-item');
 const bodyEl = document.body;
+// const isMac = (() => {
+//     const isMacBook = process.platform === 'darwin';
+//     return isMacBook;
+// })();
+// console.log('is using a Macbook', isMac);
+
 
 burger.addEventListener('click', function() {
     asideMenu.classList.add('active');

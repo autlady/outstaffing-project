@@ -15,7 +15,6 @@
 
     @media (max-width: 1023px) {
         padding-top: 20px;
-        column-gap: 20px;
         column-gap: 78px;
     }
 }
@@ -31,17 +30,17 @@
     }
 
     @media (max-width: 1364px) {
-        padding-top: 21px;
+        margin-top: 21px;
         width: 45px;
         height: 61px;
     }
 
     @media (max-width: 1023px) {
-        padding-top: 5px;
+        margin-top: 5px;
     }
 
     @media (max-width: 767px) {
-        padding-top: 0;
+        margin-top: 0;
         width: 103px;
         height: 141px;
     }

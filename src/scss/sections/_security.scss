@@ -1,0 +1,47 @@
+.banner--security {
+    padding-block: 92px;
+    padding-inline: 146px;
+    column-gap: 145px;
+}
+
+.banner--security .banner-content {
+    max-width: 856px;
+
+    .headline {
+        font-size: 66px;
+    }
+}
+
+
+
+.security-logo {
+    width: 430px;
+    height: 465px;
+    margin-top: 38px;
+    flex-shrink: 0;
+
+    @media (max-width: 1660px) {
+        width: 322px;
+        height: 349px;
+    }
+
+    @media (max-width: 1364px) {
+        padding-top: 21px;
+        width: 107px;
+        height: 115px;
+    }
+
+    @media (max-width: 1023px) {
+        padding-top: 5px;
+    }
+
+    @media (max-width: 767px) {
+        padding-top: 0;
+        width: 121px;
+        height: 130px;
+    }
+}
+
+.banner__text--security {
+    max-width: 856px;
+}

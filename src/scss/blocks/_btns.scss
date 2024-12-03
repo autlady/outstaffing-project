@@ -114,6 +114,15 @@
     }
 }
 
+.btn-banner--green {
+    background-color: #0c713f;
+    border: none;
+
+    &:hover, &:active {
+        background-color: lighten($color: #0c713f, $amount: 15%);
+    }
+}
+
 .btn-submit {
     display: inline-block;
 
