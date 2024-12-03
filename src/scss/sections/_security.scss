@@ -2,16 +2,15 @@
     padding-block: 92px;
     padding-inline: 146px;
     column-gap: 145px;
+
+    @media (max-width: 1660px) {
+        column-gap: 111px;
+    }
 }
 
 .banner--security .banner-content {
     max-width: 856px;
-
-    .headline {
-        font-size: 66px;
-    }
 }
-
 
 
 .security-logo {
@@ -26,17 +25,17 @@
     }
 
     @media (max-width: 1364px) {
-        padding-top: 21px;
+        margin-top: 15px;
         width: 107px;
         height: 115px;
     }
 
     @media (max-width: 1023px) {
-        padding-top: 5px;
+        margin-top: 5px;
     }
 
     @media (max-width: 767px) {
-        padding-top: 0;
+        margin-top: 0px;
         width: 121px;
         height: 130px;
     }

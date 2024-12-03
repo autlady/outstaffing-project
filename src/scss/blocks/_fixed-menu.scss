@@ -2,7 +2,7 @@
     position: fixed;
     top: 174px;
     left: 0;
-    // z-index: 10;
+    z-index: 10;
 
     background-color: #F1F1F1;
     padding: 38px 15px;
@@ -31,7 +31,6 @@
         left: 50%;
         transform: translateX(-50%);
         width: calc(100% - 106px - 106px);
-        // z-index: 5;
         padding-block: 13px;
         backdrop-filter: blur(22.799999237060547px);
         background-color: rgba(243, 243, 243, 0.45);
