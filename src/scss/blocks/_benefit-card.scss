@@ -134,3 +134,22 @@
         }
     }
 }
+
+.benefit-card--green {
+
+    .benefit-card__title {
+        color: #223642;
+        opacity: 0.7;
+
+        @media (max-width: 1023px) {
+            color: #3b5361;
+            opacity: 1;
+        }
+    }
+
+    svg {
+        @media (max-width: 1300px) {
+            opacity: 0.3;
+        }
+    }
+}

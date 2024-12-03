@@ -301,4 +301,42 @@ document.addEventListener("DOMContentLoaded", function (){
     },
   });
 
+  // SECURITY SERVICE SLIDER
+  let specificSwiperSec = null;
+
+  function initSpecificSwiperSec() {
+    const windowWidth = window.innerWidth;
+    const swiperContainerSec = document.querySelector(".security-services-slider");
+
+    if (windowWidth <= 1369 && swiperContainerSec && !specificSwiperSec) {
+      specificSwiperSec = new Swiper(".security-services-slider", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        grid: {
+          rows: 2,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        breakpoints: {
+          870: {
+            spaceBetween: 16,
+            slidesPerView: 2,
+          },
+        },
+      });
+    }
+
+    if (windowWidth > 1369 && specificSwiperSec) {
+      specificSwiperSec.destroy(true, true);
+      specificSwiperSec = null;
+    }
+  }
+
+  initSpecificSwiperSec();
+  window.addEventListener("resize", initSpecificSwiperSec);
+  /************************************* */
+
 })
