@@ -1,0 +1,13 @@
+// center-benefits
+section.center-benefits
+    .container
+        // slider
+        .swiper.benefits-slider
+            .swiper-wrapper
+                .swiper-slide
+                    +benefit('hat', 'Выездные обучения на территории Заказчика', 'Позволят сэкономить десятки человеко-часов, не жертвуя при этом качеством образовательного процесса, что в результате дает максимальный эффект')(class="benefit-card--blue")
+                .swiper-slide
+                    +benefit('student', '> 20 000 слушателей ежегодно', 'Нам доверяют обучение персонала более 500 постоянных Заказчиков: от небольших фирм до крупных оборонных концернов')(class="benefit-card--blue")
+                .swiper-slide
+                    +benefit('lamp', 'Срочное обучение', '')(class="benefit-card--blue")
+            .swiper-pagination

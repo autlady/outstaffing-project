@@ -1,0 +1,16 @@
+mixin center-service(img, title, hours, price)
+    // center-service-card
+    .center-service-card
+        .center-service-card__img
+            svg(class = "svg-" + img)
+                use(href="./img/spriteSvg.svg#svg-" + img)
+        h3.center-service-card__title !{title}
+        .center-service-card__hours
+            svg.svg-clock-white
+                use(href="./img/spriteSvg.svg#svg-clock-white")
+            span !{hours}
+        .center-service-card-bottom
+            .center-service-card__price
+                span ₽
+                span !{price}
+            a(href="#!").center-service-card__link Подробнее

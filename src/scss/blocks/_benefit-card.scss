@@ -8,6 +8,9 @@
     padding-bottom: 20px;
     background-color: #fff;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     @media (max-width: 1440px) {
         padding-top: 30px;
@@ -24,6 +27,7 @@
     }
 
     @media (max-width: 767px) {
+        height: 240px;
         padding-bottom: 30px;
         max-width: 100%;
     }
@@ -152,4 +156,23 @@
             opacity: 0.3;
         }
     }
+}
+
+.benefit-card--blue {
+    .benefit-card__title {
+        color: #223642;
+        opacity: 0.7;
+
+        @media (max-width: 1023px) {
+            color: #3b5361;
+            opacity: 1;
+        }
+    }
+
+    svg {
+        @media (max-width: 1300px) {
+            opacity: 0.3;
+        }
+    }
+
 }

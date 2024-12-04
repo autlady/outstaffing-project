@@ -1,0 +1,25 @@
+.center-services__title {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.center-services-slider .swiper-wrapper {
+    @media (min-width: 1300px) {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        column-gap: 59px;
+    }
+}
+
+.center-services-slider .swiper-slide {
+    @media (min-width: 1301px) {
+        width: auto!important;
+        margin-right: 0!important;
+    }
+
+    @media (max-width: 1300px) {
+        height: unset;
+    }
+}
+
+

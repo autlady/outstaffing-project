@@ -382,4 +382,42 @@ document.addEventListener("DOMContentLoaded", function (){
       },
     });
 
+  // CENTER SERVICE SLIDER
+  let specificSwiperCenter = null;
+
+  function initSpecificSwiperCenter() {
+    const windowWidth = window.innerWidth;
+    const swiperContainerCenter = document.querySelector(".center-services-slider");
+
+    if (windowWidth <= 1301 && swiperContainerCenter && !specificSwiperCenter) {
+      specificSwiperCenter = new Swiper(".center-services-slider", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          320: {
+            spaceBetween: 20,
+            slidesPerView: 1,
+          },
+          870: {
+            spaceBetween: 20,
+            slidesPerView: 2,
+          },
+        },
+      });
+    }
+
+    if (windowWidth > 1301 && specificSwiperCenter) {
+      specificSwiperCenter.destroy(true, true);
+      specificSwiperCenter = null;
+    }
+  }
+
+  initSpecificSwiperCenter();
+  window.addEventListener("resize", initSpecificSwiperCenter);
+  /************************************* */
+
 })

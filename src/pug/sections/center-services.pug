@@ -1,0 +1,61 @@
+// SERVICES
+section.center-services
+    .container
+        // title - education
+        .center-services__title
+            h2.section-title.section-title--white Образовательные услуги
+        // slider - education
+        .swiper.center-services-slider
+            .swiper-wrapper
+                .swiper-slide
+                    +center-service('ohs', 'Охрана труда', 'от 8 часов', 'от 600 ₽')
+                .swiper-slide
+                    +center-service('high', 'Работы на высоте', 'от 12 часов', 'от 3 000 ₽')
+                .swiper-slide
+                    +center-service('aid', 'Первая помощь', 'от 8 часов', 'от 800 ₽')
+            .swiper-pagination
+
+        // title - upskill
+        .center-services__title
+            h2.section-title.section-title--white Обязательное повышение квалификации для руководителей
+        // slider - upskill
+        .swiper.center-services-slider
+            .swiper-wrapper
+                .swiper-slide
+                    +center-service('fire', 'Пожарная безопасность', 'от 36 часов', 'от 3 000 ₽')
+                .swiper-slide
+                    +center-service('crisis', 'Гражданская оборона и ЧС', 'от 72 часов', 'от 3 000 ₽')
+                .swiper-slide
+                    +center-service('eco', 'Экологическая безопасность', 'от 38 часов', 'от 3 000 ₽')
+            .swiper-pagination
+
+        // title - programs
+        .center-services__title
+            h2.section-title.section-title--white Общеобразовательные программы
+        // slider - programs
+        .swiper.center-services-slider
+            .swiper-wrapper
+                .swiper-slide
+                    +center-service('upskill', 'Профессиональная переподготовка', 'от 250 часов', 'от 9 000 ₽')
+                .swiper-slide
+                    +center-service('worker', 'Рабочие специальности', 'от 24 часов', 'от 4 000 ₽')
+                .swiper-slide
+                    +center-service('qual', 'Повышение квалификации', 'от 16 часов', 'от 1 000 ₽')
+            .swiper-pagination
+
+        // title - control
+        .center-services__title
+            h2.section-title.section-title--white Ростехнадзор
+        // slider - control
+        .swiper.center-services-slider
+            .swiper-wrapper
+                .swiper-slide
+                    +center-service('electro', 'Электробезопасность', 'от 38 часов', 'от 3 000 ₽')
+                .swiper-slide
+                    +center-service('warm', 'Тепловые установки', 'от 72 часов', 'от 3 000 ₽')
+                .swiper-slide
+                    +center-service('industry', 'Промышленная безопасность', 'от 16 часов', 'от 3 000 ₽')
+            .swiper-pagination
+
+        .cot-services__info
+            p Цены, представленные на сайте, носят исключительно ознакомительный характер и не являются публичной офертой.

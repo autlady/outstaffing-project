@@ -1,0 +1,134 @@
+.center-service-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    background-color: var(--color-white);
+    padding: 40px 40px 32px 40px;
+    height: 218px;
+
+    @media (max-width: 1660px) {
+        padding: 30px;
+        border-radius: 22px;
+        height: 164px;
+    }
+
+    @media (max-width: 1023px) {
+        border-radius: 12px;
+        padding: 20px;
+    }
+
+    @media (max-width: 767px) {
+        height: 184px;
+    }
+}
+
+.center-service-card__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 232px;
+    height: 232px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    @media (max-width: 1660px) {
+        width: 175px;
+        height: 175px;
+    }
+
+    @media (max-width: 1023px) {
+        right: -50px;
+        width: 180px;
+        height: 180px;
+    }
+
+    @media (max-width: 767px) {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.center-service-card__title {
+    margin-bottom: 36px;
+    font-weight: 500;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #3b5361;
+
+    @media (max-width: 1660px) {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    @media (max-width: 1023px) {
+        margin-bottom: 44px;
+    }
+
+    @media (max-width: 1023px) {
+        font-size: 24px;
+        margin-bottom: 52px;
+    }
+}
+
+.center-service-card__hours {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 26px;
+
+    @media (max-width: 1660px) {
+        margin-bottom: 12px;
+        column-gap: 19px;
+    }
+
+    .svg-clock-white {
+        @media (max-width: 1660px) {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.center-service-card__price {
+    display: flex;
+    align-items: center;
+    column-gap: 35px;
+
+    @media (max-width: 1660px) {
+        column-gap: 26px;
+        font-size: 20px;
+    }
+}
+
+.center-service-card-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.center-service-card__hours span, .center-service-card__price span {
+        font-size: 28px;
+        line-height: 100%;
+        font-variant: small-caps;
+        color: #534e4e;
+
+        @media (max-width: 1660px) {
+            font-size: 20px;
+        }
+
+}
+
+.center-service-card__link {
+    font-weight: 500;
+    font-size: 32px;
+    text-decoration: underline;
+    color: #b8b8b8;
+
+    @media (max-width: 1600px) {
+        text-decoration: none;
+        font-size: 20px;
+    }
+}
