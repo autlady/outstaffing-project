@@ -1,0 +1,34 @@
+// objects
+section.objects
+    .container
+        .objects__title
+            h2.section-title.section-title--white Объектами охраны являются:
+        .special-slider-wrapper
+            button.slider-prev-objects
+                svg.svg-prev
+                    use(href="./img/spriteSvg.svg#svg-prev")
+            button.slider-next-objects
+                svg.svg-next
+                    use(href="./img/spriteSvg.svg#svg-next")
+            //slider
+            .swiper.objects-slider
+                .swiper-wrapper
+                    // slide
+                    .swiper-slide
+                        +object-mix("Офисные здания и бизнес-центры", "Обеспечение безопасности сотрудников и ограничение доступа к офисным помещениям")
+                    // slide
+                    .swiper-slide
+                        +object-mix("Образовательные учреждения", "Ограничение доступа к учебным корпусам и обеспечение безопасности учащихся и преподавателей")
+                    // slide
+                    .swiper-slide
+                        +object-mix("Промышленные предприятия", "Контроль доступа на территорию завода или фабрики и обеспечение безопасности производственного процесса")
+                    // slide
+                    .swiper-slide
+                        +object-mix("Транспортные узлы", "Контроль доступа к железнодорожным станциям, аэропортам, автовокзалам и обеспечения безопасности пассажиров")
+                    // slide
+                    .swiper-slide
+                        +object-mix("Жилые комплексы", "Ограничения доступа к жилым зданиям и обеспечения безопасности жильцов")
+                    // slide
+                    .swiper-slide
+                        +object-mix("Торговые центры и магазины", "Контроль доступа к торговым площадям и обеспечения безопасности покупателей и персонала")
+                .swiper-pagination
