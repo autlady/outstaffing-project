@@ -4,47 +4,47 @@ section.reviews
         .reviews__title
             h2.section-title.section-title--white Отзывы
         .special-slider-wrapper
-            button.slider-prev
+            button.slider-prev#slider-prev-reviews
                 svg.svg-prev
                     use(href="./img/spriteSvg.svg#svg-prev")
-            button.slider-next
+            button.slider-next#slider-next-reviews
                 svg.svg-next
                     use(href="./img/spriteSvg.svg#svg-next")
             //slider
             .swiper.reviews-slider
                 .swiper-wrapper
                     // slide
-                    .swiper-slide
+                    .swiper-slide(lazy="true")
                         .review-img
                             picture
                                 source(srcset="./img/reviews/review01@2x.webp" media="(min-resolution: 192dpi)" width="609" height="430")
                                 img(src="./img/reviews/review01.webp" width="609" height="430" alt="review" loading="lazy")
                     // slide
-                    .swiper-slide
+                    .swiper-slide(lazy="true")
                         .review-img
                             picture
                                 source(srcset="./img/reviews/review02@2x.webp" media="(min-resolution: 192dpi)" width="609" height="430")
                                 img(src="./img/reviews/review02.webp" width="609" height="430" alt="review" loading="lazy")
                     // slide
-                    .swiper-slide
+                    .swiper-slide(lazy="true")
                         .review-img
                             picture
                                 source(srcset="./img/reviews/review03@2x.webp" media="(min-resolution: 192dpi)" width="609" height="430")
                                 img(src="./img/reviews/review03.webp" width="609" height="430" alt="review" loading="lazy")
                     // slide
-                    .swiper-slide
+                    .swiper-slide(lazy="true")
                         .review-img
                             picture
                                 source(srcset="./img/reviews/review01@2x.webp" media="(min-resolution: 192dpi)" width="609" height="430")
                                 img(src="./img/reviews/review01.webp" width="609" height="430" alt="review" loading="lazy")
                     // slide
-                    .swiper-slide
+                    .swiper-slide(lazy="true")
                         .review-img
                             picture
                                 source(srcset="./img/reviews/review02@2x.webp" media="(min-resolution: 192dpi)" width="609" height="430")
                                 img(src="./img/reviews/review02.webp" width="609" height="430" alt="review" loading="lazy")
                     // slide
-                    .swiper-slide
+                    .swiper-slide(lazy="true")
                         .review-img
                             picture
                                 source(srcset="./img/reviews/review03@2x.webp" media="(min-resolution: 192dpi)" width="609" height="430")

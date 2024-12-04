@@ -2,5 +2,5 @@ mixin knowledge-mix(img, title)
     // knowledge-card
     .knowledge-card
         .knowledge-card__img
-            img(src="./img/icons/" + img + ".svg", alt="icon")
+            img(src="./img/icons/" + img + ".svg", alt="icon", loading="lazy")
         a(href="#!").knowledge-card__title !{title}

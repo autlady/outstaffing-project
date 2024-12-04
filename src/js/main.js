@@ -236,8 +236,8 @@ document.addEventListener("DOMContentLoaded", function (){
 
   // Navigation arrows
     navigation: {
-      nextEl: '.slider-next',
-      prevEl: '.slider-prev',
+      nextEl: '#slider-next-reviews',
+      prevEl: '#slider-prev-reviews',
     },
 
     pagination: {
@@ -272,11 +272,10 @@ document.addEventListener("DOMContentLoaded", function (){
       spaceBetween: 16,
       loop: true,
 
-
     // Navigation arrows
       navigation: {
-        nextEl: '.slider-next-partners',
-        prevEl: '.slider-prev-partners',
+        nextEl: '#slider-next-partners',
+        prevEl: '#slider-prev-partners',
       },
 
       pagination: {
@@ -319,7 +318,6 @@ document.addEventListener("DOMContentLoaded", function (){
           el: ".swiper-pagination",
           clickable: true,
         },
-
         breakpoints: {
           870: {
             spaceBetween: 16,
@@ -338,5 +336,50 @@ document.addEventListener("DOMContentLoaded", function (){
   initSpecificSwiperSec();
   window.addEventListener("resize", initSpecificSwiperSec);
   /************************************* */
+
+
+    // OBJECTS slider
+
+    const swiperObjs = new Swiper('.objects-slider', {
+      // Optional parameters
+        slidesPerView: 1,
+        spaceBetween: 16,
+
+      // Navigation arrows
+        navigation: {
+          nextEl: '#slider-next-objects',
+          prevEl: '#slider-prev-objects',
+        },
+
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+      breakpoints: {
+        320: {
+          grid: {
+            rows: 3,
+          },
+          slidesPerView: 1,
+          spaceBetween: 16,
+        },
+        942: {
+          grid: {
+            rows: 3,
+          },
+          slidesPerView: 2,
+          spaceBetween: 16,
+        },
+        1301: {
+          slidesPerView: 3,
+          spaceBetween: 42,
+        },
+        1795: {
+          spaceBetween: 56,
+          slidesPerView: 3,
+        },
+      },
+    });
 
 })

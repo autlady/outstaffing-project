@@ -2,7 +2,7 @@ mixin cot-service(img, title, text, price)
     // cot-service-card
     .cot-service-card
         .cot-service-card__img
-            img(src="./img/cot/services" + img + ".webp", alt="icon", width="232", height="232")
+            img(src="./img/cot/services" + img + ".webp", alt="icon", width="232", height="232", loading="lazy")
         h3.cot-service-card__title !{title}
         p.cot-service-card__text !{text}
         .cot-service-card-bottom
