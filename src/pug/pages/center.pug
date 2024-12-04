@@ -1,0 +1,12 @@
+extends ../layouts/layout.pug
+
+block variables
+	-var title = "Учебный центр";
+
+block content
+	include ../sections/header.pug
+	main
+		include ../sections/center.pug
+		include ../sections/center-benefits.pug
+		include ../sections/center-services.pug
+	include ../sections/footer.pug

@@ -123,6 +123,15 @@
     }
 }
 
+.btn-banner--blue {
+    background-color: #0F7290;
+    border: none;
+
+    &:hover, &:active {
+        background-color: lighten($color: #0F7290, $amount: 15%);
+    }
+}
+
 .btn-submit {
     display: inline-block;
 
