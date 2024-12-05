@@ -4,13 +4,10 @@ document.addEventListener("DOMContentLoaded", function (){
   let specificSwiperBen = null; // Для хранения экземпляра конкретного Swiper
   function initSpecificSwiperBen() {
     const windowWidth = window.innerWidth;
-
-    // Уникальный селектор для конкретного слайдера
     const swiperContainerBen = document.querySelector(".benefits-slider");
 
-    // Проверяем, нужно ли инициализировать слайдер
 
-    if (windowWidth >= 768 && windowWidth <= 1301 && swiperContainerBen && !specificSwiperBen) {
+    if (windowWidth >= 768 && windowWidth <= 1300 && swiperContainerBen && !specificSwiperBen) {
       specificSwiperBen = new Swiper(".benefits-slider", {
           slidesPerView: 2,
             pagination: {
@@ -21,8 +18,7 @@ document.addEventListener("DOMContentLoaded", function (){
       });
     }
 
-    // Уничтожаем Swiper, если ширина больше 1199px
-    if (windowWidth < 768 && windowWidth > 1301 && specificSwiperBen) {
+    if (windowWidth < 768 && windowWidth > 1300 && specificSwiperBen) {
       specificSwiperBen.destroy(true, true);
       specificSwiperBen = null; // Обнуляем экземпляр
     }
@@ -389,7 +385,7 @@ document.addEventListener("DOMContentLoaded", function (){
     const windowWidth = window.innerWidth;
     const swiperContainerCenter = document.querySelector(".center-services-slider");
 
-    if (windowWidth <= 1301 && swiperContainerCenter && !specificSwiperCenter) {
+    if (windowWidth <= 1300 && swiperContainerCenter && !specificSwiperCenter) {
       specificSwiperCenter = new Swiper(".center-services-slider", {
         slidesPerView: 2,
         spaceBetween: 20,
@@ -410,7 +406,7 @@ document.addEventListener("DOMContentLoaded", function (){
       });
     }
 
-    if (windowWidth > 1301 && specificSwiperCenter) {
+    if (windowWidth > 1300 && specificSwiperCenter) {
       specificSwiperCenter.destroy(true, true);
       specificSwiperCenter = null;
     }
@@ -420,4 +416,36 @@ document.addEventListener("DOMContentLoaded", function (){
   window.addEventListener("resize", initSpecificSwiperCenter);
   /************************************* */
 
+
+  // SERTIFICATES SLIDER
+
+  let specificSwiperSert = null;
+
+  function initSpecificSwiperSert() {
+    const windowWidth = window.innerWidth;
+    const swiperContainerSert = document.querySelector(".sertificates-slider");
+
+    if (windowWidth <= 945 && swiperContainerSert && !specificSwiperSert) {
+      specificSwiperSert = new Swiper(".sertificates-slider", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    }
+
+    if (windowWidth > 946 && specificSwiperSert) {
+      specificSwiperSert.destroy(true, true);
+      specificSwiperSert = null;
+    }
+  }
+
+  initSpecificSwiperSert();
+  window.addEventListener("resize", initSpecificSwiperSert);
+  /************************************* */
+
 })
+
+

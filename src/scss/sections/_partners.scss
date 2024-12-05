@@ -1,5 +1,9 @@
 .partners {
     padding-top: 100px;
+
+    @media (max-width: 1440px) {
+        padding-top: 72px;
+    }
 }
 
 .partners__title {

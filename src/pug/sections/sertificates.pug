@@ -1,0 +1,26 @@
+// sertificates
+section.sertificates
+    .container
+        .sertificates__title
+            h2.section-title.section-title--white Лицензии и сертификаты
+        .sertificates-row
+            // slider
+            .swiper.sertificates-slider
+                .swiper-wrapper
+                    // slide
+                    .swiper-slide(lazy="true")
+                        .sertificates__img
+                            picture
+                                source(srcset="./img/center/certificate01@2x.webp" media="(min-resolution: 192dpi)" width="429" height="607")
+                                img(src="./img/center/certificate01.webp" width="429" height="607" alt="certificate", loading="lazy")
+                    // slide
+                    .swiper-slide(lazy="true")
+                        .sertificates__img
+                            picture
+                                source(srcset="./img/center/certificate02@2x.webp" media="(min-resolution: 192dpi)" width="429" height="607")
+                                img(src="./img/center/certificate02.webp" width="429" height="607" alt="certificate", loading="lazy")
+                .swiper-pagination
+            // sertificates - text
+            .sertificates-text
+                h3 Учебный центр содействие
+                p Имеет все необходимые лицензии и аккредитации для осуществления заявленных видов деятельности
