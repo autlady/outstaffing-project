@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function (){
 
     // BENEFITS SLIDER
-  let specificSwiperBen = null; // Для хранения экземпляра конкретного Swiper
+  let specificSwiperBen = null;
   function initSpecificSwiperBen() {
     const windowWidth = window.innerWidth;
     const swiperContainerBen = document.querySelector(".benefits-slider");
@@ -14,19 +14,17 @@ document.addEventListener("DOMContentLoaded", function (){
               el: '.swiper-pagination',
               clickable: true,
             },
-            spaceBetween: 30,
+            spaceBetween: 16,
       });
     }
 
     if (windowWidth < 768 && windowWidth > 1300 && specificSwiperBen) {
       specificSwiperBen.destroy(true, true);
-      specificSwiperBen = null; // Обнуляем экземпляр
+      specificSwiperBen = null;
     }
   }
 
-  // Инициализация при загрузке страницы
   initSpecificSwiperBen();
-  // Повторная проверка при изменении размера окна
   window.addEventListener("resize", initSpecificSwiperBen);
   /************************************* */
 
@@ -176,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function (){
   const windowWidth = window.innerWidth;
   const swiperContainerGuide = document.querySelector(".guide-slider");
 
-  if (windowWidth >= 768 && windowWidth <= 1301 && swiperContainerGuide && !specificSwiperGuide) {
+  if (windowWidth >= 768 && windowWidth <= 1300 && swiperContainerGuide && !specificSwiperGuide) {
     specificSwiperGuide = new Swiper(".guide-slider", {
         slidesPerView: 2,
           pagination: {
@@ -186,7 +184,7 @@ document.addEventListener("DOMContentLoaded", function (){
           spaceBetween: 30,
     });
   }
-    if (windowWidth < 768 && windowWidth > 1301 && specificSwiperGuide) {
+    if (windowWidth < 768 && windowWidth > 1300 && specificSwiperGuide) {
       specificSwiperGuide.destroy(true, true);
       specificSwiperGuide = null;
     }
@@ -202,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function (){
     const windowWidth = window.innerWidth;
     const swiperContainerKnowledge = document.querySelector(".knowledge-slider");
 
-    if (windowWidth >= 768 && windowWidth <= 1301 && swiperContainerKnowledge && !specificSwiperKnowledge) {
+    if (windowWidth >= 768 && windowWidth <= 1300 && swiperContainerKnowledge && !specificSwiperKnowledge) {
       specificSwiperKnowledge = new Swiper(".knowledge-slider", {
           slidesPerView: 2,
             pagination: {
@@ -212,7 +210,7 @@ document.addEventListener("DOMContentLoaded", function (){
             spaceBetween: 30,
       });
     }
-      if (windowWidth < 768 && windowWidth > 1301 && specificSwiperKnowledge) {
+      if (windowWidth < 768 && windowWidth > 1300 && specificSwiperKnowledge) {
         specificSwiperKnowledge.destroy(true, true);
         specificSwiperKnowledge = null;
       }
