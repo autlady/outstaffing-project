@@ -1,6 +1,10 @@
 .center-services__title {
     margin-bottom: 32px;
     text-align: center;
+
+    @media (max-width: 1023px) {
+        text-align: left;
+    }
 }
 
 .center-services-slider .swiper-wrapper {
@@ -20,6 +24,20 @@
     @media (max-width: 1300px) {
         height: unset;
     }
+
+    @media (max-width: 767px) {
+        padding-inline: 13px;
+    }
 }
 
+.center-services__title-mt-52 {
+    margin-top: 52px;
 
+    @media (max-width: 1660px) {
+        margin-top: 29px;
+    }
+}
+
+.center-services__info {
+    margin-top: 0;
+}

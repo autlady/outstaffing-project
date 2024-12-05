@@ -1,35 +1,34 @@
 .center-service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
     overflow: hidden;
     border-radius: 30px;
     background-color: var(--color-white);
-    padding: 40px 40px 32px 40px;
-    height: 218px;
+    padding: 40px 25px 32px 40px;
+    height: 100%;
 
     @media (max-width: 1660px) {
-        padding: 30px;
+        padding: 30px 25px 25px 30px;
         border-radius: 22px;
-        height: 164px;
     }
 
     @media (max-width: 1023px) {
         border-radius: 12px;
         padding: 20px;
     }
-
-    @media (max-width: 767px) {
-        height: 184px;
-    }
 }
 
 .center-service-card__img {
     position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 232px;
-    height: 232px;
+    bottom: -10px;
+    right: -80px;
+    width: 240px;
+    height: 240px;
+    z-index: 1;
 
-    img {
+    svg {
         width: 100%;
         height: 100%;
         object-fit: contain;
@@ -53,81 +52,87 @@
 }
 
 .center-service-card__title {
-    margin-bottom: 36px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 28px;
     text-transform: uppercase;
     color: #3b5361;
+    min-height: 56px;
 
     @media (max-width: 1660px) {
-        margin-bottom: 30px;
         font-size: 20px;
+        min-height: 30px;
     }
 
     @media (max-width: 1023px) {
-        margin-bottom: 44px;
+        min-height: 56px;
     }
 
-    @media (max-width: 1023px) {
+    @media (max-width: 767px) {
         font-size: 24px;
-        margin-bottom: 52px;
+        line-height: 1.17;
+        min-height: 74px;
     }
 }
 
-.center-service-card__hours {
-    margin-bottom: 20px;
+.center-service-card__list li {
     display: flex;
     align-items: center;
-    column-gap: 26px;
+    column-gap: 10px;
 
-    @media (max-width: 1660px) {
-        margin-bottom: 12px;
-        column-gap: 19px;
-    }
-
-    .svg-clock-white {
-        @media (max-width: 1660px) {
-            width: 24px;
-            height: 24px;
-        }
-    }
-}
-
-.center-service-card__price {
-    display: flex;
-    align-items: center;
-    column-gap: 35px;
-
-    @media (max-width: 1660px) {
-        column-gap: 26px;
-        font-size: 20px;
-    }
-}
-
-.center-service-card-bottom {
-    display: flex;
-    justify-content: space-between;
-}
-
-.center-service-card__hours span, .center-service-card__price span {
+    span {
+        flex-grow: 1;
         font-size: 28px;
-        line-height: 100%;
+        line-height: 1;
         font-variant: small-caps;
         color: #534e4e;
 
         @media (max-width: 1660px) {
             font-size: 20px;
         }
+    }
 
+    .icon-wrapper {
+        font-size: 28px;
+        flex-grow: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+        text-align: center;
+
+        @media (max-width: 1660px) {
+            font-size: 20px;
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.center-service-card__list li + li {
+@media (max-width: 1660px) {
+    margin-top: 12px;
+}
 }
 
 .center-service-card__link {
+    position: absolute;
+    bottom: 32px;
+    right: 40px;
+    z-index: 2;
     font-weight: 500;
     font-size: 32px;
+    text-decoration-skip-ink: none;
     text-decoration: underline;
     color: #b8b8b8;
 
-    @media (max-width: 1600px) {
+    @media (max-width: 1660px) {
+        bottom: 25px;
+        right: 30px;
         text-decoration: none;
         font-size: 20px;
     }
