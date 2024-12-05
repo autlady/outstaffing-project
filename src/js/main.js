@@ -257,6 +257,7 @@ document.addEventListener("DOMContentLoaded", function (){
     },
   },
 });
+ /************************************* */
 
   // PARTNERS slider
 
@@ -293,6 +294,7 @@ document.addEventListener("DOMContentLoaded", function (){
       },
     },
   });
+   /************************************* */
 
   // SECURITY SERVICE SLIDER
   let specificSwiperSec = null;
@@ -375,6 +377,7 @@ document.addEventListener("DOMContentLoaded", function (){
         },
       },
     });
+     /************************************* */
 
   // CENTER SERVICE SLIDER
   let specificSwiperCenter = null;
@@ -443,6 +446,44 @@ document.addEventListener("DOMContentLoaded", function (){
   initSpecificSwiperSert();
   window.addEventListener("resize", initSpecificSwiperSert);
   /************************************* */
+
+    // DOCUMENTS slider
+
+    const swiperDoc = new Swiper('.documents-slider', {
+      // Optional parameters
+        slidesPerView: 3,
+        spaceBetween: 16,
+        loop: true,
+
+      // Navigation arrows
+        navigation: {
+          nextEl: '#slider-next-documents',
+          prevEl: '#slider-prev-documents',
+        },
+
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 16,
+        },
+        920: {
+          slidesPerView: 2,
+          spaceBetween: 16,
+        },
+        1301: {
+          slidesPerView: 3,
+          spaceBetween: 33,
+        },
+        1664: {
+          spaceBetween: 44,
+        },
+      },
+    });
 
 })
 

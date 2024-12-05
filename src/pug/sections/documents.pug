@@ -1,0 +1,46 @@
+// documents
+section.documents
+    .container
+        .documents__title
+            h2.section-title.section-title--white Разрешительная документация
+        .special-slider-wrapper
+            button.slider-prev#slider-prev-documents
+                svg.svg-prev
+                    use(href="./img/spriteSvg.svg#svg-prev")
+            button.slider-next#slider-next-documents
+                svg.svg-next
+                    use(href="./img/spriteSvg.svg#svg-next")
+            //slider
+            .swiper.documents-slider
+                .swiper-wrapper
+                    // slide
+                    .swiper-slide(lazy="true")
+                        .doc-img
+                            picture
+                                source(srcset="./img/unionmed/doc01@2x.webp" media="(min-resolution: 192dpi)" width="609" height="430")
+                                img(src="./img/unionmed/doc01.webp" width="609" height="430" alt="review" loading="lazy")
+                    // slide
+                    .swiper-slide(lazy="true")
+                        .doc-img
+                            picture
+                                source(srcset="./img/unionmed/doc02@2x.webp" media="(min-resolution: 192dpi)" width="609" height="430")
+                                img(src="./img/unionmed/doc02.webp" width="609" height="430" alt="review" loading="lazy")
+                    // slide
+                    .swiper-slide(lazy="true")
+                        .doc-img
+                            picture
+                                source(srcset="./img/unionmed/doc03@2x.webp" media="(min-resolution: 192dpi)" width="609" height="430")
+                                img(src="./img/unionmed/doc03.webp" width="609" height="430" alt="review" loading="lazy")
+                    // slide
+                    .swiper-slide(lazy="true")
+                        .doc-img
+                            picture
+                                source(srcset="./img/unionmed/doc04@2x.webp" media="(min-resolution: 192dpi)" width="609" height="430")
+                                img(src="./img/unionmed/doc04.webp" width="609" height="430" alt="review" loading="lazy")
+                    // slide
+                    .swiper-slide(lazy="true")
+                        .doc-img
+                            picture
+                                source(srcset="./img/unionmed/doc05@2x.webp" media="(min-resolution: 192dpi)" width="609" height="430")
+                                img(src="./img/unionmed/doc05.webp" width="609" height="430" alt="review" loading="lazy")
+                .swiper-pagination
