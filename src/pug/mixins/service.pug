@@ -1,0 +1,12 @@
+mixin service(img, title, text, price, link)
+    // service-card
+    .service-card
+        .service-card__img
+            svg(class = "svg-" + img)
+                use(href="./img/spriteSvg.svg#svg-" + img)
+        h3.service-card__title !{title}
+        p.service-card__text !{text}
+        .service-card-bottom
+            span.service-card__price !{price}
+            if link
+                a(href="#!").service-card__link Подробнее

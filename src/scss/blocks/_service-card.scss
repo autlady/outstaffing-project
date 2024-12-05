@@ -1,4 +1,4 @@
-.cot-service-card {
+.service-card {
     height: 356px;
     position: relative;
     overflow: hidden;
@@ -32,14 +32,14 @@
     }
 }
 
-.cot-service-card__img {
+.service-card__img {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: -50px;
     width: 232px;
     height: 232px;
 
-    img {
+    svg {
         width: 100%;
         height: 100%;
         object-fit: contain;
@@ -62,7 +62,7 @@
     }
 }
 
-.cot-service-card__title {
+.service-card__title {
     position: relative;
     z-index: 1;
     margin-bottom: 16px;
@@ -70,7 +70,7 @@
     font-size: 28px;
     text-transform: uppercase;
     color: #3b5361;
-  
+
 
     @media (max-width: 1660px) {
         font-size: 21px;
@@ -85,7 +85,7 @@
     }
 }
 
-.cot-service-card__text {
+.service-card__text {
     position: relative;
     z-index: 1;
     font-size: 20px;
@@ -109,14 +109,14 @@
     }
 }
 
-.cot-service-card-bottom {
+.service-card-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
 }
 
-.cot-service-card__price {
+.service-card__price {
     position: relative;
     z-index: 1;
     font-weight: 500;
@@ -136,7 +136,7 @@
     }
 }
 
-.cot-service-card__link {
+.service-card__link {
     position: relative;
     z-index: 1;
     font-weight: 500;
