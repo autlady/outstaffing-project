@@ -1,0 +1,13 @@
+// unionmed-benefits
+section.unionmed-benefits
+    .container
+        // slider
+        .swiper.benefits-slider
+            .swiper-wrapper
+                .swiper-slide
+                    +benefit('med', '2 медицинских центра в Санкт-Петербурге', 'Для удобства наших Клиентов медицинские центры расположены в пешей доступности от станций метро Обводный канал и Удельная')(class="benefit-card--green")
+                .swiper-slide
+                    +benefit('ambulance', 'Проведение выездных медицинских осмотров', 'Организация медицинских осмотров на территории Заказчика позволяет значительно сократить временные затраты на проведение осмотров')(class="benefit-card--green")
+                .swiper-slide
+                    +benefit('magnifier', '> 40 000 медицинских осмотров ежегодно', 'Опытный медицинский персонал, квалифицированные менеджеры и администраторы, отсутствие очередей и быстрые сроки подготовки документов')(class="benefit-card--green")
+            .swiper-pagination
