@@ -2,7 +2,8 @@ mixin security-service(img, title, text, price)
     // security-service-card
     .security-service-card
         .security-service-card__img
-            img(src="./img/security/services" + img + ".webp", alt="icon", width="232", height="232", loading="lazy")
+            svg(class = "svg-" + img)
+                use(href="./img/spriteSvg.svg#svg-" + img)
         h3.security-service-card__title !{title}
         p.security-service-card__text !{text}
         .security-service-card-bottom
