@@ -1,0 +1,143 @@
+.unionmed {
+    padding-bottom: 60px;
+
+    @media (max-width: 1660px) {
+        padding-bottom: 45px;
+    }
+
+    @media (max-width: 1023px) {
+        padding-bottom: 12px;
+    }
+
+    @media (max-width: 767px) {
+        padding-bottom: 20px;
+    }
+}
+
+.unionmed-logo {
+    width: 506px;
+    height: 425px;
+    flex-shrink: 0;
+    margin-top: 63px;
+
+    @media (max-width: 1816px) {
+        width: 400px;
+        height: 250px;
+    }
+
+    @media (max-width: 1660px) {
+        width: 322px;
+        height: 349px;
+    }
+
+    @media (max-width: 1364px) {
+        margin-top: 15px;
+        width: 107px;
+        height: 115px;
+    }
+
+    @media (max-width: 1023px) {
+        margin-top: 5px;
+    }
+
+    @media (max-width: 767px) {
+        margin-top: 0px;
+        width: 177px;
+        height: 150px;
+    }
+}
+
+.headline--unionmed {
+    margin-bottom: 44px;
+    font-size: 66px;
+
+    @media (max-width: 1690px) {
+        margin-bottom: 33px;
+        font-size: 49px;
+    }
+
+    @media (max-width: 1023px) {
+        margin-bottom: 12px;
+        font-size: 36px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+.banner__text-unionmed {
+    font-size: 24px;
+    color: #2f2b2b;
+
+    @media (max-width: 1364px) {
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: -0.01em;
+        color: #2f2b2b;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+}
+
+.banner__text-unionmed--mb28 {
+    margin-bottom: 28px;
+
+    @media (max-width: 1023px) {
+        margin-bottom: 8px;
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 12px;
+    }
+}
+
+.banner__text-unionmed--mb18 {
+    margin-bottom: 18px;
+
+    @media (max-width: 1023px) {
+        margin-bottom: 4px;
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 12px;
+    }
+}
+
+.banner__text-unionmed--mb15 {
+    margin-bottom: 15px;
+
+    @media (max-width: 1023px) {
+        margin-bottom: 4px;
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 12px;
+    }
+}
+
+.banner.banner--unionmed {
+    padding-block: 57px;
+    column-gap: 134px;
+
+    @media (max-width: 1816px) {
+        column-gap: 110px;
+        padding-inline: 34px;
+    }
+
+    @media (max-width: 1199px) {
+        column-gap: 16px;
+        padding-inline: 60px;
+        padding-top: 12px;
+        padding-bottom: 60px;
+    }
+
+    @media (max-width: 767px) {
+        padding-inline: 17px;
+        padding-top: 28px;
+    }
+}

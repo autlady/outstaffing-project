@@ -1,0 +1,40 @@
+// section-unionmed
+section.unionmed
+    .container
+        // fixed-menu
+        .fixed-menu
+            .menu-block
+                a(href="cot.html").menu-block-link
+                    img(src="./img/logo-menu/logo-menu01.webp" width="45" height="27" alt="link" class="logo-menu-cot" loading="lazy")
+                a(href="unionmed.html").menu-block-link
+                    img(src="./img/logo-menu/logo-menu02.webp" width="43" height="36" alt="link" class="logo-menu-unimed" loading="lazy")
+                a(href="center.html").menu-block-link
+                    img(src="./img/logo-menu/logo-menu03.webp" width="45" height="45" alt="link" class="logo-menu-center" loading="lazy")
+                a(href="#!").menu-block-link
+                    img(src="./img/logo-menu/logo-menu04.webp" width="51" height="35" alt="link" class="logo-menu-school" loading="lazy")
+                a(href="index.html").menu-block-link
+                    img(src="./img/logo-menu/logo-menu05.webp" width="47" height="48" alt="link" class="logo-menu-outstaff" loading="lazy")
+                a(href="#!").menu-block-link
+                    img(src="./img/logo-menu/logo-menu06.webp" width="44" height="46" alt="link" class="logo-menu-security" loading="lazy")
+        .banner.banner--unionmed
+            // logo
+            .unionmed-logo
+                picture
+                    source(srcset="./img/unionmed/unionmed-logo-mob@2x.webp" media="(max-width: 1364px) and (min-resolution: 192dpi)" width="177" height="150")
+                    source(srcset="./img/unionmed/unionmed-logo-mob.webp" media="(max-width: 1364px)" width="177" height="150")
+                    source(srcset="./img/unionmed/unionmed-logo@2x.webp" media="(min-resolution: 192dpi)" width="506" height="425")
+                    img(src="./img/unionmed/unionmed-logo.webp" width="506" height="425" alt="logo" loading="lazy")
+            // content
+            .banner-content
+                h1.headline.headline--unionmed Медицинский центр <br> &laquo;Unionmed&raquo;
+                p.banner__text-unionmed.banner__text-unionmed--mb28 Мы оказываем комплекс медицинских услуг для юридических и физических лиц в Санкт-Петербурге и Ленинградской области: медицинские осмотры, оформление личных медицинских книжек, вакцинация и многое другое.
+                p.banner__text-unionmed.banner__text-unionmed--mb18 Медицинские центры расположены в шаговой доступности от метро:
+                p.banner__text-unionmed.banner__text-unionmed--mb15  - ул. Курская, д. 21, лит. А (5 мин. от. ст. м. «Обводный канал»)
+                p.banner__text-unionmed.banner__text-unionmed--mb15  - ул. Гданьская, д. 18, к. 3 (10 мин. от ст. м. «Удельная»)
+                .banner-btns
+                    a.btn Услуги и цены
+                    a(class="btn-banner btn-banner--unionmed" data-modal-button="modal") Оставить заявку
+//modal
+div(class="fade-block hidden" data-modal="modal" id="modal")
+    .modal-window
+       include ../blocks/request-form.pug

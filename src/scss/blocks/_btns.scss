@@ -123,6 +123,17 @@
     }
 }
 
+.btn-banner--unionmed {
+    background-color: #4f7853;
+    border: none;
+
+    &:hover, &:active {
+        background-color: lighten($color: #4f7853, $amount: 15%);
+    }
+}
+
+
+
 .btn-banner--blue {
     background-color: #0F7290;
     border: none;
