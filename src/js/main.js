@@ -182,6 +182,7 @@ document.addEventListener("DOMContentLoaded", function (){
             clickable: true,
           },
           spaceBetween: 30,
+          lazy: true,
     });
   }
     if (windowWidth < 768 && windowWidth > 1300 && specificSwiperGuide) {
@@ -227,6 +228,7 @@ document.addEventListener("DOMContentLoaded", function (){
     slidesPerView: 3,
     spaceBetween: 16,
     loop: true,
+    lazy: true,
 
   // Navigation arrows
     navigation: {
@@ -266,6 +268,7 @@ document.addEventListener("DOMContentLoaded", function (){
       slidesPerView: 1,
       spaceBetween: 16,
       loop: true,
+      lazy: true,
 
     // Navigation arrows
       navigation: {
@@ -430,6 +433,7 @@ document.addEventListener("DOMContentLoaded", function (){
       specificSwiperSert = new Swiper(".sertificates-slider", {
         slidesPerView: 1,
         spaceBetween: 30,
+        lazy: true,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -454,6 +458,7 @@ document.addEventListener("DOMContentLoaded", function (){
         slidesPerView: 3,
         spaceBetween: 16,
         loop: true,
+        lazy: true,
 
       // Navigation arrows
         navigation: {
@@ -496,6 +501,7 @@ document.addEventListener("DOMContentLoaded", function (){
     if (windowWidth <= 945 && swiperContainerUniform && !specificSwiperUniform) {
       specificSwiperUniform = new Swiper(".uniform-slider", {
         slidesPerView: 1,
+        lazy: true,
         spaceBetween: 30,
         pagination: {
           el: ".swiper-pagination",
