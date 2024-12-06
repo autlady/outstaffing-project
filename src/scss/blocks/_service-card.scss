@@ -1,5 +1,5 @@
 .service-card {
-    height: 356px;
+    min-height: 356px;
     position: relative;
     overflow: hidden;
     padding: 40px 40px 36px 40px;
@@ -11,23 +11,23 @@
     justify-content: space-between;
 
     @media (max-width: 1820px) {
-        height: 320px;
+        min-height: 320px;
         padding: 30px 30px 23px 30px;
         border-radius: 23px;
     }
 
     @media (max-width: 1660px) {
-        height: 268px;
+        min-height: 268px;
     }
 
     @media (max-width: 1023px) {
-        height: 252px;
+        min-height: 252px;
         padding: 20px 14px 20px 14px;
         border-radius: 12px;
     }
 
     @media (max-width: 767px) {
-        height: 310px;
+        min-height: 310px;
         padding: 20px 20px 20px 20px;
     }
 }

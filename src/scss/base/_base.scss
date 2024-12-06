@@ -251,6 +251,17 @@ main {
   }
 }
 
+.section-subtitle {
+  font-weight: 600;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #e3e3e3;
+
+  @media (max-width: 1660px) {
+       font-size: 24px;
+  }
+}
+
 // modal
 .fade-block {
   position: fixed;

@@ -1,0 +1,11 @@
+mixin school-mix(title, price, label, img)
+    // school-service-card
+    .school-service-card
+        if img
+            .school-service-card__img
+                img(src="./img/icons/" + img + ".svg", alt="icon", loading="lazy")
+        h3.school-service-card__title !{title}
+        .school-service-card-bottom
+            if label
+                span.school-service-card__label !{label}
+            span.school-service-card__price !{price}
