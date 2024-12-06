@@ -1,5 +1,9 @@
 .objects {
     padding-bottom: 100px;
+
+    @media (max-width: 1023px) {
+        padding-bottom: 52px;
+    }
 }
 
 .objects__title {
@@ -22,6 +26,7 @@
 
     @media (max-width: 560px) {
         text-align: left;
+        padding-left: 20px;
     }
 }
 
@@ -52,6 +57,7 @@
 
     @media (max-width: 941px) {
         height: 169px!important;
+        padding-inline: 13px;
     }
 }
 

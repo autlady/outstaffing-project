@@ -485,6 +485,35 @@ document.addEventListener("DOMContentLoaded", function (){
       },
     });
 
+  // UNIFORM SLIDER
+
+  let specificSwiperUniform = null;
+
+  function initSpecificSwiperUniform() {
+    const windowWidth = window.innerWidth;
+    const swiperContainerUniform = document.querySelector(".uniform-slider");
+
+    if (windowWidth <= 945 && swiperContainerUniform && !specificSwiperUniform) {
+      specificSwiperUniform = new Swiper(".uniform-slider", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    }
+
+    if (windowWidth > 946 && specificSwiperUniform) {
+      specificSwiperUniform.destroy(true, true);
+      specificSwiperUniform = null;
+    }
+  }
+
+  initSpecificSwiperUniform();
+  window.addEventListener("resize", initSpecificSwiperUniform);
+  /************************************* */
+
 })
 
 

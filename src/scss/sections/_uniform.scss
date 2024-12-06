@@ -1,0 +1,107 @@
+.uniform {
+    padding-top: 100px;
+    padding-bottom: 80px;
+
+    @media (max-width: 1660px) {
+        padding-bottom: 40px;
+    }
+
+    @media (max-width: 1023px) {
+        padding-top: 72px;
+    }
+}
+
+.uniform__title {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 29px;
+
+    @media (max-width: 1660px) {
+        margin-bottom: 22px;
+    }
+
+    @media (max-width: 1023px) {
+        margin: 0;
+        margin-bottom: 28px;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .section-title {
+        @media (max-width: 1023px) {
+            width: 430px;
+        }
+
+        @media (max-width: 767px) {
+            width: 350px;
+        }
+    }
+
+    p {
+        margin: 0 auto;
+        width: 1360px;
+        margin-top: 32px;
+        font-size: 27px;
+        font-variant: small-caps;
+        text-align: center;
+        color: #e3e3e3;
+
+        @media (max-width: 1660px) {
+            width: 1074px;
+            margin-top: 24px;
+            font-size: 20px;
+        }
+
+        @media (max-width: 1300px) {
+            width: 830px;
+        }
+
+        @media (max-width: 1023px) {
+            width: 100%;
+            text-align: left;
+            margin-top: 32px;
+            font-size: 16px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 20px;
+            line-height: 1.4;
+            font-variant: small-caps;
+        }
+    }
+}
+
+.uniform-slider {
+
+    @media (max-width: 945px) {
+        width: 376px;
+    }
+}
+
+.uniform-slider .swiper-wrapper {
+    margin: 0 auto;
+    flex-shrink: 0;
+    @media (min-width: 946px) {
+        width: 718px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    @media (min-width: 1399px) {
+        width: 1074px;
+        column-gap: 72px;
+    }
+
+    @media (min-width: 1799px) {
+        width: 1432px;
+        column-gap: 96px;
+    }
+}
+
+.uniform-slider .swiper-slide {
+    @media (min-width: 946px) {
+        width: auto!important;
+        margin-right: 0!important;
+    }
+}

@@ -20,6 +20,7 @@
     }
 
     @media (max-width: 767px) {
+        padding-left: 20px;
         margin-bottom: 22px;
     }
 }
@@ -101,6 +102,10 @@
 
     @media (max-width: 1023px) {
         line-height: 1.25;
+    }
+
+    @media (max-width: 767px) {
+        padding-left: 20px;
     }
 }
 

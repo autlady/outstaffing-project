@@ -1,0 +1,44 @@
+// uniform
+section.uniform
+    .container
+        .uniform__title
+            h2.section-title.section-title--white Пошив форменной одежды для охранных предприятий
+            p В рамках комплексного обслуживания частных охранных предприятий мы осуществляем поставки качественной и удобной форменной одежды для охранников.
+        // slider
+        .swiper.uniform-slider
+            .swiper-wrapper
+                // slide
+                .swiper-slide(lazy="true")
+                    .uniform-card
+                        .uniform-card__img
+                            picture
+                                source(srcset="./img/school/uniform01-mob@2x.webp" media="(max-width: 1398px) and (min-resolution: 192dpi)" width="156" height="480")
+                                source(srcset="./img/school/uniform01-mob.webp" media="(max-width: 1398px)" width="156" height="480")
+                                source(srcset="./img/school/uniform01@2x.webp" media="(min-resolution: 192dpi)" width="315" height="793")
+                                img(src="./img/school/uniform01.webp" width="315" height="793" alt="certificate", loading="lazy")
+                        ul
+                            li Костюм «РИО»
+                            li Комплект: Куртка/Брюки
+                            li Ткань: Смесовая
+                            li Цвет: Черный
+                            li Размеры: 44 – 56
+                            li Cтоимость: 2200
+                        a(class="btn-uniform" data-modal-button="modal") Оставить заявку
+                // slide
+                .swiper-slide(lazy="true")
+                    .uniform-card
+                        .uniform-card__img
+                            picture
+                                source(srcset="./img/school/uniform02-mob@2x.webp" media="(max-width: 1364px) and (min-resolution: 192dpi)" width="156" height="480")
+                                source(srcset="./img/school/uniform02-mob.webp" media="(max-width: 1364px)" width="156" height="480")
+                                source(srcset="./img/school/uniform02@2x.webp" media="(min-resolution: 192dpi)" width="315" height="793")
+                                img(src="./img/school/uniform02.webp" width="315" height="793" alt="certificate", loading="lazy")
+                        ul
+                            li Костюм «Нова»
+                            li Комплект: Куртка/Брюки
+                            li Ткань: РИП-СТОП
+                            li Цвет: Черный
+                            li Размеры: 44 – 56
+                            li Cтоимость: 3200
+                        a(class="btn-uniform" data-modal-button="modal") Оставить заявку
+            .swiper-pagination
