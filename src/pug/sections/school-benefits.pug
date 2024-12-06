@@ -1,0 +1,13 @@
+// school-benefits
+section.school-benefits
+    .container
+        // slider
+        .swiper.benefits-slider
+            .swiper-wrapper
+                .swiper-slide
+                    +benefit('card', 'Получение удостоверения частного охранника', 'Полное сопровождение в получении удостоверения частного охранника 4, 5 или 6 разряда: от консультации до приема в ОЛРР Росгвардии')(class="benefit-card--green")
+                .swiper-slide
+                    +benefit('list', 'Медицинское заключение для работы частным охранником', 'Прохождение медицинской комиссии и получение справки по форме 002 ЧО/у за один визит в нашем медцентре')(class="benefit-card--green")
+                .swiper-slide
+                    +benefit('book', '> 5 000 охранников ежегодно обучаются у нас', 'Опытный педагогический персонал позволит получить необходимые для работы охранником знания и навыки')(class="benefit-card--green")
+            .swiper-pagination
