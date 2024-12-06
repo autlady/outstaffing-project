@@ -53,6 +53,10 @@
         height: 544px;
         width: 376px;
     }
+
+    @media (max-width: 429px) {
+        width: 100%;
+    }
 }
 
 .partners-slider .swiper-wrapper {

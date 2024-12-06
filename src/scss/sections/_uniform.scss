@@ -35,6 +35,10 @@
         @media (max-width: 767px) {
             width: 350px;
         }
+
+        @media (max-width: 429px) {
+            width: 100%;
+        }
     }
 
     p {
@@ -75,6 +79,10 @@
 
     @media (max-width: 945px) {
         width: 376px;
+    }
+
+    @media (max-width: 429px) {
+        width: 100%;
     }
 }
 

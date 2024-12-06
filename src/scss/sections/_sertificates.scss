@@ -62,6 +62,10 @@
         width: 376px;
         height: 532px;
     }
+
+    @media (max-width: 429px) {
+        width: 100%;
+    }
 }
 
 .sertificates-text {
@@ -125,6 +129,10 @@
 .sertificates-slider {
     @media (max-width: 945px) {
         width: 376px;
+    }
+
+    @media (max-width: 429px) {
+        width: 100%;
     }
 }
 

@@ -48,6 +48,10 @@
         width: 376px;
         height: 532px;
     }
+
+    @media (max-width: 429px) {
+        width: 100%;
+    }
 }
 
 .doc-img img {
@@ -68,6 +72,10 @@
     }
     @media (max-width: 921px) {
         width: 376px;
+    }
+
+    @media (max-width: 429px) {
+        width: 100%;
     }
 }
 
