@@ -105,7 +105,7 @@
     }
 }
 
-.btn-banner--yellow {
+.btn-banner--cot {
     background-color: #f9bd6e;
     border: none;
 
@@ -114,7 +114,7 @@
     }
 }
 
-.btn-banner--green {
+.btn-banner--security {
     background-color: #0c713f;
     border: none;
 
@@ -132,14 +132,21 @@
     }
 }
 
-
-
-.btn-banner--blue {
+.btn-banner--center {
     background-color: #0F7290;
     border: none;
 
     &:hover, &:active {
         background-color: lighten($color: #0F7290, $amount: 15%);
+    }
+}
+
+.btn-banner--school {
+    background-color: #3b80a7;
+    border: none;
+
+    &:hover, &:active {
+        background-color: lighten($color: #3b80a7, $amount: 15%);
     }
 }
 
