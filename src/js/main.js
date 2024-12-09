@@ -73,6 +73,14 @@ for (let link of linkAsideMenu) {
     });
 }
 
+//TELEPHONE MASK
+const inputsPhone = document.querySelectorAll('.phone');
+const mask = new Inputmask('+7 (999) 999-99-99');
+
+for (let item of inputsPhone) {
+  mask.mask(item);
+}
+
 //FIELDSET
 'use strict';
 
