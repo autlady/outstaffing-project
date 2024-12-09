@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (){
 //ASIDE MENU
-const burger = document.querySelector('.burger');
+const burger = document.querySelectorAll('.btn-open-menu');
 const asideMenu = document.querySelector('.aside-menu-wrapper');
 const asideMenuBlock = document.querySelector('.aside-menu');
 const btnCloseAsideMenu = document.querySelector('.btn-close-menu');
@@ -8,10 +8,13 @@ const linkAsideMenu = document.querySelectorAll('.menu-link');
 const asideListItems = document.querySelectorAll('.menu-item');
 const bodyEl = document.body;
 
-burger.addEventListener('click', function() {
+for (let item of burger) {
+  item.addEventListener('click', function() {
     asideMenu.classList.add('active');
     bodyEl.classList.add('noscroll');
 });
+}
+
 
 asideMenu.addEventListener('click', function (e) {
     if (e.target === e.currentTarget){
@@ -157,7 +160,7 @@ for (let link of linkAsideMenu) {
         });
       }
     }
-    
+
 // SELECT
     // Полифилл для метода forEach для NodeList
 if (window.NodeList && !NodeList.prototype.forEach) {
