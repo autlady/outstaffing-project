@@ -1,0 +1,14 @@
+.img-block  {
+    position: relative;
+    // background-color: #fff;
+
+    @media (max-width: 1660px) {
+        max-width: 599px;
+        width: 100%;
+    }
+
+    // @media (max-width: 767px) {
+    //     padding: 20px 10px;
+
+    // }
+}

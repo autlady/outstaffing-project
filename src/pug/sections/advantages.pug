@@ -15,10 +15,18 @@ section.advantages
                         .swiper-slide
                             +advantage('headphones', 'Полное сопровождение', 'Группа Компаний "Труд" предлагает своим партнерам не просто услугу аутстаффинга, а полноценное сопровождение на всех этапах. Мы непременно находим решение, которое позволит нашим Клиентам получить максимальную выгоду от сотрудничества с нами')
                     .swiper-pagination
-                .advantages__img
+                .advantages__img(data-modal-button="photo-modal")
                     picture
                         source(srcset="./img/outstaff/advantage-mob@2x.webp" media="(max-width: 767px) and (min-resolution: 192dpi)" width="380" height="539")
                         source(srcset="./img/outstaff/advantage-mob.webp" media="(max-width: 767px)" width="380" height="539")
                         source(srcset="./img/outstaff/advantage@2x.webp" media="(min-resolution: 192dpi)" width="513" height="727")
                         img(src="./img/outstaff/advantage.webp" width="513" height="727" alt="staff", loading="lazy")
+//modal
+div(class="fade-block hidden" data-modal="photo-modal" id="modal-photo")
+    .modal-window
+        .img-block
+            button(class="btn-close-modal" data-modal-close)
+                svg.svg-close
+                    use(href="./img/spriteSvg.svg#svg-close")
+            img(src="", width="513" height="727", alt="doc", loading="lazy")
 

@@ -68,7 +68,6 @@ for (let link of linkAsideMenu) {
             if (submenu) {
                 submenu.classList.add('open');
             }
-
         }
     });
 }
@@ -80,6 +79,30 @@ const mask = new Inputmask('+7 (999) 999-99-99');
 for (let item of inputsPhone) {
   mask.mask(item);
 }
+
+//SEARCH HINT
+const hint = document.querySelector('.search-hint');
+const inputHeader = document.getElementById('header-search');
+inputHeader.addEventListener('keyup', function() {
+  hint.classList.add('active');
+});
+
+inputHeader.addEventListener('focus', function() {
+  this.closest('.header-search').classList.add('active');
+})
+
+inputHeader.addEventListener('blur', function() {
+  hint.classList.remove('active');
+  this.closest('.header-search').classList.remove('active');
+});
+
+
+//resize
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 1300) {
+    console.log('555');
+  }
+})
 
 //FIELDSET
 'use strict';
@@ -136,13 +159,18 @@ for (let item of inputsPhone) {
           }
           e.preventDefault();
           const itemAttr = item.getAttribute('data-modal-button');
-
           for (let frame of modalFrames) {
             const frameAttr = frame.getAttribute('data-modal');
             if (frameAttr == itemAttr) {
               frame.classList.remove('hidden');
               bodyEl.classList.add('noscroll');
-
+              if (frameAttr == "photo-modal") {
+                const img = item.querySelector("img");
+                const imgSrc = img.getAttribute('src');
+                const modalImg = frame.querySelector('img');
+                modalImg.setAttribute('src', imgSrc);
+                console.log(imgSrc);
+              }
             }
           }
         });
@@ -210,9 +238,11 @@ if (dropdowns.length > 0){
               e.stopPropagation();
               dropDownBtn.querySelector('span').innerText = this.innerText;
               dropDownBtn.querySelector('span').classList.add('text-black');
-
+              console.log(this.innerText);
               dropDownBtn.focus();
-              dropDownInput.value = this.dataset.value;
+              // dropDownInput.value = this.dataset.value;
+              // console.log(dropDownInput.value);
+              dropDownInput.setAttribute('value', this.innerText);
               dropDownList.classList.remove('dropdown__list--visible');
               dropDownBtn.classList.remove('dropdown__button--active');
           });

@@ -9,13 +9,13 @@ section.sertificates
                 .swiper-wrapper
                     // slide
                     .swiper-slide
-                        .sertificates__img
+                        .sertificates__img(data-modal-button="photo-modal")
                             picture
                                 source(srcset="./img/center/certificate01@2x.webp" media="(min-resolution: 192dpi)" width="429" height="607")
                                 img(src="./img/center/certificate01.webp" width="429" height="607" alt="certificate", loading="lazy")
                     // slide
                     .swiper-slide
-                        .sertificates__img
+                        .sertificates__img(data-modal-button="photo-modal")
                             picture
                                 source(srcset="./img/center/certificate02@2x.webp" media="(min-resolution: 192dpi)" width="429" height="607")
                                 img(src="./img/center/certificate02.webp" width="429" height="607" alt="certificate", loading="lazy")
@@ -24,3 +24,12 @@ section.sertificates
             .sertificates-text
                 h3 Учебный центр содействие
                 p Имеет все необходимые лицензии и аккредитации для осуществления заявленных видов деятельности
+//modal
+div(class="fade-block hidden" data-modal="photo-modal" id="modal-photo")
+    .modal-window
+        .img-block
+            button(class="btn-close-modal" data-modal-close)
+                svg.svg-close
+                    use(href="./img/spriteSvg.svg#svg-close")
+            img(src="", width="513" height="727", alt="doc", loading="lazy")
+

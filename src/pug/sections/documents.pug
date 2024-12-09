@@ -15,32 +15,40 @@ section.documents
                 .swiper-wrapper
                     // slide
                     .swiper-slide
-                        .doc-img
+                        .doc-img(data-modal-button="photo-modal")
                             picture
                                 source(srcset="./img/unionmed/doc01@2x.webp" media="(min-resolution: 192dpi)" width="609" height="430")
                                 img(src="./img/unionmed/doc01.webp" width="609" height="430" alt="review" loading="lazy")
                     // slide
                     .swiper-slide
-                        .doc-img
+                        .doc-img(data-modal-button="photo-modal")
                             picture
                                 source(srcset="./img/unionmed/doc02@2x.webp" media="(min-resolution: 192dpi)" width="609" height="430")
                                 img(src="./img/unionmed/doc02.webp" width="609" height="430" alt="review" loading="lazy")
                     // slide
                     .swiper-slide
-                        .doc-img
+                        .doc-img(data-modal-button="photo-modal")
                             picture
                                 source(srcset="./img/unionmed/doc03@2x.webp" media="(min-resolution: 192dpi)" width="609" height="430")
                                 img(src="./img/unionmed/doc03.webp" width="609" height="430" alt="review" loading="lazy")
                     // slide
                     .swiper-slide
-                        .doc-img
+                        .doc-img(data-modal-button="photo-modal")
                             picture
                                 source(srcset="./img/unionmed/doc04@2x.webp" media="(min-resolution: 192dpi)" width="609" height="430")
                                 img(src="./img/unionmed/doc04.webp" width="609" height="430" alt="review" loading="lazy")
                     // slide
                     .swiper-slide
-                        .doc-img
+                        .doc-img(data-modal-button="photo-modal")
                             picture
                                 source(srcset="./img/unionmed/doc05@2x.webp" media="(min-resolution: 192dpi)" width="609" height="430")
                                 img(src="./img/unionmed/doc05.webp" width="609" height="430" alt="review" loading="lazy")
                 .swiper-pagination
+//modal
+div(class="fade-block hidden" data-modal="photo-modal" id="modal-photo")
+    .modal-window
+        .img-block
+            button(class="btn-close-modal" data-modal-close)
+                svg.svg-close
+                    use(href="./img/spriteSvg.svg#svg-close")
+            img(src="", width="513" height="727", alt="doc", loading="lazy")
