@@ -1,4 +1,247 @@
 document.addEventListener("DOMContentLoaded", function (){
+//ASIDE MENU
+const burger = document.querySelector('.burger');
+const asideMenu = document.querySelector('.aside-menu-wrapper');
+const asideMenuBlock = document.querySelector('.aside-menu');
+const btnCloseAsideMenu = document.querySelector('.btn-close-menu');
+const linkAsideMenu = document.querySelectorAll('.menu-link');
+const asideListItems = document.querySelectorAll('.menu-item');
+const bodyEl = document.body;
+
+burger.addEventListener('click', function() {
+    asideMenu.classList.add('active');
+    bodyEl.classList.add('noscroll');
+});
+
+asideMenu.addEventListener('click', function (e) {
+    if (e.target === e.currentTarget){
+        asideMenuBlock.classList.remove('aside-menu-large');
+        asideMenu.classList.remove('active');
+        bodyEl.classList.remove('noscroll');
+    }
+});
+
+btnCloseAsideMenu.addEventListener('click', function () {
+    asideMenuBlock.classList.remove('aside-menu-large');
+    asideMenu.classList.remove('active');
+    bodyEl.classList.remove('noscroll');
+    if (window.innerWidth < 1200) {
+        if (asideMenu.querySelector('.open')) {
+            asideMenu.querySelector('.open').classList.remove("open");
+
+            console.log(linkAsideMenu);
+            asideListItems.forEach((el) => {
+                console.log(el);
+                el.classList.remove('menu-item-bg');
+            });
+
+        }
+    }
+});
+
+for (let link of linkAsideMenu) {
+    link.addEventListener('click', function() {
+        let submenu = this.nextElementSibling;
+        if (window.innerWidth < 1200) {
+            if (submenu) {
+
+                document.querySelectorAll('.menu-item .open').forEach((item) => {
+                    if (item !== submenu) {
+                        item.classList.remove('open');
+                        item.closest(".menu-item").classList.remove('menu-item-bg');
+                    }
+                });
+
+                submenu.classList.toggle("open");
+                submenu.closest(".menu-item").classList.toggle('menu-item-bg');
+            }
+        }
+
+        if (window.innerWidth >= 1200) {
+            asideMenuBlock.classList.add('aside-menu-large');
+            if( asideMenuBlock.querySelector('.open')){
+                asideMenuBlock.querySelector('.open').classList.remove('open');
+            }
+            if (submenu) {
+                submenu.classList.add('open');
+            }
+
+        }
+    });
+}
+
+//FIELDSET
+'use strict';
+
+;( function ( document, window, index )
+{
+	var inputs = document.querySelectorAll( '.inputfile' );
+	Array.prototype.forEach.call( inputs, function( input )
+	{
+		var label	 = input.nextElementSibling,
+			labelVal = label.innerHTML;
+
+		input.addEventListener( 'change', function( e )
+		{
+			var fileName = '';
+			if( this.files && this.files.length > 1 )
+				fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+			else
+				fileName = e.target.value.split( '\\' ).pop();
+
+			if( fileName ) {
+
+				if ( label.firstChild.nodeType === Node.ELEMENT_NODE ) {
+					console.log( label.firstChild.nodeType);
+					label.querySelector( 'span' ).innerHTML = fileName;
+				} else {
+					label.nextElementSibling.innerHTML = fileName;
+				}
+
+				console.log(fileName);
+			}
+			else
+				label.innerHTML = labelVal;
+		});
+
+		// Firefox bug fix
+		input.addEventListener( 'focus', function(){ input.classList.add( 'has-focus' ); });
+		input.addEventListener( 'blur', function(){ input.classList.remove( 'has-focus' ); });
+	});
+}( document, window, 0 ));
+
+//MODAL
+    const modalFramesOpen = document.querySelectorAll('[data-modal-button]');
+    const modalFrames = document.querySelectorAll('[data-modal]');
+
+    if (modalFrames.length > 0) {
+      const modalFramesClose = document.querySelectorAll('[data-modal-close]');
+
+      for (let item of modalFramesOpen) {
+        item.addEventListener('click', function (e) {
+          for (let item of modalFrames) {
+            item.classList.add('hidden');
+            bodyEl.classList.remove('noscroll');
+          }
+          e.preventDefault();
+          const itemAttr = item.getAttribute('data-modal-button');
+
+          for (let frame of modalFrames) {
+            const frameAttr = frame.getAttribute('data-modal');
+            if (frameAttr == itemAttr) {
+              frame.classList.remove('hidden');
+              bodyEl.classList.add('noscroll');
+
+            }
+          }
+        });
+      }
+      /*==  закрыть модалки  frame-modal по клику на крестик ======*/
+      for (let item of modalFramesClose) {
+        item.addEventListener('click', function (e) {
+          e.preventDefault();
+          item.closest('[data-modal]').classList.add('hidden');
+          bodyEl.classList.remove('noscroll');
+        });
+      }
+
+      /*=============== закрыть модалки по клику вне ===============*/
+      for (let frame of modalFrames) {
+        const frameWin = frame.querySelector('.modal-window');
+        frameWin.addEventListener('click', function (e) {
+          if (e.target === e.currentTarget) {
+            e.preventDefault();
+            frame.classList.add('hidden');
+            bodyEl.classList.remove('noscroll');
+          }
+        });
+      }
+    }
+    
+// SELECT
+    // Полифилл для метода forEach для NodeList
+if (window.NodeList && !NodeList.prototype.forEach) {
+  NodeList.prototype.forEach = function (callback, thisArg) {
+      thisArg = thisArg || window;
+      for (var i = 0; i < this.length; i++) {
+          callback.call(thisArg, this[i], i, this);
+      }
+  };
+}
+const dropdowns = document.querySelectorAll('.dropdown');
+if (dropdowns.length > 0){
+  for (drop of dropdowns){
+      const dropDownBtn = drop.querySelector('.dropdown__button');
+       const dropDownList = drop.querySelector('.dropdown__list');
+      const dropDownListItems = dropDownList.querySelectorAll('.dropdown__list-item');
+      const dropDownInput = drop.querySelector('.dropdown__input-hidden');
+
+       // клик по кнопке. Открыть/закрыть select
+      dropDownBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          const dropActive = document.querySelector('.dropdown__list--visible');
+          if (dropActive){
+              dropActive.classList.remove('dropdown__list--visible');
+          }
+          if (this.classList.contains('dropdown__button--active')){
+              dropDownList.classList.remove('dropdown__list--visible');
+              this.classList.remove('dropdown__button--active');
+          }else{
+              dropDownList.classList.add('dropdown__list--visible');
+              this.classList.add('dropdown__button--active');
+          }
+
+      });
+
+      // выбор элемента списка. Запомнить выбранное значение. Закрыть дропдаун
+      dropDownListItems.forEach(function (listItem) {
+          listItem.addEventListener('click', function (e) {
+              e.stopPropagation();
+              dropDownBtn.querySelector('span').innerText = this.innerText;
+              dropDownBtn.querySelector('span').classList.add('text-black');
+
+              dropDownBtn.focus();
+              dropDownInput.value = this.dataset.value;
+              dropDownList.classList.remove('dropdown__list--visible');
+              dropDownBtn.classList.remove('dropdown__button--active');
+          });
+      })
+
+      // клик снаружи дропдауна. Закрыть дропдаун
+      document.addEventListener('click', function (e) {
+          if (e.target !== dropDownBtn) {
+              dropDownBtn.classList.remove('dropdown__button--active');
+              dropDownList.classList.remove('dropdown__list--visible');
+
+          }
+      })
+
+      // нажатие на Tab или Escape. Закрыть дропдаун
+      document.addEventListener('keydown', function (e) {
+          if (e.key === 'Tab' || e.key === 'Escape') {
+              dropDownBtn.classList.remove('dropdown__button--active');
+              dropDownList.classList.remove('dropdown__list--visible');
+          }
+      })
+
+      const forms = document.querySelectorAll('.js-form');
+      if (forms) {
+          for (let formItem of forms){
+              const customBtn = formItem.querySelector('.js-reset');
+              const customSelects = formItem.querySelectorAll('.js-btn span');
+
+              customBtn.addEventListener('click', function() {
+
+                  for (item of customSelects) {
+
+                      item.textContent = "Не выбран";
+                      item.classList.remove('text-black');
+               }
+              });
+          }
+  }
+  }
+}
 
     // BENEFITS SLIDER
   let specificSwiperBen = null;
