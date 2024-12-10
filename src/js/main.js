@@ -274,7 +274,7 @@ if (dropdowns.length > 0){
               dropDownList.classList.remove('dropdown__list--visible');
               dropDownBtn.classList.remove('dropdown__button--active');
           });
-      })
+      });
 
       // клик снаружи дропдауна. Закрыть дропдаун
       document.addEventListener('click', function (e) {
@@ -283,7 +283,7 @@ if (dropdowns.length > 0){
               dropDownList.classList.remove('dropdown__list--visible');
 
           }
-      })
+      });
 
       // нажатие на Tab или Escape. Закрыть дропдаун
       document.addEventListener('keydown', function (e) {
@@ -291,7 +291,7 @@ if (dropdowns.length > 0){
               dropDownBtn.classList.remove('dropdown__button--active');
               dropDownList.classList.remove('dropdown__list--visible');
           }
-      })
+      });
 
       const forms = document.querySelectorAll('.js-form');
       if (forms) {
@@ -832,6 +832,6 @@ if (dropdowns.length > 0){
   window.addEventListener("resize", initSpecificSwiperUniform);
   /************************************* */
 
-})
+});
 
 
