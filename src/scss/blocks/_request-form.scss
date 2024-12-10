@@ -3,9 +3,6 @@
     width: 50%;
     background-color: #fff;
     padding: 39px 37px;
-    // max-height: 85vh;
-    // overflow: hidden;
-    // overflow-y: auto;
 
     @media (max-width: 1660px) {
         max-width: 599px;
@@ -301,4 +298,9 @@
     @media (max-width: 1023px) {
         margin-top: 10px;
     }
+}
+
+.form-fieldset.active {
+    border-color: #F2F2F2;
+    background-color: #F2F2F2;
 }
