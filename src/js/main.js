@@ -96,14 +96,6 @@ inputHeader.addEventListener('blur', function() {
   this.closest('.header-search').classList.remove('active');
 });
 
-
-//resize
-window.addEventListener('resize', () => {
-  if (window.innerWidth > 1300) {
-    console.log('555');
-  }
-})
-
 //FIELDSET
 'use strict';
 
@@ -145,92 +137,40 @@ window.addEventListener('resize', () => {
 }( document, window, 0 ));
 
 //DRAG N DROP
-const dropFileZone = document.querySelector(".form-fieldset__content")
-const statusText = document.getElementById("fieldsetHint")
-const uploadInput = document.querySelector(".inputfile")
+const dropFileZone = document.querySelector(".form-fieldset");
+const dropFileButton = document.querySelector(".inputfile");
 
-let setStatus = (text) => {
-  statusText.textContent = text
-}
+["dragover", "drop"].forEach(function (event) {
+    document.addEventListener(event, function (evt) {
+        evt.preventDefault();
+        return false;
+    });
+});
 
-const uploadUrl = "/unicorns";
+dropFileZone.addEventListener("dragenter", function () {
+    dropFileZone.classList.add("active");
+});
 
-["dragover", "drop"].forEach(function(event) {
-  document.addEventListener(event, function(evt) {
-    evt.preventDefault()
-    return false
-  })
-})
+dropFileZone.addEventListener("dragleave", function () {
+    dropFileZone.classList.remove("active");
+});
 
-dropFileZone.addEventListener("dragenter", function() {
-  dropFileZone.classList.add("_active")
-})
+dropFileZone.addEventListener("drop", function () {
+    dropFileZone.classList.remove("active");
+    const file = event.dataTransfer?.files[0];
+    if (file) {
+        dropFileZone.getElementsByTagName("span")[0].innerHTML = file.name;
 
-dropFileZone.addEventListener("dragleave", function() {
-  dropFileZone.classList.remove("_active")
-})
-
-dropFileZone.addEventListener("drop", function() {
-  dropFileZone.classList.remove("_active")
-  const file = event.dataTransfer?.files[0]
-  if (!file) {
-    return
-  }
-
-  if (file.type.startsWith("image/")) {
-    uploadInput.files = event.dataTransfer.files
-    processingUploadFile()
-  } else {
-    setStatus("Можно загружать только изображения")
-    return false
-  }
-})
-
-uploadInput.addEventListener("change", (event) => {
-  const file = uploadInput.files?.[0]
-  if (file && file.type.startsWith("image/")) {
-    processingUploadFile()
-  } else {
-    setStatus("Можно загружать только изображения")
-    return false
-  }
-})
-
-function processingUploadFile(file) {
-  if (file) {
-    const dropZoneData = new FormData()
-    const xhr = new XMLHttpRequest()
-
-    dropZoneData.append("file", file)
-
-    xhr.open("POST", uploadUrl, true)
-
-    xhr.send(dropZoneData)
-
-    xhr.onload = function () {
-      if (xhr.status == 200) {
-        setStatus("Всё загружено")
-      } else {
-        setStatus("Oшибка загрузки")
-      }
-      HTMLElement.style.display = "none"
+        console.log(dropFileZone.getElementsByTagName("span"));
     }
-  }
-}
+});
 
-function processingDownloadFileWithFetch() {
-  fetch(url, {
-    method: "POST",
-  }).then(async (res) => {
-    const reader = res?.body?.getReader();
-    while (true && reader) {
-      const { value, done } = await reader?.read()
-      console.log("value", value)
-      if (done) break
-      console.log("Received", value)
+dropFileButton.addEventListener("change", function () {
+    const file = dropFileButton.files?.[0];
+    if (file) {
+        dropFileZone.getElementsByTagName("span")[0].innerHTML = file.name;
     }
-  })
-}
+});
 
 //MODAL
     const modalFramesOpen = document.querySelectorAll('[data-modal-button]');

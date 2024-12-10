@@ -257,7 +257,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 8px;
+    left: 11px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
@@ -269,7 +269,7 @@
     }
 
     @media (max-width: 1440px) {
-        left: 18px;
+        left: 12px;
     }
 }
 

@@ -52,17 +52,14 @@
     }
 
     .benefit-card {
-        height: 215px;
         transition: 0.3s ease-in;
         margin-bottom: 100px;
         height: 162px;
         margin-bottom: 88px;
 
         &:hover {
-            margin-bottom: 30px;
-            height: 285px;
-            margin-bottom: 20px;
-            height: 230px;
+            margin-bottom: 5px;
+            height: 245px;
             justify-content: space-between;
             .benefit-card__img {
                 width: 125px;
@@ -145,7 +142,7 @@
         font-size: 27px;
     }
 
-    @media (max-width: 1300px) {
+    @media (max-width: 1660px) {
         font-size: 20px;
         letter-spacing: -0.02em;
         text-transform: uppercase;
