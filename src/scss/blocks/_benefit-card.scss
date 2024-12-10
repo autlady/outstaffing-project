@@ -38,7 +38,12 @@
 }
 
 @media (min-width: 1301px) {
-    .outstaffing-benefits {
+    .outstaffing-benefits,
+    .center-benefits,
+    .cot-benefits,
+    .school-benefits,
+    .unionmed-benefits,
+    .security-benefits {
         padding-bottom: 0;
     }
 
@@ -50,11 +55,16 @@
     .benefit-card {
         height: 215px;
         transition: 0.3s ease-in;
-        margin-bottom: 155px;
+        // margin-bottom: 155px;
+        margin-bottom: 100px;
 
         &:hover {
-            margin-bottom: 115px;
-            height: 255px;
+            // margin-bottom: 115px;
+            // margin-bottom: 60px;
+            // height: 255px;
+            margin-bottom: 30px;
+            height: 285px;
+            justify-content: space-between;
             .benefit-card__img {
                 width: 125px;
                 height: 115px;
@@ -65,9 +75,14 @@
 
             .benefit-card__text {
                 height: auto;
+                height: unset;
             }
         }
     }
+}
+
+@media (min-width: 1661px) {
+    
 }
 
 .benefit-card__img {
