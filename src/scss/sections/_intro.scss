@@ -1,5 +1,76 @@
 .intro {
+    position: relative;
+    .btn-banner {
+        display: none;
 
+        @media (max-width: 767px) {
+            display: block;
+        }
+    }
+
+    .fixed-menu {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 55px;
+        top: auto;
+    }
+
+    .menu-block {
+        flex-direction: row;
+        column-gap: 87px;
+    }
+
+    .menu-block-link {
+        width: 183px;
+        height: 183px;
+
+        .logo-menu-cot {
+            width: 128px;
+            height: 76px;
+        }
+
+        .logo-menu-unimed {
+            width: 141px;
+            height: 120px;
+        }
+
+        .logo-menu-center {
+            width: 140px;
+            height: 140px;
+        }
+
+        .logo-menu-school {
+            width: 153px;
+            height: 104px;
+        }
+
+        .logo-menu-outstaff {
+            width: 137px;
+            height: 150px;
+        }
+
+        .logo-menu-security {
+            width: 105px;
+            height: 126px;
+        }
+    }
+}
+
+.intro-wrapper {
+    padding: 150px 130px;
+
+    border-radius: 70px;
+    background-color: #f1f1f1;
+
+}
+
+.intro-title {
+    margin-bottom: 24px;
+}
+
+.intro-slider {
+    padding-bottom: 150px;
 }
 
 .intro-text {
@@ -8,8 +79,13 @@
     color: #000;
 }
 
+.intro-text ul {
+    column-count: 2;
+}
+
 .intro-text li {
     position: relative;
+    padding-left: 30px;
 }
 
 .intro-text li:before {
