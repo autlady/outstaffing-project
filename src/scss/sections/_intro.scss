@@ -1,0 +1,20 @@
+.intro {
+
+}
+
+.intro-text {
+    font-family: var(--second-family);
+    font-size: 28px;
+    color: #000;
+}
+
+.intro-text li {
+    position: relative;
+}
+
+.intro-text li:before {
+    position: absolute;
+    content: '\2022';
+    margin-left: -18px;
+    color: #6a6a6a;
+}

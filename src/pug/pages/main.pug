@@ -1,0 +1,12 @@
+extends ../layouts/layout.pug
+
+block variables
+	-var title = "Главная";
+
+block content
+	include ../sections/header.pug
+	main
+		include ../sections/intro.pug
+		include ../sections/main-cta.pug
+		include ../sections/presentation.pug
+	include ../sections/footer.pug
