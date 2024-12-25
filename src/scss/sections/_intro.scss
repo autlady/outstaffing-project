@@ -14,6 +14,8 @@
         transform: translateX(-50%);
         bottom: 55px;
         top: auto;
+        background: none;
+        backdrop-filter: none;
     }
 
     .menu-block {
@@ -58,11 +60,16 @@
 }
 
 .intro-wrapper {
+    position: relative;
     padding: 150px 130px;
 
     border-radius: 70px;
     background-color: #f1f1f1;
 
+}
+
+.intro-content {
+    max-width: 930px;
 }
 
 .intro-title {
@@ -71,6 +78,7 @@
 
 .intro-slider {
     padding-bottom: 150px;
+    // max-width: 930px;
 }
 
 .intro-text {
@@ -93,4 +101,10 @@
     content: '\2022';
     margin-left: -18px;
     color: #6a6a6a;
+}
+
+.intro-logo {
+    position: absolute;
+    bottom: 0;
+    right: 95px;
 }
