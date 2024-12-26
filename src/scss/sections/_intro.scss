@@ -16,45 +16,210 @@
         top: auto;
         background: none;
         backdrop-filter: none;
+
+        @media (max-width: 1660px) {
+            bottom: 15px;
+        }
+
+        @media (max-width: 1023px) {
+            position: fixed;
+            top: auto;
+            height: 83px;
+            right: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 106px - 106px);
+            padding-block: 13px;
+            backdrop-filter: blur(22.799999237060547px);
+            background-color: rgba(243, 243, 243, 0.45);
+            border-radius: 35px 35px 0 0;
+        }
     }
 
     .menu-block {
         flex-direction: row;
         column-gap: 87px;
+
+        @media (max-width: 1840px) {
+            column-gap: 40px;
+        }
+
+        @media (max-width: 1226px) {
+            column-gap: 20px;
+        }
+
+        @media (max-width: 1023px) {
+            column-gap: 32px;
+        }
     }
 
     .menu-block-link {
         width: 183px;
         height: 183px;
 
+        @media (max-width: 1660px) {
+            width: 120px;
+            height: 120px;
+        }
+
+        @media (max-width: 1226px) {
+            width: 90px;
+            height: 90px;
+        }
+
+        @media (max-width: 1023px) {
+            width: 57px;
+            height: 57px;
+        }
+
+        @media (max-width: 767px) {
+            width: 41px;
+            height: 41px;
+        }
+
         .logo-menu-cot {
             width: 128px;
             height: 76px;
+
+            @media (max-width: 1660px) {
+                width: 85px;
+                height: auto;
+            }
+
+            @media (max-width: 1226px) {
+                width: 64px;
+            }
+
+            @media (max-width: 1023px) {
+                width: 40px;
+                height: 21px;
+            }
+
+            @media (max-width: 767px) {
+                width: 29px;
+                height: 16px;
+            }
         }
 
         .logo-menu-unimed {
             width: 141px;
             height: 120px;
+
+            @media (max-width: 1660px) {
+                width: 85px;
+                height: auto;
+            }
+
+            @media (max-width: 1226px) {
+                width: 64px;
+            }
+
+            @media (max-width: 1023px) {
+                width: 48px;
+                height: 40px;
+            }
+
+            @media (max-width: 767px) {
+                width: 34px;
+                height: 29px;
+            }
         }
 
         .logo-menu-center {
             width: 140px;
             height: 140px;
+
+            @media (max-width: 1660px) {
+                width: 85px;
+                height: auto;
+            }
+
+            @media (max-width: 1226px) {
+                width: 64px;
+            }
+
+            @media (max-width: 1023px) {
+                width: 44px;
+                height: 44px;
+            }
+
+            @media (max-width: 767px) {
+                width: 33px;
+                height: 33px;
+            }
         }
 
         .logo-menu-school {
             width: 153px;
             height: 104px;
+
+            @media (max-width: 1660px) {
+                width: 85px;
+                height: auto;
+            }
+
+            @media (max-width: 1226px) {
+                width: 64px;
+            }
+
+            @media (max-width: 1023px) {
+                width: 47px;
+                height: 32px;
+            }
+
+            @media (max-width: 767px) {
+                width: 34px;
+                height: 29px;
+            }
         }
 
         .logo-menu-outstaff {
             width: 137px;
             height: 150px;
+
+            @media (max-width: 1660px) {
+                width: 85px;
+                height: auto;
+            }
+
+            @media (max-width: 1226px) {
+                width: 64px;
+            }
+
+            @media (max-width: 1023px) {
+                width: 38px;
+                height: 42px;
+            }
+
+            @media (max-width: 767px) {
+                width: 28px;
+                height: 30px;
+            }
         }
 
         .logo-menu-security {
             width: 105px;
             height: 126px;
+
+            @media (max-width: 1660px) {
+                width: 74px;
+                height: auto;
+            }
+
+            @media (max-width: 1226px) {
+                width: 58px;
+            }
+
+            @media (max-width: 1023px) {
+                width: 42px;
+                height: 44px;
+            }
+
+            @media (max-width: 767px) {
+                width: 27px;
+                height: 29px;
+            }
         }
     }
 }
@@ -67,21 +232,44 @@
     border-radius: 70px;
     background-color: #f1f1f1;
 
+    @media (max-width: 1660px) {
+        padding: 95px 95px;
+        padding-bottom: 220px;
+    }
+
+    @media (max-width: 1023px) {
+        padding: 70px 50px;
+        padding-bottom: 120px;
+        border-radius: none;
+        background-color: var(--bg-color);
+    }
+
+    @media (max-width: 1023px) {
+        padding-top: 32px;
+        padding-bottom: 41px;
+        padding-inline: 32px;
+    }
+
 }
 
 .intro-content {
     position: relative;
     max-width: 1135px;
+
+    @media (max-width: 1023px) {
+        max-width: 400px;
+    }
 }
 
 .intro__title {
     margin-bottom: 24px;
+
+    @media (max-width: 1023px) {
+        margin-bottom: 8px;
+    }
 }
 
 .intro-slider {
-    // padding-bottom: 160px;
-    // max-width: 930px;
-
     .swiper-pagination {
         display: flex;
         justify-content: center;
@@ -102,21 +290,43 @@
     font-family: var(--second-family);
     font-size: 28px;
     color: #000;
+
+    @media (max-width: 1023px) {
+        height: 126px;
+        font-size: 14px;
+        color: #fff;
+        overflow: hidden;
+        overflow-y: auto;
+        scrollbar-width: none;
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 .intro__text ul {
-    column-count: 2;
-    // column-width: auto;
-    width: fit-content;
+    display: grid;
+    grid-template-columns: 520px 599px;
+
+    @media (max-width: 1545px) {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 .intro__text li {
     position: relative;
     padding-left: 30px;
+
 }
 
 .intro__text > * + * {
     margin-top: 8px;
+
+    @media(max-width: 1023px) {
+        margin-top: unset;
+    }
 }
 
 .intro__text li:before {
@@ -130,6 +340,15 @@
     position: absolute;
     bottom: 0;
     right: 104px;
+
+    @media (max-width: 1660px) {
+        right: 50px;
+        width: 420px;
+    }
+
+    @media (max-width: 1023px) {
+        display: none;
+    }
 }
 
 .intro__link {
@@ -141,11 +360,77 @@
     color: #bfbfbf;
     transition: 0.3s ease-in;
 
+    @media (max-width: 1023px) {
+        font-size: 15px;
+    }
+
     .svg-arrow-right {
         margin-left: 8px;
+
+        @media (max-width: 1023px) {
+           width: 18px;
+           height: 12px;
+           margin-left: 4px;
+        }
     }
 
     &:hover, &:active {
         color: var(--color-white);
+    }
+}
+
+.intro__logo-mob {
+    display: none;
+
+    @media (max-width: 1023px) {
+        margin-inline: auto;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+
+    .svg-logo {
+        color: #375A64;
+        width: 175px;
+        height: 105px;
+    }
+}
+
+.intro__services {
+    display: none;
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+
+    @media (max-width: 1023px) {
+        display: block;
+    }
+
+    .main-title {
+        margin-bottom: 24px;
+    }
+
+    ul {
+        margin-bottom: 24px;
+        li a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        li + li {
+            margin-top: 16px;
+        }
+
+        .svg-next {
+            width: 18px;
+            height: 18px;
+        }
     }
 }

@@ -19,6 +19,11 @@ section.intro
         .intro-wrapper
             // intro - content
             .intro-content
+                // logo-mobile
+                .intro__logo-mob
+                    svg.svg-logo
+                        use(href="./img/logo.svg#svg-logo")
+                // title
                 .intro__title
                     h1.main-title Комплексные решения для бизнеса
                 // slider
@@ -32,10 +37,10 @@ section.intro
                                 p В структуре Группы компаний Труд:
                                 ul
                                     li многопрофильный медицинский центр
-                                    li аккредитованный центр охраны труда
-                                    li учебный центр (охрана труда и ДПО)
                                     li аккредитованное частное агентство занятости
+                                    li аккредитованный центр охраны труда
                                     li центр подготовки частных охранников
+                                    li учебный центр (охрана труда и ДПО)
                                     li охранное предприятие
                     .swiper-pagination
                 // link
@@ -44,6 +49,32 @@ section.intro
                         use(href="./img/spriteSvg.svg#svg-arrow-right")
                 // mobile modal button
                 a(class="btn-banner" data-modal-button="modal") Оставить заявку
+                .intro__services
+                    h3.main-title Услуги
+                    //services list
+                    ul
+                        li
+                            a(href="#!") Охрана труда
+                                svg.svg-next
+                                    use(href="./img/spriteSvg.svg#svg-next")
+                        li
+                            a(href="#!") Учебный центр
+                                svg.svg-next
+                                    use(href="./img/spriteSvg.svg#svg-next")
+                        li
+                            a(href="#!") Медицинский центр
+                                svg.svg-next
+                                    use(href="./img/spriteSvg.svg#svg-next")
+                        li
+                            a(href="#!") Аутстаффинг персонала
+                                svg.svg-next
+                                    use(href="./img/spriteSvg.svg#svg-next")
+                        li
+                            a(href="#!") Охранное предприятие
+                                svg.svg-next
+                                    use(href="./img/spriteSvg.svg#svg-next")
+                    //services button
+                    a.btn-services Cмотреть все услуги
             // intro - logo
             .intro__logo
                 img(src="./img/logo-intro.svg" alt="logo" width="578" height="720")
