@@ -28,10 +28,26 @@ header.header
                     a(href="#!").contacts-mob-item
                         svg.svg-phone-mob
                             use(href="./img/spriteSvg.svg#svg-phone")
-                .contacts-mob
+                .contacts-mob.js-mobile-search
                     a(href="#!").contacts-mob-item
                         svg.svg-search-mob
                             use(href="./img/spriteSvg.svg#svg-search-mob")
+                .header-search
+                        button(type="submit").header-search__btn
+                            svg.svg-search
+                                use(href="./img/spriteSvg.svg#svg-search")
+                        input(type="text" id="header-search" class="header-search__input" placeholder="Поиск по сайту")
+                        .search-hint
+                            ul
+                                li
+                                    a(href="#!") Cсылка 1
+                                li
+                                    a(href="#!") Ссылка 2
+                                li
+                                    a(href="#!") Cсылка 3
+                                li
+                                    a(href="#!") Ссылка 4
+
             .header-content
                 // header-contacts
                 .header-contacts

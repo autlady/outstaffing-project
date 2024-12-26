@@ -1,20 +1,17 @@
-.request-form-block  {
+.request-form-block {
     position: relative;
-    width: 50%;
+    max-width: 599px;
     background-color: #fff;
     padding: 39px 37px;
 
     @media (max-width: 1660px) {
-        max-width: 599px;
         width: 100%;
     }
 
     @media (max-width: 767px) {
         padding: 20px 10px;
-
     }
 }
-
 
 .form-item-mb22 {
     margin-bottom: 22px;
@@ -89,7 +86,6 @@
     display: flex;
 }
 
-
 .real-checkbox {
     width: 0;
     height: 0;
@@ -98,7 +94,7 @@
     z-index: -1;
 }
 
-.real-checkbox:focus+.custom-checkbox {
+.real-checkbox:focus + .custom-checkbox {
     background-color: #eee;
 }
 
@@ -126,7 +122,7 @@
 }
 
 .custom-checkbox::before {
-    content: '';
+    content: "";
     display: inline-block;
     width: 20px;
     height: 12px;
@@ -154,11 +150,11 @@
 }
 
 // активация декоративного чекбокса
-.real-checkbox:checked+.custom-checkbox::before {
+.real-checkbox:checked + .custom-checkbox::before {
     transform: translate(-50%, -50%) scale(1);
 }
 
-.real-checkbox:checked+.custom-checkbox {
+.real-checkbox:checked + .custom-checkbox {
     background-color: #375a64;
 }
 
@@ -209,20 +205,19 @@
 }
 
 .form-fieldset {
-  margin-bottom: 36px;
-  padding-block: 38px;
-  padding-inline: 24px;
-  background-color: #fff;
-  border: 1px dashed #464646;
-  text-align: center;
-  display: flex;
+    margin-bottom: 36px;
+    padding-block: 38px;
+    padding-inline: 24px;
+    background-color: #fff;
+    border: 1px dashed #464646;
+    text-align: center;
+    display: flex;
 
     @media (max-width: 1023px) {
         margin-bottom: 12px;
         padding-block: 20px;
         padding-inline: 10px;
     }
-
 }
 
 .form-fieldset__content {
@@ -275,20 +270,19 @@
 }
 
 .form-label:hover {
-  color: red;
+    color: red;
 }
 
 /*КАСТОМНЫЙ ВЫБОР ФАЙЛА*/
 
 .inputfile {
-  width: 0.1px;
-  height: 0.1px;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
 }
-
 
 .form-item-btn {
     margin-top: 30px;
@@ -301,6 +295,6 @@
 }
 
 .form-fieldset.active {
-    border-color: #F2F2F2;
-    background-color: #F2F2F2;
+    border-color: #f2f2f2;
+    background-color: #f2f2f2;
 }

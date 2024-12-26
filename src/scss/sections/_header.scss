@@ -36,6 +36,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    position: relative;
 }
 
 .header-left {
@@ -57,8 +58,7 @@
 }
 
 .header__logo .svg-logo {
-
-    color: #F0EDED;
+    color: #f0eded;
     width: 174px;
     height: 105px;
 
@@ -85,15 +85,36 @@
 
     @media (max-width: 1300px) {
         display: flex;
-      }
+    }
 
-      @media (max-width: 768px) {
+    @media (max-width: 768px) {
         column-gap: 24px;
-      }
+    }
+
+    .header-search {
+        visibility: hidden;
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+
+        transition: opacity 0.2s ease;
+
+        &._active {
+            visibility: visible;
+            z-index: 100;
+        }
+
+        input {
+            flex: 1 1 auto;
+            width: 100%;
+            background-color: #fff;
+        }
+    }
 }
 
-.header-content-mob
-.svg-tg,
+.header-content-mob .svg-tg,
 .svg-wa,
 .svg-mail-mob,
 .svg-phone-mob,
@@ -109,7 +130,7 @@
     @media (max-width: 480px) {
         width: 19px;
         height: 20px;
-      }
+    }
 }
 
 .header-content-mob .svg-tg {
@@ -119,14 +140,14 @@
     @media (max-width: 480px) {
         width: 19px;
         height: 20px;
-      }
+    }
 }
 
 .header-content-mob .svg-mail-mob {
     @media (max-width: 480px) {
         width: 19px;
         height: 16px;
-      }
+    }
 }
 
 .header-content-mob .svg-phone-mob {
@@ -136,20 +157,20 @@
     @media (max-width: 480px) {
         width: 19px;
         height: 20px;
-      }
+    }
 }
 
 .header-content-mob .svg-search-mob {
     @media (max-width: 480px) {
         width: 19px;
         height: 20px;
-      }
+    }
 }
 
 .header-content {
     @media (max-width: 1300px) {
         display: none;
-      }
+    }
 }
 
 .header-contacts {
@@ -180,7 +201,7 @@
 }
 
 .contacts-item a {
-    transition: .3s ease-in;
+    transition: 0.3s ease-in;
 
     &:hover,
     &:focus,
@@ -235,7 +256,7 @@
 }
 
 .menu a {
-    transition: .3s ease-in;
+    transition: 0.3s ease-in;
 
     &:hover {
         color: var(--color-muted);
@@ -243,6 +264,7 @@
 }
 
 .header-search {
+    margin-bottom: 0 !important;
     position: relative;
 }
 
@@ -292,7 +314,8 @@
     font-size: 20px;
     color: var(--color-white);
 
-    &:focus, &:active {
+    &:focus,
+    &:active {
         background-color: var(--color-white);
         border-radius: 5px;
         color: #464040;

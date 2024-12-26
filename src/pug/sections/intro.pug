@@ -19,16 +19,16 @@ section.intro
         .intro-wrapper
             // intro - content
             .intro-content
-                .intro-title
+                .intro__title
                     h1.main-title Комплексные решения для бизнеса
                 // slider
                 .swiper.intro-slider
                     .swiper-wrapper
                         .swiper-slide
-                            .intro-text
+                            .intro__text
                                 p Группа компаний «Труд» оказывает широкий комплекс услуг, направленных на обеспечение соблюдения обязательных требований трудового законодательства РФ и создание комфортных условий для функционирования и оптимизации бизнес-процессов.
                         .swiper-slide
-                            .intro-text
+                            .intro__text
                                 p В структуре Группы компаний Труд:
                                 ul
                                     li многопрофильный медицинский центр
@@ -39,14 +39,14 @@ section.intro
                                     li охранное предприятие
                     .swiper-pagination
                 // link
-                a(href="#!").guide__link Подробнее
+                a(href="#!").intro__link Подробнее
                     svg.svg-arrow-right
                         use(href="./img/spriteSvg.svg#svg-arrow-right")
-                // modal button
+                // mobile modal button
                 a(class="btn-banner" data-modal-button="modal") Оставить заявку
             // intro - logo
-            .intro-logo
-                img(src="./img/logo-intro.svg" alt="logo")
+            .intro__logo
+                img(src="./img/logo-intro.svg" alt="logo" width="578" height="720")
 //modal
 div(class="fade-block hidden" data-modal="modal" id="modal")
     .modal-window
