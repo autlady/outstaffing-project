@@ -35,6 +35,10 @@
             background-color: rgba(243, 243, 243, 0.45);
             border-radius: 35px 35px 0 0;
         }
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
     }
 
     .menu-block {
@@ -51,6 +55,10 @@
 
         @media (max-width: 1023px) {
             column-gap: 32px;
+        }
+
+        @media (max-width: 767px) {
+            column-gap: 23px;
         }
     }
 
@@ -245,7 +253,7 @@
     }
 
     @media (max-width: 1023px) {
-        padding-top: 32px;
+        padding-top: 15px;
         padding-bottom: 41px;
         padding-inline: 32px;
     }
@@ -259,6 +267,11 @@
     @media (max-width: 1023px) {
         max-width: 400px;
     }
+
+    @media (max-width: 375px) {
+        max-width: 221px;
+        margin: 0 auto;
+    }
 }
 
 .intro__title {
@@ -267,13 +280,33 @@
     @media (max-width: 1023px) {
         margin-bottom: 8px;
     }
+
+    @media (max-width: 375px) {
+        max-width: 221px;
+        margin-inline: auto;
+    }
 }
 
 .intro-slider {
+
+    @media (max-width: 375px) {
+        max-width: 221px;
+    }
+
+    .swiper-wrapper {
+        @media (max-width: 1023px) {
+            padding-bottom: 60px;
+        }
+    }
+
     .swiper-pagination {
         display: flex;
         justify-content: center;
         column-gap: 6px;
+
+        @media (max-width: 1023px) {
+            column-gap: 0px;
+        }
     }
 
     .swiper-pagination-bullet {
@@ -283,6 +316,10 @@
 
     .swiper-pagination-bullet-active {
         background-color: #000;
+
+        @media (max-width: 1023px) {
+            background-color: #d9d9d9;
+        }
     }
 }
 
@@ -362,6 +399,9 @@
 
     @media (max-width: 1023px) {
         font-size: 15px;
+        margin-top: -55px;
+        // left: 50%;
+        // transform: translateX(-50%);
     }
 
     .svg-arrow-right {
@@ -383,7 +423,7 @@
     display: none;
 
     @media (max-width: 1023px) {
-        margin-inline: auto;
+        // margin-inline: auto;
         margin-bottom: 16px;
         display: flex;
         align-items: center;
@@ -402,6 +442,7 @@
 }
 
 .intro__services {
+    margin-top: 40px;
     display: none;
     font-family: var(--second-family);
     font-weight: 500;
@@ -409,6 +450,7 @@
     color: #fff;
 
     @media (max-width: 1023px) {
+        margin-top: 30px;
         display: block;
     }
 
@@ -432,5 +474,12 @@
             width: 18px;
             height: 18px;
         }
+    }
+}
+
+.intro-btn-wrapper {
+    @media(max-width: 1023px) {
+        display: flex;
+        justify-content: center;;
     }
 }
