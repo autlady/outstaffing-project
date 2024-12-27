@@ -1,5 +1,27 @@
 // PRESENTATION
-section.presentation.none
+section.presentation
     .container
-        .steps__title
-            h2.section-title.section-title--white СЛАЙДЕРЫ
+        .presentation-wrapper
+            .presentation-slider-wrapper
+                h2.slider-title Топ проекты
+                // slider
+                .swiper.top-slider
+                    .swiper-wrapper
+                       //slide
+                       .swiper-slide
+                        //slide
+                       .swiper-slide
+                // slider controls
+                button.slider-prev-xs#slider-prev-top
+                    svg.svg-prev
+                        use(href="./img/spriteSvg.svg#svg-prev")
+                button.slider-next-xs#slider-next-top
+                    svg.svg-next
+                        use(href="./img/spriteSvg.svg#svg-next")
+                // link
+                a(href="#!").arrow__link Cмотреть все
+                    svg.svg-arrow-right
+                        use(href="./img/spriteSvg.svg#svg-arrow-right")
+
+
+

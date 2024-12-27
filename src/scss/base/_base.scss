@@ -224,7 +224,11 @@ main {
   text-transform: uppercase;
   color: #375a64;
 
-  @media (max-width: 1023px) {
+  @media (max-width: 1364px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 767px) {
     font-weight: 600;
     font-size: 20px;
     color: #fff;
