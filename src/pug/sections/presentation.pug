@@ -2,9 +2,10 @@
 section.presentation
     .container
         .presentation-wrapper
+            // TOP SLIDER WRAPPER
             .presentation-slider-wrapper
-                h2.slider-title Топ проекты
-                // slider
+                h2.presentation__title Топ проекты
+                // TOP slider
                 .swiper.top-slider
                     .swiper-wrapper
                        //slide
@@ -19,9 +20,54 @@ section.presentation
                     svg.svg-next
                         use(href="./img/spriteSvg.svg#svg-next")
                 // link
-                a(href="#!").arrow__link Cмотреть все
-                    svg.svg-arrow-right
-                        use(href="./img/spriteSvg.svg#svg-arrow-right")
+                .presentation-link-wrapper
+                    a(href="#!").arrow__link Cмотреть все
+                        svg.svg-arrow-right
+                            use(href="./img/spriteSvg.svg#svg-arrow-right")
+            // REVIEWS SLIDER WRAPPER
+            .presentation-slider-wrapper
+                h2.presentation__title Отзывы
+                // REVIEWS slider
+                .swiper.presentation-reviews-slider
+                    .swiper-wrapper
+                       //slide
+                       .swiper-slide
+                        //slide
+                       .swiper-slide
+                // slider controls
+                button.slider-prev-xs#slider-prev-present
+                    svg.svg-prev
+                        use(href="./img/spriteSvg.svg#svg-prev")
+                button.slider-next-xs#slider-next-present
+                    svg.svg-next
+                        use(href="./img/spriteSvg.svg#svg-next")
+                // link
+                .presentation-link-wrapper
+                    a(href="#!").arrow__link Cмотреть все
+                        svg.svg-arrow-right
+                            use(href="./img/spriteSvg.svg#svg-arrow-right")
+            // ARTICLES SLIDER WRAPPER
+            .presentation-slider-wrapper
+                h2.presentation__title Статьи
+                // ARTICLES slider
+                .swiper.presentation-articles-slider
+                    .swiper-wrapper
+                       //slide
+                       .swiper-slide
+                        //slide
+                       .swiper-slide
+                // slider controls
+                button.slider-prev-xs#slider-prev-articles
+                    svg.svg-prev
+                        use(href="./img/spriteSvg.svg#svg-prev")
+                button.slider-next-xs#slider-next-articles
+                    svg.svg-next
+                        use(href="./img/spriteSvg.svg#svg-next")
+                // link
+                .presentation-link-wrapper
+                    a(href="#!").arrow__link Cмотреть все
+                        svg.svg-arrow-right
+                            use(href="./img/spriteSvg.svg#svg-arrow-right")
 
 
 

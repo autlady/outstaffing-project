@@ -1,5 +1,5 @@
 // INTRO
-section.intro
+section.intro.none
     .container
         // fixed-menu
         .fixed-menu
@@ -44,9 +44,10 @@ section.intro
                                     li охранное предприятие
                     .swiper-pagination
                 // link
-                a(href="#!").arrow__link Подробнее
-                    svg.svg-arrow-right
-                        use(href="./img/spriteSvg.svg#svg-arrow-right")
+                .intro-link-wrapper
+                    a(href="#!").arrow__link Подробнее
+                        svg.svg-arrow-right
+                            use(href="./img/spriteSvg.svg#svg-arrow-right")
                 // mobile modal button
                 a(class="btn-banner" data-modal-button="modal") Оставить заявку
             .intro__services
