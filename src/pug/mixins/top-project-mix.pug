@@ -1,0 +1,8 @@
+mixin top-project-mix(img, title, text)
+    // top-project
+    .top-project
+        .top-project__img
+            img(src="./img/presentation/" + img + ".webp", alt="project", loading="lazy")
+        .top-project__content
+            h3.top-project__title !{title}
+            p.top-project__text !{text}

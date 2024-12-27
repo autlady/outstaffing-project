@@ -8,17 +8,22 @@ section.presentation
                 // TOP slider
                 .swiper.top-slider
                     .swiper-wrapper
-                       //slide
-                       .swiper-slide
                         //slide
-                       .swiper-slide
+                        .swiper-slide
+                           +top-project-mix("project01", "ООО «ГСП-7» (Газстройпром)", "Обучение > 5 000 слушателей ежегодно СОУТ > 2 500 рабочих мест")
+                        //slide
+                        .swiper-slide
+                           +top-project-mix("project01", "ООО «ГСП-7» (Газстройпром)", "Обучение > 5 000 слушателей ежегодно СОУТ > 2 500 рабочих мест")
+                    // pagination
+                    .swiper-pagination
                 // slider controls
-                button.slider-prev-xs#slider-prev-top
-                    svg.svg-prev
-                        use(href="./img/spriteSvg.svg#svg-prev")
-                button.slider-next-xs#slider-next-top
-                    svg.svg-next
-                        use(href="./img/spriteSvg.svg#svg-next")
+                .presentation-slider-controls
+                    button.slider-prev-xs#slider-prev-top
+                        svg.svg-prev
+                            use(href="./img/spriteSvg.svg#svg-prev")
+                    button.slider-next-xs#slider-next-top
+                        svg.svg-next
+                            use(href="./img/spriteSvg.svg#svg-next")
                 // link
                 .presentation-link-wrapper
                     a(href="#!").arrow__link Cмотреть все
@@ -30,17 +35,34 @@ section.presentation
                 // REVIEWS slider
                 .swiper.presentation-reviews-slider
                     .swiper-wrapper
-                       //slide
-                       .swiper-slide
-                        //slide
-                       .swiper-slide
+                        // slide
+                        .swiper-slide
+                            .review-img(data-modal-button="photo-modal")
+                                picture
+                                    source(srcset="./img/reviews/review01@2x.webp" media="(min-resolution: 192dpi)" width="400" height="500")
+                                    img(src="./img/reviews/review01.webp" width="400" height="500" alt="review" loading="lazy")
+                        // slide
+                        .swiper-slide
+                            .review-img(data-modal-button="photo-modal")
+                                picture
+                                    source(srcset="./img/reviews/review02@2x.webp" media="(min-resolution: 192dpi)" width="400" height="500")
+                                    img(src="./img/reviews/review02.webp" width="400" height="500" alt="review" loading="lazy")
+                        // slide
+                        .swiper-slide
+                            .review-img(data-modal-button="photo-modal")
+                                picture
+                                    source(srcset="./img/reviews/review03@2x.webp" media="(min-resolution: 192dpi)" width="400" height="500")
+                                    img(src="./img/reviews/review03.webp" width="400" height="500" alt="review" loading="lazy")
+                    // pagination
+                    .swiper-pagination
                 // slider controls
-                button.slider-prev-xs#slider-prev-present
-                    svg.svg-prev
-                        use(href="./img/spriteSvg.svg#svg-prev")
-                button.slider-next-xs#slider-next-present
-                    svg.svg-next
-                        use(href="./img/spriteSvg.svg#svg-next")
+                .presentation-slider-controls
+                    button.slider-prev-xs#slider-prev-present
+                        svg.svg-prev
+                            use(href="./img/spriteSvg.svg#svg-prev")
+                    button.slider-next-xs#slider-next-present
+                        svg.svg-next
+                            use(href="./img/spriteSvg.svg#svg-next")
                 // link
                 .presentation-link-wrapper
                     a(href="#!").arrow__link Cмотреть все
@@ -56,18 +78,29 @@ section.presentation
                        .swiper-slide
                         //slide
                        .swiper-slide
+                    // pagination
+                    .swiper-pagination
                 // slider controls
-                button.slider-prev-xs#slider-prev-articles
-                    svg.svg-prev
-                        use(href="./img/spriteSvg.svg#svg-prev")
-                button.slider-next-xs#slider-next-articles
-                    svg.svg-next
-                        use(href="./img/spriteSvg.svg#svg-next")
+                .presentation-slider-controls
+                    button.slider-prev-xs#slider-prev-articles
+                        svg.svg-prev
+                            use(href="./img/spriteSvg.svg#svg-prev")
+                    button.slider-next-xs#slider-next-articles
+                        svg.svg-next
+                            use(href="./img/spriteSvg.svg#svg-next")
                 // link
                 .presentation-link-wrapper
                     a(href="#!").arrow__link Cмотреть все
                         svg.svg-arrow-right
                             use(href="./img/spriteSvg.svg#svg-arrow-right")
+//modal
+div(class="fade-block hidden" data-modal="photo-modal" id="modal-photo")
+    .modal-window
+        .img-block
+            button(class="btn-close-modal" data-modal-close)
+                svg.svg-close
+                    use(href="./img/spriteSvg.svg#svg-close")
+            img(src="", width="513" height="727", alt="doc", loading="lazy")
 
 
 

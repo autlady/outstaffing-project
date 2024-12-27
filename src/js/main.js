@@ -843,6 +843,71 @@ const swiperIntro = new Swiper('.intro-slider', {
 });
  /************************************* */
 
+   // TOP slider
+
+const swiperTop = new Swiper('.top-slider', {
+  // Optional parameters
+    slidesPerView: 1,
+    spaceBetween: 16,
+    loop: true,
+
+    pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+     // Navigation arrows
+     navigation: {
+      nextEl: '#slider-next-top',
+      prevEl: '#slider-prev-top',
+    },
+});
+ /************************************* */
+
+   // PRESENTATION REVIEWS slider
+
+   const swiperPresReviews = new Swiper('.presentation-reviews-slider', {
+    // Optional parameters
+      slidesPerView: 1,
+      spaceBetween: 16,
+      loop: true,
+
+      pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+       // Navigation arrows
+       navigation: {
+        nextEl: '#slider-next-present',
+        prevEl: '#slider-prev-present',
+      },
+  });
+   /************************************* */
+
+  /************************************* */
+
+   // ARTICLES REVIEWS slider
+
+   const swiperArticles = new Swiper('.articles-slider', {
+    // Optional parameters
+      slidesPerView: 1,
+      spaceBetween: 16,
+      loop: true,
+
+      pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+       // Navigation arrows
+       navigation: {
+        nextEl: '#slider-next-articles',
+        prevEl: '#slider-prev-articles',
+      },
+  });
+   /************************************* */
+
 });
 
 
