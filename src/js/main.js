@@ -835,6 +835,8 @@ const swiperIntro = new Swiper('.intro-slider', {
     slidesPerView: 1,
     spaceBetween: 16,
     loop: true,
+    autoplay: true,
+    autoplayDelay: 5000,
 
     pagination: {
     el: '.swiper-pagination',
@@ -849,7 +851,6 @@ const swiperTop = new Swiper('.top-slider', {
   // Optional parameters
     slidesPerView: 1,
     spaceBetween: 16,
-    loop: true,
 
     pagination: {
     el: '.swiper-pagination',
@@ -870,7 +871,6 @@ const swiperTop = new Swiper('.top-slider', {
     // Optional parameters
       slidesPerView: 1,
       spaceBetween: 16,
-      loop: true,
 
       pagination: {
       el: '.swiper-pagination',
@@ -893,7 +893,6 @@ const swiperTop = new Swiper('.top-slider', {
     // Optional parameters
       slidesPerView: 1,
       spaceBetween: 16,
-      loop: true,
 
       pagination: {
       el: '.swiper-pagination',

@@ -1,5 +1,7 @@
 .img-block  {
     position: relative;
+    display: flex;
+    justify-content: center;
     // background-color: #fff;
 
     @media (max-width: 1660px) {

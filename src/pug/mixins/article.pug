@@ -1,0 +1,8 @@
+mixin article(img, title, date)
+    // article-card
+    .article-card
+        .article-card__img
+            img(src="./img/presentation/" + img + ".webp", srcset="./img/presentation/" + img + "@2x.webp 2x", alt="article img", loading="lazy")
+        .article-card__content
+            h3.article-card__title !{title}
+            p.article-card__date !{date}

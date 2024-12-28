@@ -10,10 +10,10 @@ section.presentation
                     .swiper-wrapper
                         //slide
                         .swiper-slide
-                           +top-project-mix("project01", "ООО «ГСП-7» (Газстройпром)", "Обучение > 5 000 слушателей ежегодно СОУТ > 2 500 рабочих мест")
+                           +top-project-mix("project01", "ООО «ГСП-7» (Газстройпром)", "Обучение > 5 000 слушателей ежегодно <br> СОУТ > 2 500 рабочих мест")
                         //slide
                         .swiper-slide
-                           +top-project-mix("project01", "ООО «ГСП-7» (Газстройпром)", "Обучение > 5 000 слушателей ежегодно СОУТ > 2 500 рабочих мест")
+                           +top-project-mix("project01", "ООО «ГСП-7» (Газстройпром)", "Обучение > 5 000 слушателей ежегодно <br> СОУТ > 2 500 рабочих мест")
                     // pagination
                     .swiper-pagination
                 // slider controls
@@ -26,7 +26,7 @@ section.presentation
                             use(href="./img/spriteSvg.svg#svg-next")
                 // link
                 .presentation-link-wrapper
-                    a(href="#!").arrow__link Cмотреть все
+                    a(href="#!").arrow-link Cмотреть все
                         svg.svg-arrow-right
                             use(href="./img/spriteSvg.svg#svg-arrow-right")
             // REVIEWS SLIDER WRAPPER
@@ -65,19 +65,21 @@ section.presentation
                             use(href="./img/spriteSvg.svg#svg-next")
                 // link
                 .presentation-link-wrapper
-                    a(href="#!").arrow__link Cмотреть все
+                    a(href="#!").arrow-link Cмотреть все
                         svg.svg-arrow-right
                             use(href="./img/spriteSvg.svg#svg-arrow-right")
             // ARTICLES SLIDER WRAPPER
             .presentation-slider-wrapper
                 h2.presentation__title Статьи
                 // ARTICLES slider
-                .swiper.presentation-articles-slider
+                .swiper.articles-slider
                     .swiper-wrapper
-                       //slide
-                       .swiper-slide
                         //slide
-                       .swiper-slide
+                        .swiper-slide
+                            +article("article01", "Отменяются ли льготы и компенсации при истечении срока действия СОУТ?", "27.11.2024")
+                        //slide
+                        .swiper-slide
+                            +article("article01", "Отменяются ли льготы и компенсации при истечении срока действия СОУТ?", "27.11.2024")
                     // pagination
                     .swiper-pagination
                 // slider controls
@@ -90,7 +92,7 @@ section.presentation
                             use(href="./img/spriteSvg.svg#svg-next")
                 // link
                 .presentation-link-wrapper
-                    a(href="#!").arrow__link Cмотреть все
+                    a(href="#!").arrow-link Cмотреть все
                         svg.svg-arrow-right
                             use(href="./img/spriteSvg.svg#svg-arrow-right")
 //modal
@@ -100,7 +102,7 @@ div(class="fade-block hidden" data-modal="photo-modal" id="modal-photo")
             button(class="btn-close-modal" data-modal-close)
                 svg.svg-close
                     use(href="./img/spriteSvg.svg#svg-close")
-            img(src="", width="513" height="727", alt="doc", loading="lazy")
+            img(src="./img/placeholder.webp", width="513" height="727", alt="doc", loading="lazy")
 
 
 

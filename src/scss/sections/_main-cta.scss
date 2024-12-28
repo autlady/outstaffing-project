@@ -19,10 +19,11 @@
         }
 
         @media (max-width: 1330px) {
-            padding: 32px 25px;
+            padding: 60px 25px;
         }
 
         @media (max-width: 767px) {
+            padding-block: 32px;
             background-color: #455966;
         }
     }
@@ -53,9 +54,17 @@
         text-align: left;
         margin-bottom: 0;
 
+        .section-title {
+            @media (max-width: 1330px) {
+                margin-top: 0px;
+            }
+        }
+
         @media (max-width: 1440px) {
             text-align: center;
         }
+
+
     }
 
     .cta__subtitle {
