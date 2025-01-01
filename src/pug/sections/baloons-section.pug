@@ -1,0 +1,281 @@
+section.baloons-section
+    // первый экран
+    .container.container-main
+        .balloons-main.balloon-first
+            .balloons
+                .balloons__wrap
+                    .balloons-item(data-target="balloon-1")
+                        img(src="./img/baloons/logo-union-med.svg" alt="ГК ТРУД" width="129" height="111")
+                    .balloons-item(data-target="balloon-2")
+                        img(src="./img/baloons/logo-zot.svg" alt="ГК ТРУД" width="137" height="85")
+                    .balloons-item(data-target="balloon-3")
+                        img(src="./img/baloons/logo-uchs.svg" alt="ГК ТРУД" width="129" height="111")
+                    .balloons-item(data-target="balloon-4")
+                        img(src="./img/baloons/logo-center.svg" alt="ГК ТРУД" width="129" height="111")
+                    .balloons-item(data-target="balloon-5")
+                        img(src="./img/baloons/global.svg" alt="ГК ТРУД" width="144" height="157")
+                    .balloons-item(data-target="balloon-6")
+                        img(src="./img/baloons/logo-array.svg" alt="ГК ТРУД" width="129" height="111")
+
+            .balloons-dock
+                .balloons-item-active(data-target="balloon-0")
+                    img(src="./img/logo-baloons-mob.svg" alt="ГК ТРУД" width="159" height="96")
+
+                // только для 1 экрана
+                a(href="#" class="balloons-dock-more") Смотреть все услуги
+                button(data-target="balloon-0" class="balloons-dock-back")
+                    svg.svg-arrow-right-mob
+                        use(href="./img/spriteSvg.svg#svg-arrow-right-mob")
+            .balloons-info
+                // 0
+                .balloons-info__item.balloon-0.open
+                    h2.balloons-info__title Комплексные решения для бизнеса
+                    .balloons-info__content
+                        .swiper.balloons-info-slider
+                            .swiper-wrapper
+                                .swiper-slide
+                                    .baloons__text
+                                        p Группа компаний «Труд» оказывает широкий комплекс услуг, направленных на обеспечение соблюдения обязательных требований трудового законодательства РФ и создание комфортных условий для функционирования и оптимизации бизнес-процессов.
+                                .swiper-slide
+                                    .baloons__text
+                                        p В структуре Группы компаний Труд:
+                                        ul
+                                            li многопрофильный медицинский центр
+                                            li аккредитованное частное агентство занятости
+                                            li аккредитованный центр охраны труда
+                                            li центр подготовки частных охранников
+                                            li учебный центр (охрана труда и ДПО)
+                                            li охранное предприятие
+                            .swiper-pagination
+                        .baloons-link-wrapper
+                            a(href="#!").arrow-link Подробнее
+                                svg.svg-arrow-right
+                                    use(href="./img/spriteSvg.svg#svg-arrow-right")
+                        a(class="btn-banner" data-modal-button="modal") Оставить заявку
+                // 1
+                .balloons-info__item.balloon-6
+                    h2.balloons-info__title Охранная организация «Массив»
+                    .balloons-info__content
+                        .swiper.balloons-info-slider
+                            .swiper-wrapper
+                                .swiper-slide
+                                    p Мы гарантируем безопасность в сфере строительства, логистики, производства, оптовой и розничной торговли, также нам доверяют охрану образовательные и медицинские учреждения
+                                .swiper-slide
+                                    p Наши охранные предприятия обеспечивают физическую охрану объектов любой сложности и реализуют современные технические решения по обеспечению безопасности
+                            .swiper-pagination
+                // 2
+                .balloons-info__item.balloon-4
+                    h2.balloons-info__title ЭКОЛОГИЧЕСКИЕ УСЛУГИ
+                    .balloons-info__content
+                        .swiper.balloons-info-slider
+                            .swiper-wrapper
+                                .swiper-slide
+                                    p Центр охраны окружающей среды «Эко-форсайт» помогает находить оптимальные решения различных экологических вопросов. Мы разрабатываем и согласовываем любые природоохранные документы
+                            .swiper-pagination
+                // 3
+                .balloons-info__item.balloon-5
+                    h2.balloons-info__title АУТСТАФФИНГ ПЕРСОНАЛА
+                    .balloons-info__content
+                        .swiper.balloons-info-slider
+                            .swiper-wrapper
+                                .swiper-slide
+                                    p ГлобалСтафф реализует комплекс услуг по оптимизации бизнес-процессов, связанных с управлением трудовыми ресурсами. Наш подход к управлению персоналом лишен формальностей и стандартных органичений и позволяет обеспечить существенную экономию Ваших средств.
+                                .swiper-slide
+                                    p Аутстаффинг (аутсорсинг) персонала - это передача ответственности, связанной с самостоятельным управлением персоналом, специализированной организации, имеющей соответствующую аккредитацию Министерства труда.
+                                .swiper-slide
+                                    p Сотрудничество с нами позволяет оптимизировать штатную численность предприятия, исключить риски, связанные с управлением персоналом, значительно сократить административные затраты и издержки
+                            .swiper-pagination
+                // 4
+                .balloons-info__item.balloon-3
+                    h2.balloons-info__title УЧЕБНЫЙ ЦЕНТР «СОДЕЙСТВИЕ»
+                    .balloons-info__content
+                        .swiper.balloons-info-slider
+                            .swiper-wrapper
+                                .swiper-slide
+                                    p Учебный центр «Содействие» предоставляет широкий спектр качественных образовательных услуг. Мы реализуем учебный процесс, применяя только лучшее: опытные преподаватели, интерактивные программы обучения, практические занятия
+                                .swiper-slide
+                                    p Учебный центр имеет лицензию, выданную комитетом по образованию Санкт-Петербурга на осуществление образовательной деятельности (№ ЛО35-01271-78/00176927 от 13.12.2021) и аккредитацию Минтруда на обучение по охране труда (№7800 от 14.02.2023)
+                            .swiper-pagination
+                // 5
+                .balloons-info__item.balloon-2
+                    h2.balloons-info__title ЦЕНТР ОХРАНЫ ТРУДА «ЦОТ»
+                    .balloons-info__content
+                        .swiper.balloons-info-slider
+                            .swiper-wrapper
+                                .swiper-slide
+                                    p Центр охраны труда осуществляет полный комплекс услуг в области охраны труда. Квалификация и опыт наших специалистов, индивидуальный подход к каждому Клиенту – качества, которые позволяют нам находить решения в ситуациях любой сложности
+                                .swiper-slide
+                                    p Мы гарантируем экспертную поддержку на всех этапах сотрудничества, возможность сопровождения результатов нашей работы, в том числе, при взаимодействии с государственными органами надзора и контроля
+                            .swiper-pagination
+                // 6
+                .balloons-info__item.balloon-1
+                    h2.balloons-info__title МЕДИЦИНСКИЙ ЦЕНТР «ЮНИОНМЕД»
+                    .balloons-info__content
+                        .swiper.balloons-info-slider
+                            .swiper-wrapper
+                                .swiper-slide
+                                    p Медицинский центр «ЮнионМед» оказывает полный спектр медицинских услуг для корпоративных клиентов и физических лиц в Санкт-Петербурге и Ленинградской области
+                                .swiper-slide
+                                    p «ЮнионМед» обладает уникальными передвижными комплексами с возможностью организации проведения выездных медицинских осмотров на территории предприятия Заказчика
+                                .swiper-slide
+                                    p Удобное расположение медицинских центров (вблизи станций метро Удельная и Обводный канал), современное оборудование, комфортная среда и высокий профессиональный уровень сотрудников позволяют нам оказывать услуги на высоком уровне
+                            .swiper-pagination
+            .balloons-service
+                // 0
+                .balloons-service__item.balloon-0.open
+                    h2.balloons-service__title Услуги
+                    ul.balloons-service-list
+                        li
+                            a(class="balloons-service-list__link" href="#!") Охрана труда
+                        li
+                            a(class="balloons-service-list__link" href="#!") Учебный центр
+                        li
+                            a(class="balloons-service-list__link" href="#!") Медицинский центр
+                        li
+                            a(class="balloons-service-list__link" href="#!") Аутстаффинг персонала
+                        li
+                            a(class="balloons-service-list__link" href="#!") Экологические услуги
+                        li
+                            a(class="balloons-service-list__link" href="#!") Охранное предприятие
+                        li.more-link
+                            a(class="balloons-service-list__link" href="#!") Смотреть все услуги
+
+                // ГРУППА КОМПАНИЙ БЕЗОПАСНЫЙ ГОРОД
+                .balloons-service__item.balloon-6
+                    h2.balloons-service__title
+                    ul.balloons-service-list
+                        li
+                            a(class="balloons-service-list__link" href="#!") Стационарные посты охраны
+                        li
+                            a(class="balloons-service-list__link" href="#!") Мобильные посты (патрульные а/м)
+                        li
+                            a(class="balloons-service-list__link" href="#!") Пультовая охрана (ГБР)
+                        li
+                            a(class="balloons-service-list__link" href="#!") Монтаж систем и видеонаблюдения
+                        li
+                            a(class="balloons-service-list__link" href="#!") Монтаж СКУД (турникеты, шлагбаумы и пр.)
+                        li.more-link
+                            a(class="balloons-service-list__link" href="#!") Смотреть все услуги
+
+                // ЭКОЛОГИЧЕСКИЕ УСЛУГИ
+                .balloons-service__item.balloon-4
+                    h2.balloons-service__title Услуги
+                    ul.balloons-service-list
+                        li
+                            a(class="balloons-service-list__link" href="#!") Экологический аутсорсинг
+                        li
+                            a(class="balloons-service-list__link" href="#!") Постановка на учет и расчет НВОС
+                        li
+                            a(class="balloons-service-list__link" href="#!") Разработка паспорта на отходы
+                        li
+                            a(class="balloons-service-list__link" href="#!") Инвентаризация отходов
+                        li
+                            a(class="balloons-service-list__link" href="#!") Разработка проектов ПНООЛР, ПДВ, 2НДС ЗСО
+                        li
+                            a(class="balloons-service-list__link" href="#!") Инвентаризация источников выбросов
+                        li
+                            a(class="balloons-service-list__link" href="#!") Подготовка экологической отчетности
+                        li.more-link
+                            a(class="balloons-service-list__link" href="#!") Смотреть все услуги
+
+                // АУТСТАФФИНГ ПЕРСОНАЛА
+                .balloons-service__item.balloon-5
+                    h2.balloons-service__title Услуги
+                    ul.balloons-service-list
+                        li
+                            a(class="balloons-service-list__link" href="#!") Оформление (перевод) сотрудников
+                        li
+                            a(class="balloons-service-list__link" href="#!") Миграционный учет
+                        li
+                            a(class="balloons-service-list__link" href="#!") Юридическое сопровождение
+                        li
+                            a(class="balloons-service-list__link" href="#!") Начисление заработных плат, больничных, отпускных и пр.
+                        li
+                            a(class="balloons-service-list__link" href="#!") Ведение кадрового делопроизводства
+                        li.more-link
+                            a(class="balloons-service-list__link" href="#!") Смотреть все услуги
+
+                // УЧЕБНЫЙ ЦЕНТР
+                .balloons-service__item.balloon-3
+                    h2.balloons-service__title Услуги
+                    ul.balloons-service-list
+                        li
+                            a(class="balloons-service-list__link" href="#!") Рабочие профессии
+                        li
+                            a(class="balloons-service-list__link" href="#!") Повышение квалификации
+                        li
+                            a(class="balloons-service-list__link" href="#!") Профпереподготовка
+                        li
+                            a(class="balloons-service-list__link" href="#!") Школа охранников
+                        li
+                            a(class="balloons-service-list__link" href="#!") Охрана труда
+                        li
+                            a(class="balloons-service-list__link" href="#!") Работы на высоте
+                        li
+                            a(class="balloons-service-list__link" href="#!") Электробезопасность
+                        li.more-link
+                            a(class="balloons-service-list__link" href="#!") Смотреть все услуги
+
+                // Центр охраны труда
+                .balloons-service__item.balloon-2
+                    h2.balloons-service__title Услуги
+                    ul.balloons-service-list
+                        li
+                            a(class="balloons-service-list__link" href="#!") Оценка профессиональных рисков
+                        li
+                            a(class="balloons-service-list__link" href="#!") Специальная оценка условий труда
+                        li
+                            a(class="balloons-service-list__link" href="#!") Аутсорсинг охраны труда
+                        li
+                            a(class="balloons-service-list__link" href="#!") Аудит охраны труда
+                        li
+                            a(class="balloons-service-list__link" href="#!") Производственный контроль
+                        li
+                            a(class="balloons-service-list__link" href="#!") Расследование несчастных случаев
+                        li
+                            a(class="balloons-service-list__link" href="#!") Сопровождение проверок
+                        li.more-link
+                            a(class="balloons-service-list__link" href="#!") Смотреть все услуги
+
+                // Мед центр
+                .balloons-service__item.balloon-1
+                    h2.balloons-service__title Услуги
+                    ul.balloons-service-list
+                        li
+                            a(class="balloons-service-list__link" href="#!") Медицинские осмотры
+                        li
+                            a(class="balloons-service-list__link" href="#!") Личные медицинские книжки
+                        li
+                            a(class="balloons-service-list__link" href="#!") Водительская комиссия
+                        li
+                            a(class="balloons-service-list__link" href="#!") Вакцинация
+                        li
+                            a(class="balloons-service-list__link" href="#!") Предрейсовые осмотры
+                        li
+                            a(class="balloons-service-list__link" href="#!") Психиатрическое освидетельствование
+                        li
+                            a(class="balloons-service-list__link" href="#!") Оружейная комиссия
+                        li.more-link
+                            a(class="balloons-service-list__link" href="#!") Смотреть все услуги
+
+            // только первый экран
+            img(class="balloons-main-image" src="./img/logo-baloons.svg" alt="ГК Труд" width="575" height="720")
+
+        .footer-balloons
+            .footer-balloons__wrap
+                .footer-balloons-item(data-target="balloon-1")
+                    img(src="./img/baloons/logo-union-med.svg" alt="ГК ТРУД" width="129" height="111")
+                .footer-balloons-item(data-target="balloon-2")
+                    img(src="./img/baloons/logo-zot.svg" alt="ГК ТРУД" width="137" height="85")
+                .footer-balloons-item(data-target="balloon-3")
+                    img(src="./img/baloons/logo-uchs.svg" alt="ГК ТРУД" width="153" height="151")
+                .footer-balloons-item(data-target="balloon-4")
+                    img(src="./img/baloons/logo-center.svg" alt="ГК ТРУД" width="145" height="146")
+                .footer-balloons-item(data-target="balloon-5")
+                    img(src="./img/baloons/global.svg" alt="ГК ТРУД" width="144" height="157")
+                .footer-balloons-item(data-target="balloon-6")
+                    img(src="./img/baloons/logo-array.svg" alt="ГК ТРУД"  width="116" height="123")
+//modal
+div(class="fade-block hidden" data-modal="modal" id="modal")
+    .modal-window
+       include ../blocks/request-form.pug

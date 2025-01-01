@@ -136,6 +136,23 @@ main {
   }
 }
 
+.container-main {
+  max-width: 100%;
+
+  @media (max-width: 1300px) {
+    padding-inline: 40px;
+
+  }
+
+  @media (max-width: 1023px) {
+    padding-inline: 20px;
+  }
+
+  @media (max-width: 767px) {
+    padding-inline: 9px;
+  }
+}
+
 .section-wrapper {
   padding: 80px 72px 68px 72px;
   background-color: var(--color-white);
