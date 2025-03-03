@@ -1,0 +1,46 @@
+.breadcrumbs {
+    padding-block: 56px;
+}
+
+.breadcrumbs__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 4px;
+}
+
+.breadcrumbs__list-item {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.breadcrumbs__list-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    background-image: url('../img/icons/arrow-breadcrumbs.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 7px;
+    height: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 17px;
+}
+
+.breadcrumbs__list-link {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--dark-blue);
+
+    &:hover, &:active {
+        color: var(--dark-grey);
+    }
+}
+
+.breadcrumbs__list-item:last-child .breadcrumbs__list-link{
+    color: var(--grey);
+    pointer-events: none;
+    cursor: default;
+}
+

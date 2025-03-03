@@ -1,0 +1,64 @@
+.h1 {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 72px;
+    font-variant: small-caps;
+    color: #000;
+}
+
+.h2 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 40px;
+    color: #000;
+}
+
+.h3 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.29;
+    font-variant: all-small-caps;
+    color: #000;
+}
+
+.h4 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.33;
+    color: #000;
+}
+
+.h4--medium {
+    font-weight: 500;
+}
+
+.h5 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #000;
+}
+
+.h5--bold {
+    font-weight: 500;
+}
+
+.h6 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+}
+
+.tag {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.33;
+    font-variant: all-small-caps;
+    color: #000;
+}
