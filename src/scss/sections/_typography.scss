@@ -1,57 +1,57 @@
-.h1 {
+.title1 {
     font-family: var(--second-family);
     font-weight: 600;
     font-size: 72px;
     font-variant: small-caps;
-    color: #000;
+    color: var(--dark-blue);
 }
 
-.h2 {
+.title2 {
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 40px;
-    color: #000;
+    color: var(--dark-blue);
 }
 
-.h3 {
+.title3 {
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 28px;
     line-height: 1.29;
     font-variant: all-small-caps;
-    color: #000;
+    color: var(--dark-blue);
 }
 
-.h4 {
+.title4 {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 24px;
     line-height: 1.33;
-    color: #000;
+    color: var(--dark-blue);
 }
 
-.h4--medium {
+.title4--medium {
     font-weight: 500;
 }
 
-.h5 {
+.title5 {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 20px;
     line-height: 1.4;
-    color: #000;
+    color: var(--dark-blue);
 }
 
-.h5--bold {
+.title5--bold {
     font-weight: 500;
 }
 
-.h6 {
+.title6 {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    color: #000;
+    color: var(--dark-blue);
 }
 
 .tag {
@@ -60,5 +60,5 @@
     font-size: 24px;
     line-height: 1.33;
     font-variant: all-small-caps;
-    color: #000;
+    color: var(--dark-blue);
 }
