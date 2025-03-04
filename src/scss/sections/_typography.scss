@@ -11,6 +11,14 @@
     font-weight: 600;
     font-size: 40px;
     color: var(--dark-blue);
+
+    @media (max-width: 1023px) {
+        font-size: 32px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 24px;
+    }
 }
 
 .title3 {

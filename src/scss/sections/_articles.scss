@@ -8,17 +8,38 @@
 
 .articles__title {
     margin-bottom: 40px;
+
+    @media (max-width: 1023px) {
+        margin-bottom: 32px;
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 24px;
+    }
 }
 
 .articles-labels {
     display: flex;
-    flex-wrap: wrap;
+
     margin-bottom: 40px;
+    overflow: hidden;
+    overflow-x: auto;
+    scrollbar-width: none;
     gap: 10px;
+
+    @media (max-width: 1023px) {
+        margin-bottom: 32px;
+
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 24px;
+    }
 }
 
 .article-label-wrapper {
     position: relative;
+    flex-shrink: 0;
 
     .real-radio {
         width: 0px;
@@ -49,6 +70,10 @@
         border: 1px solid var(--primary);
         color: var(--white);
     }
+}
+
+.article-label-wrapper:last-child {
+    margin-right: 0;
 }
 
 
