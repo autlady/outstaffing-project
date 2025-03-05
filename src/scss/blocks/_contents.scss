@@ -1,0 +1,33 @@
+.contents__title {
+    margin-bottom: 40px;
+
+    @media (max-width: 1023px) {
+        margin-bottom: 32px;
+    }
+}
+
+.contents__list li a {
+    font-size: 24px;
+    line-height: 1.33;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--primary);
+
+    &:hover, &:active {
+        color: var(--secondary);
+    }
+
+    @media (max-width: 1023px) {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+.contents__list li + li {
+    margin-top: 8px;
+}

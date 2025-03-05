@@ -142,7 +142,7 @@ main {
       max-width: 100%;
     }
   }
-  
+
 }
 
 .container-main {
@@ -343,4 +343,16 @@ main {
 
 .hidden {
   display: none;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+
+  @media (max-width: 1023px) {
+    margin-bottom: 32px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 24px;
+  }
 }

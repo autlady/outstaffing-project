@@ -28,6 +28,14 @@
     line-height: 1.29;
     font-variant: all-small-caps;
     color: var(--dark-blue);
+
+    @media (max-width: 1023px) {
+        font-size: 24px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 20px;
+    }
 }
 
 .title4 {

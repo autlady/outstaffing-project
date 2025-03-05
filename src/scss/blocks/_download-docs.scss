@@ -1,0 +1,46 @@
+.download-docs__title {
+    margin-bottom: 24px;
+
+    @media (max-width: 767px) {
+        margin-bottom: 16px;
+    }
+}
+
+.download-docs__list li {
+    display: flex;
+    border-radius: 8px;
+    padding: 8px 16px;
+    background-color: var(--light-grey);
+
+    a {
+        display: flex;
+        column-gap: 8px;
+        align-items: flex-start;
+        font-size: 24px;
+        line-height: 1.33;
+        color: var(--primary);
+        transition: 0.2s ease-in;
+
+        @media (max-width: 1023px) {
+            font-size: 20px;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        &:hover, &:active {
+            color: var(--secondary);
+        }
+
+        img {
+            padding-top: 3px;
+        }
+    }
+}
+
+.download-docs__list li + li {
+    margin-top: 16px;
+}
