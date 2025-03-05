@@ -6,23 +6,23 @@
     justify-content: space-between;
     background-color: var(--color-white);
     border-radius: 20px;
-    min-height: 790px;
+    min-height: 520px;
     overflow: hidden;
 
     @media (max-width: 1798px) {
         border-radius: 15px;
         padding: 28px 21px 30px 21px;
-        min-height: 592px;
+        min-height: 420px;
     }
 
     @media (max-width: 1398px) {
         border-radius: 12px;
         padding: 20px;
-        min-height: 460px;
+        min-height: 400px;
     }
 
     @media (max-width: 767px) {
-        min-height: 481px;
+        min-height: 400px;
     }
 }
 

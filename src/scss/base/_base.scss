@@ -134,6 +134,15 @@ main {
   @media (max-width: 767px) {
     padding-inline: 9px;
   }
+
+  @media (min-width: 1921px) {
+    max-width: 1920px;
+
+    &.container-main {
+      max-width: 100%;
+    }
+  }
+  
 }
 
 .container-main {

@@ -1,6 +1,7 @@
 @import "./base/_var";
 @import "./base/_base";
 @import "./base/_icons";
+@import "./base/_typography";
 
 //blocks
 
@@ -26,6 +27,8 @@
 @import "./blocks/img-block";
 @import "./blocks/top-project";
 @import "./blocks/article-card";
+@import "./blocks/breadcrumbs";
+@import "./blocks/anchor-block";
 @import "./blocks/article-bg-card";
 
 //sections
@@ -66,8 +69,5 @@
 @import "./sections/main-cta";
 @import "./sections/presentation";
 @import "./sections/baloons-section";
-@import "./sections/typography";
-@import "./sections/breadcrumbs";
-@import "./sections/anchor-block";
 @import "./sections/articles";
 @import "./sections/thesises";

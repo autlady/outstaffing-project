@@ -24,6 +24,7 @@
     padding-block: 105px;
     padding-inline: 144px;
     display: flex;
+    align-items: center;
     column-gap: 184px;
 
     @media (max-width: 1660px) {
@@ -77,13 +78,12 @@
 }
 
 .banner__text {
-    max-width: 800px;
     margin-top: 25px;
     font-size: 24px;
     color: #464040;
+    text-align: justify;
 
     @media (max-width: 1660px) {
-        max-width: 700px;
         font-size: 18px;
     }
 
