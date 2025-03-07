@@ -1,0 +1,33 @@
+.variants__title {
+    margin-bottom: 40px;
+
+    @media (max-width: 1023px) {
+        margin-bottom: 32px;
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 24px;
+    }
+}
+
+.variants-slider .swiper-slide {
+    display: flex;
+    
+    @media (min-width: 1301px) {
+        width: auto!important;
+        margin-right: 0!important;
+    }
+
+    @media (max-width: 1300px) {
+        height: unset;
+    }
+}
+
+.variants-slider .swiper-wrapper {
+    @media (min-width: 1301px) {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        column-gap: 16px;
+    }
+}
+

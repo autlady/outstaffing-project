@@ -321,7 +321,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const windowWidth = window.innerWidth;
     const swiperContainerBen = document.querySelector(".benefits-slider");
 
-
     if (windowWidth >= 768 && windowWidth <= 1300 && swiperContainerBen && !specificSwiperBen) {
       specificSwiperBen = new Swiper(".benefits-slider", {
         slidesPerView: 2,
@@ -341,6 +340,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
   initSpecificSwiperBen();
   window.addEventListener("resize", initSpecificSwiperBen);
+
+  /************************************* */
+  // VARIANTS SLIDER
+  let specificSwiperVariants = null;
+  function initSpecificSwiperVariants() {
+    const windowWidth = window.innerWidth;
+    const swiperContainerVariants = document.querySelector(".variants-slider");
+
+    if (windowWidth <= 1300 && swiperContainerVariants && !specificSwiperVariants) {
+      specificSwiperVariants = new Swiper(".variants-slider", {
+        slidesPerView: 3,
+        spaceBetween: 16,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    }
+
+    if (windowWidth > 1300 && specificSwiperVariants) {
+      specificSwiperVariants.destroy(true, true);
+      specificSwiperVariants = null;
+    }
+  }
+
+  initSpecificSwiperVariants();
+  window.addEventListener("resize", initSpecificSwiperVariants);
   /************************************* */
 
 
