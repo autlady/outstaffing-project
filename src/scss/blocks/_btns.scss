@@ -64,9 +64,9 @@
 
     transition: 0.2s ease-in;
 
-    &:hover, &:active {
-        background-color: lighten($color: #393a5a, $amount: 15%);
-    }
+    // &:hover, &:active {
+    //     background-color: lighten($color: #393a5a, $amount: 15%);
+    // }
 
     @media (max-width: 1660px) {
         border-radius: 8px;
@@ -109,45 +109,45 @@
     background-color: #f9bd6e;
     border: none;
 
-    &:hover, &:active {
-        background-color: darken($color: #f9bd6e, $amount: 15%);
-    }
+    // &:hover, &:active {
+    //     background-color: darken($color: #f9bd6e, $amount: 15%);
+    // }
 }
 
 .btn-banner--security {
     background-color: #0c713f;
     border: none;
 
-    &:hover, &:active {
-        background-color: lighten($color: #0c713f, $amount: 15%);
-    }
+    // &:hover, &:active {
+    //     background-color: lighten($color: #0c713f, $amount: 15%);
+    // }
 }
 
 .btn-banner--unionmed {
     background-color: #4f7853;
     border: none;
 
-    &:hover, &:active {
-        background-color: lighten($color: #4f7853, $amount: 15%);
-    }
+    // &:hover, &:active {
+    //     background-color: lighten($color: #4f7853, $amount: 15%);
+    // }
 }
 
 .btn-banner--center {
     background-color: #0F7290;
     border: none;
 
-    &:hover, &:active {
-        background-color: lighten($color: #0F7290, $amount: 15%);
-    }
+    // &:hover, &:active {
+    //     background-color: lighten($color: #0F7290, $amount: 15%);
+    // }
 }
 
 .btn-banner--school {
     background-color: #3b80a7;
     border: none;
 
-    &:hover, &:active {
-        background-color: lighten($color: #3b80a7, $amount: 15%);
-    }
+    // &:hover, &:active {
+    //     background-color: lighten($color: #3b80a7, $amount: 15%);
+    // }
 }
 
 .btn-submit {
@@ -173,9 +173,9 @@
 
     transition: 0.2s ease-in;
 
-    &:hover, &:active {
-        background-color: lighten($color: #375a64, $amount: 15%);
-    }
+    // &:hover, &:active {
+    //     background-color: lighten($color: #375a64, $amount: 15%);
+    // }
 
     @media (max-width: 1023px) {
         height: 32px;
@@ -211,7 +211,7 @@
     transition: 0.2s ease-in;
 
     &:hover, &:active {
-        background-color: lighten($color: #223642, $amount: 15%);
+        // background-color: lighten($color: #223642, $amount: 15%);
         color: var(--color-white);
     }
 
@@ -261,7 +261,7 @@
     max-width: 273px;
 
     &:hover, &:active {
-        background-color: lighten($color: #3b80a7, $amount: 15%);
+        // background-color: lighten($color: #3b80a7, $amount: 15%);
     }
 
     @media (max-width: 1660px) {

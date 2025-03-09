@@ -15,6 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  if(asideMenu) {
+
+
   asideMenu.addEventListener('click', function (e) {
     if (e.target === e.currentTarget) {
       asideMenuBlock.classList.remove('aside-menu-large');
@@ -70,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
-
+}
   //TELEPHONE MASK
   const inputsPhone = document.querySelectorAll('.phone');
   const mask = new Inputmask('+7 (999) 999-99-99');
@@ -99,8 +102,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
   }
-
-
 
   //FIELDSET
   'use strict';
@@ -143,6 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const dropFileZone = document.querySelector(".form-fieldset");
   const dropFileButton = document.querySelector(".inputfile");
 
+  if(dropFileZone) {
   ["dragover", "drop"].forEach(function (event) {
     document.addEventListener(event, function (evt) {
       evt.preventDefault();
@@ -174,6 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
       dropFileZone.getElementsByTagName("span")[0].innerHTML = file.name;
     }
   });
+}
 
   //MODAL
   const modalFramesOpen = document.querySelectorAll('[data-modal-button]');
@@ -350,11 +353,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (windowWidth <= 1300 && swiperContainerVariants && !specificSwiperVariants) {
       specificSwiperVariants = new Swiper(".variants-slider", {
-        slidesPerView: 3,
+        slidesPerView: 2.5,
         spaceBetween: 16,
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 16,
+          },
+          920: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 2.5,
+          },
         },
       });
     }
@@ -597,6 +612,38 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       1664: {
         spaceBetween: 44,
+      },
+    },
+  });
+  /************************************* */
+  // OTHER SERVICES slider
+
+  const swiperOtherServ = new Swiper('.other-services-slider', {
+    // Optional parameters
+    slidesPerView: 3,
+    spaceBetween: 16,
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '#slider-next-serv',
+      prevEl: '#slider-prev-serv',
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      920: {
+        slidesPerView: 2,
+      },
+      1301: {
+        slidesPerView: 3,
       },
     },
   });
@@ -934,7 +981,10 @@ const menuOpenClass = "open";
 let media = { "md": 768, "lg": 992, "xl": 1200 };
 
 const siteHeader = document.querySelector('.header');
+if (siteHeader) {
+
 const siteHeaderHeight = siteHeader.offsetHeight;
+
 
 document.body.addEventListener("scroll", () => {
 
@@ -965,6 +1015,7 @@ document.body.addEventListener("scroll", () => {
 
   }
 }, false);
+}
 
 const balloonItem = document.querySelectorAll(".balloons-item");
 

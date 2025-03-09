@@ -1,0 +1,74 @@
+.activities-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    @media (max-width: 1300px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    @media (max-width: 767px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 8px;
+    }
+}
+
+.activities-card {
+    display: flex;
+    align-items: center;
+    background-color: var(--light-grey);
+    border-radius: 12px;
+    padding: 24px;
+    gap: 16px;
+
+    @media (max-width: 1023px) {
+        padding: 16px;
+        gap: 8px;
+    }
+
+    @media (max-width: 767px) {
+        max-width: 312px;
+        gap: 16px;
+    }
+}
+
+.activities-card__img {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    @media (max-width: 920px) {
+        width: 72px;
+        height: 72px;
+    }
+
+    @media (max-width: 767px) {
+        // width: 40px;
+        // height: 40px;
+    }
+}
+
+.activities-card__title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.29;
+    font-variant: all-small-caps;
+    color: var(--primary);
+
+    @media (max-width: 1023px) {
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    @media (max-width: 920px) {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+}
