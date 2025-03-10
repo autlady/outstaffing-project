@@ -3,7 +3,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 
-    @media (max-width: 1300px) {
+    @media (max-width: 1600px) {
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
     }
@@ -22,7 +22,7 @@
     padding: 24px;
     gap: 16px;
 
-    @media (max-width: 1023px) {
+    @media (max-width: 1100px) {
         padding: 16px;
         gap: 8px;
     }
@@ -30,6 +30,11 @@
     @media (max-width: 767px) {
         max-width: 312px;
         gap: 16px;
+    }
+
+    @media (max-width: 525px) {
+        max-width: unset;
+        width: 100%;
     }
 }
 
@@ -48,11 +53,6 @@
         width: 72px;
         height: 72px;
     }
-
-    @media (max-width: 767px) {
-        // width: 40px;
-        // height: 40px;
-    }
 }
 
 .activities-card__title {
@@ -62,7 +62,7 @@
     font-variant: all-small-caps;
     color: var(--primary);
 
-    @media (max-width: 1023px) {
+    @media (max-width: 1100px) {
         font-size: 24px;
         line-height: normal;
     }

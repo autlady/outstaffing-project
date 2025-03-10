@@ -1,3 +1,7 @@
+.typography {
+    padding-bottom: 60px;
+}
+
 .title1 {
     font-family: var(--second-family);
     font-weight: 600;
@@ -7,6 +11,7 @@
 }
 
 .title2 {
+    margin-bottom: 40px;
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 40px;
@@ -14,10 +19,12 @@
 
     @media (max-width: 1023px) {
         font-size: 32px;
+        margin-bottom: 32px;
     }
 
     @media (max-width: 767px) {
         font-size: 24px;
+        margin-bottom: 24px;
     }
 }
 

@@ -1,19 +1,18 @@
 // OTHER SERVICES
-section.other-services
-    .container
-        // OTHER SERVICES TITLE
-        .other-services__title
-            h2.title2 Возможно вас заинтересует
+section.other-services.none
+    // OTHER SERVICES TITLE
+    h2.title2 Возможно вас заинтересует
+    .special-slider-wrapper
+        // slider controls
+        .other-services-slider-controls
+            button.slider-prev-xs#slider-prev-serv
+                svg.svg-prev
+                    use(href="./img/spriteSvg.svg#svg-prev")
+            button.slider-next-xs#slider-next-serv
+                svg.svg-next
+                    use(href="./img/spriteSvg.svg#svg-next")
         // slider
         .swiper.other-services-slider
-            // slider controls
-            .other-services-slider-controls
-                button.slider-prev-xs#slider-prev-serv
-                    svg.svg-prev
-                        use(href="./img/spriteSvg.svg#svg-prev")
-                button.slider-next-xs#slider-next-serv
-                    svg.svg-next
-                        use(href="./img/spriteSvg.svg#svg-next")
             .swiper-wrapper
                 // slide
                 .swiper-slide

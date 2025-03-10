@@ -4,17 +4,22 @@ block variables
 	-var title = "Шаблоны";
 
 block content
-	include ../sections/typography.pug
-	include ../blocks/breadcrumbs.pug
-	include ../blocks/anchor-block.pug
-	include ../sections/articles.pug
-	include ../sections/thesises.pug
-	include ../blocks/contents.pug
-	include ../blocks/download-docs.pug
-	include ../blocks/catalog-docs.pug
-	include ../blocks/doc-banner.pug
-	include ../sections/services.pug
-	include ../sections/variants.pug
-	include ../sections/result.pug
-	include ../sections/other-services.pug
-	include ../sections/activities.pug
+	include ../sections/header.pug
+	main
+		.white-wrapper
+			include ../blocks/breadcrumbs.pug
+			include ../sections/typography.pug
+			include ../blocks/anchor-block.pug
+			include ../sections/articles.pug
+			include ../sections/thesises.pug
+			include ../blocks/contents.pug
+			include ../blocks/download-docs.pug
+			include ../blocks/catalog-docs.pug
+			include ../blocks/doc-banner.pug
+			include ../sections/services.pug
+			include ../sections/variants.pug
+			include ../sections/result.pug
+			include ../sections/other-services.pug
+			include ../sections/privileges.pug
+			include ../sections/activities.pug
+	include ../sections/footer.pug

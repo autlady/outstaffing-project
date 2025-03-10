@@ -1,3 +1,7 @@
+.variants {
+    padding-bottom: 60px;
+}
+
 .variants__title {
     margin-bottom: 40px;
 
@@ -12,14 +16,23 @@
 
 .variants-slider .swiper-slide {
     display: flex;
-    
+    justify-content: center;
+
     @media (min-width: 1301px) {
         width: auto!important;
         margin-right: 0!important;
     }
 
     @media (max-width: 1300px) {
+        width: 340px!important;
         height: unset;
+    }
+
+    @media (max-width: 375px) {
+        width: 280px!important;
+    }
+    @media (max-width: 374px) {
+        width: 230px!important;
     }
 }
 

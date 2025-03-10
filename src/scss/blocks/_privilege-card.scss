@@ -1,0 +1,61 @@
+.privilege-card {
+    padding: 24px;
+    border-radius: 12px;
+    background-color: var(--light-grey);
+
+    .title3 {
+        color: var(--primary);
+    }
+
+    @media (max-width: 767px) {
+        width: 100%;
+        padding: 16px;
+    }
+}
+
+.privilege-card-top {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+
+    @media (max-width: 767px) {
+        column-gap: 7px;
+        margin-bottom: 8px;
+    }
+}
+
+.privilege-card__img {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+
+    svg {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    @media (max-width: 1660px) {
+        width: 52px;
+        height: 52px;
+    }
+    @media (max-width: 767px) {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.privilege-card__text {
+    font-size: 24px;
+    line-height: 1.33;
+    color: var(--dark-grey);
+
+    @media (max-width: 1199px) {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}

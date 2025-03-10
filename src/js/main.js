@@ -353,23 +353,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (windowWidth <= 1300 && swiperContainerVariants && !specificSwiperVariants) {
       specificSwiperVariants = new Swiper(".variants-slider", {
-        slidesPerView: 2.5,
+        slidesPerView: 'auto',
         spaceBetween: 16,
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
-        },
-        breakpoints: {
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 16,
-          },
-          920: {
-            slidesPerView: 2,
-          },
-          1024: {
-            slidesPerView: 2.5,
-          },
         },
       });
     }
@@ -522,6 +510,66 @@ document.addEventListener("DOMContentLoaded", function () {
 
   initSpecificSwiperAdv();
   window.addEventListener("resize", initSpecificSwiperAdv);
+
+  /************************************* */
+
+  // PRIVILAGES4 SLIDER
+
+  let specificSwiperPriv4 = null;
+
+  function initSpecificSwiperPriv4() {
+    const windowWidth = window.innerWidth;
+    const swiperContainerPriv4 = document.querySelector(".privileges4-slider");
+
+    if (windowWidth <= 767 && swiperContainerPriv4 && !specificSwiperPriv4) {
+      specificSwiperAdv = new Swiper(".privileges4-slider", {
+        slidesPerView: 1,
+        spaceBetween: 16,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    }
+
+    if (windowWidth > 767 && specificSwiperPriv4) {
+      specificSwiperPriv4.destroy(true, true);
+      specificSwiperPriv4 = null;
+    }
+  }
+
+  initSpecificSwiperPriv4();
+  window.addEventListener("resize", initSpecificSwiperPriv4);
+  /************************************* */
+  /************************************* */
+
+  // PRIVILAGES3 SLIDER
+
+  let specificSwiperPriv3 = null;
+
+  function initSpecificSwiperPriv3() {
+    const windowWidth = window.innerWidth;
+    const swiperContainerPriv3 = document.querySelector(".privileges3-slider");
+
+    if (windowWidth <= 767 && swiperContainerPriv3 && !specificSwiperPriv3) {
+      specificSwiperPriv3 = new Swiper(".privileges3-slider", {
+        slidesPerView: 1,
+        spaceBetween: 16,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    }
+
+    if (windowWidth > 767 && specificSwiperPriv3) {
+      specificSwiperPriv3.destroy(true, true);
+      specificSwiperPriv3 = null;
+    }
+  }
+
+  initSpecificSwiperPriv3();
+  window.addEventListener("resize", initSpecificSwiperPriv3);
   /************************************* */
 
   // GUIDE SLIDER
@@ -639,7 +687,7 @@ document.addEventListener("DOMContentLoaded", function () {
       320: {
         slidesPerView: 1,
       },
-      920: {
+      768: {
         slidesPerView: 2,
       },
       1301: {

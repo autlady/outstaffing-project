@@ -1,7 +1,4 @@
 .anchor-block {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: var(--dark-blue);
     width: 400px;
     height: 100px;
@@ -38,7 +35,7 @@
         color: var(--color-white);
     }
 
-    @media (max-width: 1023px) {
+    @media (max-width: 1200px) {
         font-size: 16px;
         line-height: 1.5;
     }

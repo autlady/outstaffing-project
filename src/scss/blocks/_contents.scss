@@ -1,9 +1,5 @@
-.contents__title {
-    margin-bottom: 40px;
-
-    @media (max-width: 1023px) {
-        margin-bottom: 32px;
-    }
+.contents {
+    padding-bottom: 60px;
 }
 
 .contents__list li a {
