@@ -318,6 +318,25 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  // ACCORDEON
+  const accordeonTitle = document.querySelectorAll('[data-name="accordeon-title"]');
+
+  if (accordeonTitle) {
+    accordeonTitle.forEach(function (item) {
+      item.addEventListener('click', showAccordeon);
+    });
+  }
+
+  function showAccordeon() {
+    this.classList.toggle('show');
+    let loock = this.nextElementSibling;
+    if (loock.style.height){
+    loock.style.height = null;
+    } else {
+        loock.style.height = loock.scrollHeight + "px";
+    }
+  }
+
   // BENEFITS SLIDER
   let specificSwiperBen = null;
   function initSpecificSwiperBen() {

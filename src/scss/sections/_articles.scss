@@ -52,6 +52,11 @@
         color: var(--primary);
         flex-shrink: 0;
         cursor: pointer;
+
+        @media (max-width: 1023px) {
+            font-size: 18px;
+            line-height: normal;
+        }
     }
 
     .real-radio:checked + .category-label {
@@ -91,5 +96,12 @@
 
     @media (max-width: 767px) {
         margin-top: 24px;
+    }
+}
+
+.categories-labels.categories-labels-wrap {
+    @media (max-width: 1023px) {
+        flex-wrap: wrap;
+
     }
 }

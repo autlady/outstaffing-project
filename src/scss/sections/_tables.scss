@@ -1,0 +1,128 @@
+.table-col2, .table-col3 {
+    width: 100%;
+    margin-bottom: 60px;
+
+    @media (max-width: 1023px) {
+        width: unset;
+        overflow: hidden;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+}
+
+.table-col2-head, .table-col3-head {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 16px;
+
+    @media (max-width: 1023px) {
+        margin-bottom: 8px;
+        column-gap: 8px;
+    }
+}
+
+.table-col2-head__sell, .table-col3-head__sell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 24px;
+    padding-inline: 15px;
+    width: 50%;
+    border-radius: 12px;
+    background-color: var(--primary);
+
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    color: var(--white);
+
+    @media (max-width: 1023px) {
+        font-size: 20px;
+        padding-block: 16px;
+    }
+}
+
+.table-col3-head__sell {
+    width: 33.3%;
+}
+
+.table-col2-row, .table-col3-row {
+    display: flex;
+    column-gap: 16px;
+    width: 100%;
+    justify-content: space-between;
+
+    @media (max-width: 1023px) {
+        column-gap: 8px;
+    }
+}
+
+.table-col2-row + .table-col2-row {
+    margin-top: 16px;
+
+    @media (max-width: 1023px) {
+        margin-top: 8px;
+    }
+}
+
+.table-col3-row + .table-col3-row {
+    margin-top: 16px;
+
+    @media (max-width: 1023px) {
+        margin-top: 8px;
+    }
+}
+
+.table-col2-row__sell, .table-col3-row__sell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 24px;
+    border-radius: 12px;
+    width: 50%;
+    font-size: 24px;
+    line-height: 1.33;
+    color: var(--dark-blue);
+    text-align: center;
+
+    @media (max-width: 1023px) {
+        padding: 8px 16px;
+        font-size: 20px;
+        line-height: 1.4;
+    }
+}
+
+.table-col2-row:nth-child(2n) {
+    .table-col2-row__sell {
+        background: var(--light-grey);
+    }
+}
+
+.table-col3-row:nth-child(2n) {
+    .table-col3-row__sell {
+        background: var(--light-grey);
+    }
+}
+
+.table-col3-row__sell ul {
+    width: 100%;
+    margin: 0;
+}
+
+
+.table-col3-row__sell ul li {
+    text-align: center;
+}
+
+.table-col3-row__sell ul li:not(:last-child) {
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(193, 193, 193, 0.5);
+}
+
+.table-col3-row__sell ul li:last-child {
+    padding-top: 8px;
+}
+
+
