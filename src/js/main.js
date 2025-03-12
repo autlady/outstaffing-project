@@ -590,6 +590,66 @@ document.addEventListener("DOMContentLoaded", function () {
   initSpecificSwiperPriv3();
   window.addEventListener("resize", initSpecificSwiperPriv3);
   /************************************* */
+  /************************************* */
+
+  // TOP PROJECTS SLIDER
+
+  let specificSwiperTP = null;
+
+  function initSpecificSwiperTP() {
+    const windowWidth = window.innerWidth;
+    const swiperContainerTP = document.querySelector(".top-projects-slider");
+
+    if (windowWidth <= 767 && swiperContainerTP && !specificSwiperTP) {
+      specificSwiperTP = new Swiper(".top-projects-slider", {
+        slidesPerView: 1,
+        spaceBetween: 16,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    }
+
+    if (windowWidth > 767 && specificSwiperTP) {
+      specificSwiperTP.destroy(true, true);
+      specificSwiperTP = null;
+    }
+  }
+
+  initSpecificSwiperTP();
+  window.addEventListener("resize", initSpecificSwiperTP);
+  /************************************* */
+  /************************************* */
+
+  // MED BLOCK SLIDER
+
+  let specificSwiperMED = null;
+
+  function initSpecificSwiperMED() {
+    const windowWidth = window.innerWidth;
+    const swiperContainerMED = document.querySelector(".med-block-slider");
+
+    if (windowWidth <= 767 && swiperContainerMED && !specificSwiperMED) {
+      specificSwiperMED = new Swiper(".med-block-slider", {
+        slidesPerView: 1,
+        spaceBetween: 16,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    }
+
+    if (windowWidth > 767 && specificSwiperMED) {
+      specificSwiperMED.destroy(true, true);
+      specificSwiperMED = null;
+    }
+  }
+
+  initSpecificSwiperMED();
+  window.addEventListener("resize", initSpecificSwiperMED);
+  /************************************* */
 
   // GUIDE SLIDER
   let specificSwiperGuide = null;

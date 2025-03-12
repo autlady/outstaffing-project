@@ -13,4 +13,42 @@ section.top-projects
         label.category-label-wrapper
             input(name="project-category" type="radio" class="real-radio")
             span.category-label Медицинский центр
-    h3.title3 Охрана труда
+    // TOP PROJECTS BLOCK
+    .top-projects-block
+        h3.title3 Охрана труда
+        // SLIDER
+        .swiper.top-projects-slider
+            .swiper-wrapper
+                .swiper-slide
+                    +project-bg('project01', 'ООО «ГСП-7» (Газстройпром)', 'Обучение > 5 000 слушателей ежегодно <br> СОУТ > 2 500 рабочих мест')
+                .swiper-slide
+                    +project-bg('project02', 'ООО Торговый дом «Реалъ»', 'Аутсорсинг охраны труда на предприятии с численностью > 1 500 человек с 2020 года')
+                .swiper-slide
+                    +project-bg('project03', 'Образовательные учреждения Невского района Санкт-Петербурга', 'СОУТ > 8 000 рабочих мест <br> ОПР > 5 000 рабочих мест')
+                .swiper-slide
+                    +project-bg('project04', 'АО «Газпром шельфпроект»', 'СОУТ > 500 рабочих мест <br> ОПР > 600 рабочих мест')
+                .swiper-slide
+                    +project-bg('project05', 'ГУП «Водоканал Ленинградской области»', 'Медицинские осмотры > 5 000 человек ежегодно')
+                .swiper-slide
+                    +project-bg('project03', 'Образовательные учреждения Невского района Санкт-Петербурга', 'СОУТ > 8 000 рабочих мест <br> ОПР > 5 000 рабочих мест')
+            .swiper-pagination
+
+    // PROJECTS BLOCK
+    .med-block
+        h3.title3 Медицинский центр
+        // SLIDER
+        .swiper.med-block-slider
+            .swiper-wrapper
+                .swiper-slide
+                    +project-bg('project06', 'АО «Метрострой Северной Столицы»', 'Медицинские осмотры > 2 300 человек ежегодно')
+                .swiper-slide
+                    +project-bg('project04', 'АО «Газпром шельфпроект»', 'СОУТ > 500 рабочих мест')
+                .swiper-slide
+                    +project-bg('project07', 'ООО «АПТЕКИ НЕВИС»', 'Медицинские осмотры <br> > 800 человек ежегодно')
+                .swiper-slide
+                    +project-bg('project03', 'Образовательные учреждения Невского района Санкт-Петербурга', 'СОУТ > 8 000 рабочих мест <br> ОПР > 5 000 рабочих мест')
+                .swiper-slide
+                    +project-bg('project02', 'ООО Торговый дом «Реалъ»', 'Аутсорсинг охраны труда на предприятии с численностью > 1 500 человек с 2020 года')
+                .swiper-slide
+                    +project-bg('project04', 'АО «Газпром шельфпроект»', 'СОУТ > 8 000 рабочих мест <br> ОПР > 5 000 рабочих мест')
+            .swiper-pagination
