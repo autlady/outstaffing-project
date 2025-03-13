@@ -1,0 +1,39 @@
+.slider-sout-block
+    h2.title2 Статьи по теме СОУТ
+    .special-slider-wrapper
+        // slider controls
+        .sout-slider-controls
+            button.slider-prev-xs#slider-prev-sout
+                svg.svg-prev
+                    use(href="./img/spriteSvg.svg#svg-prev")
+            button.slider-next-xs#slider-next-sout
+                svg.svg-next
+                    use(href="./img/spriteSvg.svg#svg-next")
+        // SOUT slider
+        .swiper.sout-slider
+            .swiper-wrapper
+                //slide
+                .swiper-slide
+                    +article-bg("article01", "Отменяются ли льготы и компенсации при истечении срока действия СОУТ?", "27.11.2024")
+                //slide
+                .swiper-slide
+                    +article-bg("article01", "Отменяются ли льготы и компенсации при истечении срока действия СОУТ?", "27.11.2024")
+                //slide
+                .swiper-slide
+                    +article-bg("article01", "Отменяются ли льготы и компенсации при истечении срока действия СОУТ?", "27.11.2024")
+                //slide
+                .swiper-slide
+                    +article-bg("article01", "Отменяются ли льготы и компенсации при истечении срока действия СОУТ?", "27.11.2024")
+                //slide
+                .swiper-slide
+                    +article-bg("article01", "Отменяются ли льготы и компенсации при истечении срока действия СОУТ?", "27.11.2024")
+                //slide
+                .swiper-slide
+                    +article-bg("article01", "Отменяются ли льготы и компенсации при истечении срока действия СОУТ?", "27.11.2024")
+            // pagination
+            .swiper-pagination
+        // link
+        .sout-link-wrapper
+            a(href="#!").arrow-link Cмотреть все
+                svg.svg-arrow-right
+                    use(href="./img/spriteSvg.svg#svg-arrow-right")

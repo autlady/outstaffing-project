@@ -1,0 +1,51 @@
+.review-block
+    h2.title2 Отзывы
+    .special-slider-wrapper
+        // slider controls
+        .rev-slider-controls
+            button.slider-prev-xs#slider-prev-rev
+                svg.svg-prev
+                    use(href="./img/spriteSvg.svg#svg-prev")
+            button.slider-next-xs#slider-next-rev
+                svg.svg-next
+                    use(href="./img/spriteSvg.svg#svg-next")
+        // Project slider
+        .swiper.rev-slider
+            .swiper-wrapper
+                //slide
+                .swiper-slide
+                    .review-img(data-modal-button="photo-modal")
+                        picture
+                            source(srcset="./img/reviews/review01@2x.webp" media="(min-resolution: 192dpi)" width="609" height="430")
+                            img(src="./img/reviews/review01.webp" width="609" height="430" alt="review" loading="lazy")
+                //slide
+                .swiper-slide
+                    .review-img(data-modal-button="photo-modal")
+                        picture
+                            source(srcset="./img/reviews/review02@2x.webp" media="(min-resolution: 192dpi)" width="609" height="430")
+                            img(src="./img/reviews/review02.webp" width="609" height="430" alt="review" loading="lazy")
+                //slide
+                .swiper-slide
+                    .review-img(data-modal-button="photo-modal")
+                        picture
+                            source(srcset="./img/reviews/review03@2x.webp" media="(min-resolution: 192dpi)" width="609" height="430")
+                            img(src="./img/reviews/review03.webp" width="609" height="430" alt="review" loading="lazy")
+                //slide
+                .swiper-slide
+                    .review-img(data-modal-button="photo-modal")
+                        picture
+                            source(srcset="./img/reviews/review01@2x.webp" media="(min-resolution: 192dpi)" width="609" height="430")
+                            img(src="./img/reviews/review01.webp" width="609" height="430" alt="review" loading="lazy")
+                //slide
+                .swiper-slide
+                    .review-img(data-modal-button="photo-modal")
+                        picture
+                            source(srcset="./img/reviews/review02@2x.webp" media="(min-resolution: 192dpi)" width="609" height="430")
+                            img(src="./img/reviews/review02.webp" width="609" height="430" alt="review" loading="lazy")
+            // pagination
+            .swiper-pagination
+        // link
+        .rev-link-wrapper
+            a(href="#!").arrow-link Cмотреть все
+                svg.svg-arrow-right
+                    use(href="./img/spriteSvg.svg#svg-arrow-right")

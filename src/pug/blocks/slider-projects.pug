@@ -1,0 +1,40 @@
+// TOP PROJECTS BLOCK
+.projects-block
+    h2.title2 Топ проекты
+    .special-slider-wrapper
+        // slider controls
+        .project-slider-controls
+            button.slider-prev-xs#slider-prev-pr
+                svg.svg-prev
+                    use(href="./img/spriteSvg.svg#svg-prev")
+            button.slider-next-xs#slider-next-pr
+                svg.svg-next
+                    use(href="./img/spriteSvg.svg#svg-next")
+        // Project slider
+        .swiper.project-slider
+            .swiper-wrapper
+                //slide
+                .swiper-slide
+                    +project-bg('project01', 'ООО «ГСП-7» (Газстройпром)', 'Обучение > 5 000 слушателей ежегодно <br> СОУТ > 2 500 рабочих мест')
+                //slide
+                .swiper-slide
+                    +project-bg('project01', 'ООО «ГСП-7» (Газстройпром)', 'Обучение > 5 000 слушателей ежегодно <br> СОУТ > 2 500 рабочих мест')
+                //slide
+                .swiper-slide
+                    +project-bg('project01', 'ООО «ГСП-7» (Газстройпром)', 'Обучение > 5 000 слушателей ежегодно <br> СОУТ > 2 500 рабочих мест')
+                //slide
+                .swiper-slide
+                    +project-bg('project01', 'ООО «ГСП-7» (Газстройпром)', 'Обучение > 5 000 слушателей ежегодно <br> СОУТ > 2 500 рабочих мест')
+                //slide
+                .swiper-slide
+                    +project-bg('project01', 'ООО «ГСП-7» (Газстройпром)', 'Обучение > 5 000 слушателей ежегодно <br> СОУТ > 2 500 рабочих мест')
+                //slide
+                .swiper-slide
+                    +project-bg('project01', 'ООО «ГСП-7» (Газстройпром)', 'Обучение > 5 000 слушателей ежегодно <br> СОУТ > 2 500 рабочих мест')
+            // pagination
+            .swiper-pagination
+        // link
+        .project-link-wrapper
+            a(href="#!").arrow-link Cмотреть все
+                svg.svg-arrow-right
+                    use(href="./img/spriteSvg.svg#svg-arrow-right")

@@ -608,6 +608,14 @@ document.addEventListener("DOMContentLoaded", function () {
           el: ".swiper-pagination",
           clickable: true,
         },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+          },
+          650: {
+            slidesPerView: 2,
+          },
+        },
       });
     }
 
@@ -638,6 +646,14 @@ document.addEventListener("DOMContentLoaded", function () {
           el: ".swiper-pagination",
           clickable: true,
         },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+          },
+          650: {
+            slidesPerView: 2,
+          },
+        },
       });
     }
 
@@ -649,6 +665,182 @@ document.addEventListener("DOMContentLoaded", function () {
 
   initSpecificSwiperMED();
   window.addEventListener("resize", initSpecificSwiperMED);
+
+  /************************************* */
+  // LICENSE MED SLIDER
+
+  let specificSwiperLicMed = null;
+
+  function initSpecificSwiperLicMed() {
+    const windowWidth = window.innerWidth;
+    const swiperContainerLicMed = document.querySelector(".licenses-med-slider");
+
+    if (windowWidth <= 1370 && swiperContainerLicMed && !specificSwiperLicMed) {
+      specificSwiperLicMed = new Swiper(".licenses-med-slider", {
+        slidesPerView: 3,
+        spaceBetween: 24,
+        lazy: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 16,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 16,
+          },
+          860: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+          },
+        },
+      });
+    }
+
+    if (windowWidth > 1370 && specificSwiperLicMed) {
+      specificSwiperLicMed.destroy(true, true);
+      specificSwiperLicMed = null;
+    }
+  }
+
+  initSpecificSwiperLicMed();
+  window.addEventListener("resize", initSpecificSwiperLicMed);
+  /************************************* */
+  /************************************* */
+  // LICENSE EDUC SLIDER
+
+  let specificSwiperLicEd = null;
+
+  function initSpecificSwiperLicEd() {
+    const windowWidth = window.innerWidth;
+    const swiperContainerLicEd = document.querySelector(".licenses-educ-slider");
+
+    if (windowWidth <= 1370 && swiperContainerLicEd && !specificSwiperLicEd) {
+      specificSwiperLicEd = new Swiper(".licenses-educ-slider", {
+        slidesPerView: 3,
+        spaceBetween: 24,
+        lazy: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 16,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 16,
+          },
+          860: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+          },
+        },
+      });
+    }
+
+    if (windowWidth > 1370 && specificSwiperLicEd) {
+      specificSwiperLicEd.destroy(true, true);
+      specificSwiperLicEd = null;
+    }
+  }
+
+  initSpecificSwiperLicEd();
+  window.addEventListener("resize", initSpecificSwiperLicEd);
+  /************************************* */
+  /************************************* */
+  // LICENSE GUARD SLIDER
+
+  let specificSwiperLicGu = null;
+
+  function initSpecificSwiperLicGu() {
+    const windowWidth = window.innerWidth;
+    const swiperContainerLicGu = document.querySelector(".licenses-guard-slider");
+
+    if (windowWidth <= 1370 && swiperContainerLicGu && !specificSwiperLicGu) {
+      specificSwiperLicGu = new Swiper(".licenses-guard-slider", {
+        slidesPerView: 3,
+        spaceBetween: 24,
+        lazy: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 16,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 16,
+          },
+          860: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+          },
+        },
+      });
+    }
+
+    if (windowWidth > 1370 && specificSwiperLicGu) {
+      specificSwiperLicGu.destroy(true, true);
+      specificSwiperLicGu = null;
+    }
+  }
+
+  initSpecificSwiperLicGu();
+  window.addEventListener("resize", initSpecificSwiperLicGu);
+  /************************************* */
+  /************************************* */
+  // LICENSE AUTSTAFF SLIDER
+
+  let specificSwiperLicAut = null;
+
+  function initSpecificSwiperLicAut() {
+    const windowWidth = window.innerWidth;
+    const swiperContainerLicAut = document.querySelector(".licenses-aut-slider");
+
+    if (windowWidth <= 1370 && swiperContainerLicAut && !specificSwiperLicAut) {
+      specificSwiperLicAut = new Swiper(".licenses-aut-slider", {
+        slidesPerView: 3,
+        spaceBetween: 24,
+        lazy: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 16,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 16,
+          },
+          860: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+          },
+        },
+      });
+    }
+
+    if (windowWidth > 1370 && specificSwiperLicAut) {
+      specificSwiperLicAut.destroy(true, true);
+      specificSwiperLicAut = null;
+    }
+  }
+
+  initSpecificSwiperLicAut();
+  window.addEventListener("resize", initSpecificSwiperLicAut);
   /************************************* */
 
   // GUIDE SLIDER
@@ -770,6 +962,104 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesPerView: 2,
       },
       1301: {
+        slidesPerView: 3,
+      },
+    },
+  });
+  /************************************* */
+  // SOUT slider
+
+  const swiperSout = new Swiper('.sout-slider', {
+    // Optional parameters
+    slidesPerView: 3,
+    spaceBetween: 16,
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '#slider-next-sout',
+      prevEl: '#slider-prev-sout',
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      650: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+    },
+  });
+  /************************************* */
+  /************************************* */
+  // PROJECT slider
+
+  const swiperProj = new Swiper('.project-slider', {
+    // Optional parameters
+    slidesPerView: 3,
+    spaceBetween: 16,
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '#slider-next-pr',
+      prevEl: '#slider-prev-pr',
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      650: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+    },
+  });
+  /************************************* */
+  /************************************* */
+  // Review slider
+
+  const swiperRev = new Swiper('.rev-slider', {
+    // Optional parameters
+    slidesPerView: 3,
+    spaceBetween: 16,
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '#slider-next-rev',
+      prevEl: '#slider-prev-rev',
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      650: {
+        slidesPerView: 2,
+      },
+      768: {
         slidesPerView: 3,
       },
     },

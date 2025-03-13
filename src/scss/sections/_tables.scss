@@ -7,7 +7,7 @@
     margin-bottom: 60px;
 
     @media (max-width: 525px) {
-        width: calc(50vw + 50%);
+        width: 82vw;
         overflow: hidden;
         overflow-x: auto;
         scrollbar-width: none;
@@ -25,13 +25,21 @@
         margin-bottom: 8px;
         column-gap: 8px;
     }
-        @media (max-width: 525px) {
-            justify-content: flex-start;
-            width: 500px;
-    }
 }
 
+.table-col2-head, .table-col2-row {
+    @media (max-width: 525px) {
+        justify-content: flex-start;
+        width: 410px;
+}
+}
 
+.table-col3-head, .table-col3-row {
+    @media (max-width: 525px) {
+        justify-content: flex-start;
+        width: 620px;
+}
+}
 
 .table-col2-head__sell, .table-col3-head__sell {
     display: flex;
@@ -52,18 +60,10 @@
         font-size: 20px;
         padding-block: 16px;
     }
-
-    // @media (max-width: 500px) {
-    //     width: 180px;
-    //  }
 }
 
 .table-col3-head__sell {
     width: 33.3%;
-
-    // @media (max-width: 500px) {
-    //     width: 180px;
-    //  }
 }
 
 .table-col2-row, .table-col3-row {
@@ -77,12 +77,6 @@
     }
 }
 
-.table-col2-row, .table-col3-row {
-    @media (max-width: 525px) {
-        justify-content: flex-start;
-        width: 550px;
-}
-}
 
 .table-col2-row + .table-col2-row {
     margin-top: 16px;
@@ -117,10 +111,6 @@
         font-size: 20px;
         line-height: 1.4;
     }
-
-    // @media (max-width: 500px) {
-    //     width: 180px;
-    //  }
 }
 
 .table-col2-row:nth-child(2n) {
