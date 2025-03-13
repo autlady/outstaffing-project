@@ -21,13 +21,6 @@
 .project-slider .swiper-slide {
     display: flex;
     justify-content: center;
-
-    @media (max-width: 375px) {
-        width: 272px!important;
-    }
-    @media (max-width: 374px) {
-        width: 230px!important;
-    }
 }
 
 .rev-slider .swiper-slide {
@@ -40,14 +33,4 @@
         width: 272px!important;
         height: 400px!important;
     }
-}
-
-.sout-slider .swiper-slide .article-bg-card,
-.project-slider .swiper-slide .project-card {
-    // @media (max-width: 375px) {
-    //     width: 272px!important;
-    // }
-    // @media (max-width: 374px) {
-    //     width: 230px!important;
-    // }
 }

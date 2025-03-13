@@ -988,6 +988,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     breakpoints: {
       320: {
+        slidesPerView: 1.1,
+      },
+      380: {
         slidesPerView: 1,
       },
       650: {
@@ -1021,6 +1024,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     breakpoints: {
       320: {
+        slidesPerView: 1.1,
+      },
+      380: {
         slidesPerView: 1,
       },
       650: {
@@ -1054,6 +1060,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     breakpoints: {
       320: {
+        slidesPerView: 1.1,
+      },
+      380: {
         slidesPerView: 1,
       },
       650: {
