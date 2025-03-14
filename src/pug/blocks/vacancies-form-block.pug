@@ -1,0 +1,39 @@
+// VACANCIES FORM BLOCK
+.vacancies-form-block
+    .vacancies-form-wrapper
+        // VACANCIES FORM TEXT
+        .vacancies-form-col
+            .vacancies-form-title
+                h2.title2 Не нашли подходящую вакансию?
+            .vacancies-form-text
+                p Напишите о себе и в каком направлении хотите развиваться. Не забудьте про ссылки на свои проекты, портфолио и аккаунты в социальных сетях - хотим узнать вас поближе.
+        // FORM
+        form(class="vacancies-form")
+            input(type="hidden" name="vacancy" value="vacancy")
+            .form-item-row.form-item-mb8
+                .form-item.vacancies-form-name
+                    input(class="vacancies-form-input" required type="text" name="username" placeholder="ФИО")
+                .form-item.vacancies-form-birthday
+                    input(class="vacancies-form-input" required type="text" name="birthday" placeholder="Дата рождения")
+            .form-item.form-item-mb8
+                input(class="vacancies-form-input" required type="text" name="city" placeholder="Город проживания")
+            .form-item-row.form-item-mb8
+                .form-item.vacancies-form-tel
+                    input(class="vacancies-form-input" required type="tel" name="tel" placeholder="Телефон")
+                .form-item.vacancies-form-mail
+                    input(class="vacancies-form-input" required type="email" name="email" placeholder="Электронная почта")
+            // fieldset
+            fieldset.form-fieldset.form-item-mb8
+                .form-fieldset__content
+                    input(class="inputfile" id="file" type="file" name="selectFile")
+                    label(class="form-label" for="file") Загрузить резюме
+                    span Файл не выбран
+            .form-item.form-item-mb16
+                input(class="vacancies-form-input" required type="text" name="link" placeholder="Ссылка на ваш профиль в соц. сетях или портфолио")
+            .form-item.form-item-mb24
+                label.checkbox
+                    input(type="checkbox" name="privacy").real-checkbox
+                    span.custom-checkbox
+                    span.request-form-privacy Я согласен(a) на обработку персональных данных
+            .form-item.form-item-btn
+                button(type="submit" class="btn-submit") Отправить

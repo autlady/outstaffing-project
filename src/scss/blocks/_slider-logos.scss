@@ -1,0 +1,13 @@
+.logos-slider .swiper-slide {
+    @media (max-width: 767px) {
+        height: 151px !important;
+    }
+}
+
+.logo-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 105px;
+}
+

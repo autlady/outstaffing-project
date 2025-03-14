@@ -318,6 +318,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  // VACANCIES CARDS
+  const vacCards = document.querySelectorAll('.vacancy-card');
+
+for (card of vacCards) {
+    const expandBtn = card.querySelector('.vacancy-card__expand');
+    const topBtns = card.querySelector('.vacancy-card__btns-top');
+    const cardText = card.querySelector('.vacancy-card__hidden');
+    const closeTextBtn = card.querySelector('.vacancy-card__close');
+
+    if (expandBtn) {
+        expandBtn.addEventListener('click', function() {
+            cardText.classList.remove("hidden");
+            topBtns.classList.add("hidden");
+        });
+        closeTextBtn.addEventListener('click', function() {
+            cardText.classList.add("hidden");
+            topBtns.classList.remove("hidden");
+    })
+    }
+}
+
   // ACCORDEON
   const accordeonTitle = document.querySelectorAll('[data-name="accordeon-title"]');
 
@@ -1068,7 +1089,10 @@ document.addEventListener("DOMContentLoaded", function () {
       650: {
         slidesPerView: 2,
       },
-      768: {
+      720: {
+        slidesPerView: 2.5,
+      },
+      920: {
         slidesPerView: 3,
       },
     },
@@ -1100,6 +1124,44 @@ document.addEventListener("DOMContentLoaded", function () {
         grid: {
           rows: 3,
         },
+      },
+
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 16,
+      },
+      1301: {
+        slidesPerView: 5,
+      },
+    },
+  });
+  /************************************* */
+  // LOGOS slider
+
+  const swiperLogos = new Swiper('.logos-slider', {
+    // Optional parameters
+    slidesPerView: 1,
+    spaceBetween: 16,
+    loop: true,
+    lazy: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '#slider-next-logos',
+      prevEl: '#slider-prev-logos',
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1.5,
+      },
+      520: {
+        slidesPerView: 2,
       },
 
       768: {

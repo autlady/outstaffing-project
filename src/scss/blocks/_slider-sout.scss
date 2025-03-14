@@ -1,4 +1,4 @@
-.slider-sout-block, .projects-block, .review-block {
+.slider-sout-block, .projects-block, .review-block, .slider-logos-block {
     padding-bottom: 56px;
     border-bottom: 1px solid var(--grey);
 
@@ -18,18 +18,15 @@
 
 
 .sout-slider .swiper-slide,
-.project-slider .swiper-slide {
-    display: flex;
-    justify-content: center;
-}
-
-.rev-slider .swiper-slide {
+.project-slider .swiper-slide,
+.rev-slider .swiper-slide,
+.logos-slider .swiper-slide {
     display: flex;
     justify-content: center;
 }
 
 .rev-slider .swiper-slide .review-img {
-    @media (max-width: 1023px) {
+    @media (max-width: 1150px) {
         width: 272px!important;
         height: 400px!important;
     }

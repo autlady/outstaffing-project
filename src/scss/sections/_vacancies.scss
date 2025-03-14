@@ -1,0 +1,130 @@
+.vacancies-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.vacancy-card {
+    max-width: 710px;
+    border-radius: 12px;
+    padding: 24px;
+    background-color: var(--light-grey);
+
+    @media (max-width: 1023px) {
+        max-width: 100%;
+    }
+}
+
+.vacancy-card__labels {
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.vacancy-card__title {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.29;
+    font-variant: all-small-caps;
+    color: var(--primary);
+
+    @media (max-width: 1023px) {
+        font-size: 24px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 20px;
+    }
+}
+
+.vacancy-card__label {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 8px 16px;
+    background: var(--white);
+
+    font-size: 24px;
+    color: var(--dark-blue);
+    white-space: nowrap;
+
+    @media (max-width: 1023px) {
+        font-size: 16px;
+    }
+}
+
+.vacancy-card__btns {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        row-gap: 16px;
+        align-items: flex-start;
+    }
+
+    @media (max-width: 525px) {
+        width: 100%;
+        align-items: center;
+        justify-content: stretch;
+    }
+
+    .btn-send {
+        @media (max-width: 525px) {
+            width: 100%;
+        }
+    }
+}
+
+.vacancy-card__expand, .vacancy-card__close {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--grey);
+
+    &:hover {
+        color: var(--dark-blue);
+    }
+}
+
+.vacancy-card__text {
+    padding-top: 24px;
+    font-size: 24px;
+    line-height: 1.33;
+    color: var(--dark-grey);
+
+    p {
+        margin-bottom: 8px;
+    }
+
+    ul {
+        margin-bottom: 24px;
+
+        @media (max-width: 1023px) {
+            margin-bottom: 16px;
+        }
+    }
+
+    li {
+        margin-left: 10px;
+    }
+
+    ul li::before {
+        content: "\2022";
+        color: var(--dark-grey);
+        font-weight: normal;
+        display: inline-block;
+        width: 20px;
+    }
+
+    @media (max-width: 1023px) {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}

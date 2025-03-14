@@ -368,3 +368,45 @@
         font-size: 20px;
     }
 }
+
+.btn-send {
+    display: inline-block;
+
+    padding: 0 16px;
+    height: 56px;
+
+    color: var(--white);
+    background-color: var(--primary);;
+    border: none;
+    border-radius: 12px;
+
+    font-weight: 500;
+    font-size: 24px;
+    font-variant: all-small-caps;
+    text-transform: uppercase;
+    line-height: 56px;
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition: 0.2s ease-in;
+
+    &:hover {
+        background-color: var(--secondary);
+    }
+
+    &:active, &:focus {
+        background-color: #24444d;
+    }
+
+    @media (max-width: 1023px) {
+        height: 45px;
+        line-height: 45px;
+    }
+
+    @media (max-width: 767px) {
+        height: 42px;
+        line-height: 42px;
+        font-size: 20px;
+    }
+}

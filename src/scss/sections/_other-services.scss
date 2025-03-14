@@ -1,7 +1,8 @@
 .other-services,
 .slider-sout-block,
 .projects-block,
-.review-block {
+.review-block,
+.slider-logos-block {
     .special-slider-wrapper {
         @media (max-width: 1300px) {
             padding: 0;
@@ -12,7 +13,8 @@
 .other-services-slider-controls,
 .sout-slider-controls,
 .project-slider-controls,
-.rev-slider-controls {
+.rev-slider-controls,
+.logos-slider-controls {
     .slider-prev-xs, .slider-next-xs {
         top: 40%;
         background-color: var(--primary);
