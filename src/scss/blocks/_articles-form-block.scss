@@ -1,4 +1,4 @@
-.vacancies-form-block {
+.articles-form-block {
     margin-top: 56px;
     background-color: var(--light-grey);
     border-radius: 20px;
@@ -9,7 +9,7 @@
     }
 }
 
-.vacancies-form-title {
+.articles-form-title {
     .title2 {
         text-transform: uppercase;
 
@@ -19,7 +19,7 @@
     }
 }
 
-.vacancies-form-text {
+.articles-form-text {
     font-size: 24px;
     line-height: 1.33;
     color: var(--dark-grey);
@@ -34,7 +34,7 @@
     }
 }
 
-.vacancies-form-wrapper {
+.articles-form-wrapper {
     display: flex;
     column-gap: 72px;
 
@@ -49,11 +49,11 @@
     }
 }
 
-.vacancies-form-col {
+.articles-form-col {
     width: 45%;
     flex-shrink: 0;
 
-    .vacancies-form-title {
+    .articles-form-title {
         @media (max-width: 1324px) {
             text-align: center;
         }
@@ -63,7 +63,7 @@
         }
     }
 
-    .vacancies-form-text {
+    .articles-form-text {
         @media (max-width: 1324px) {
             text-align: center;
         }
@@ -82,7 +82,7 @@
     }
 }
 
-.vacancies-form {
+.articles-form {
     width: 100%;
 
     @media (max-width: 1324px) {
@@ -93,85 +93,6 @@
         width: 100%;
     }
 
-    .form-item-row {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        column-gap: 8px;
-
-        .vacancies-form-name {
-            width: 66%;
-
-            @media (max-width: 525px) {
-                width: 100%;
-            }
-        }
-
-        .vacancies-form-birthday {
-            width: 32%;
-
-            @media (max-width: 525px) {
-                width: 100%;
-            }
-        }
-
-        .vacancies-form-tel {
-            width: 49%;
-
-            @media (max-width: 525px) {
-                width: 100%;
-            }
-        }
-
-        .vacancies-form-mail {
-            width: 49%;
-
-            @media (max-width: 525px) {
-                width: 100%;
-            }
-        }
-
-        @media (max-width: 525px) {
-            flex-direction: column;
-            row-gap: 8px;
-        }
-    }
-
-    .form-fieldset {
-        padding-block: 20px;
-        padding-inline: 16px;
-        border: none;
-        border-radius: 12px;
-        background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill: none; stroke: lightgrey; stroke-width: 2; stroke-dasharray: 16 10'/></svg>");
-
-        .form-label {
-            display: block;
-            padding: 0;
-            border: none;
-            font-size: 20px;
-            line-height: 1.4;
-            text-decoration: underline;
-            text-decoration-skip-ink: none;
-            text-align: right;
-            color: var(--grey);
-            font-family: var(--font-family);
-
-            @media (max-width: 767px) {
-                font-size: 16px;
-            }
-
-        }
-
-        span {
-            font-size: 20px;
-            line-height: 1.4;
-            color: var(--dark-blue);
-
-            @media (max-width: 767px) {
-                font-size: 16px;
-            }
-        }
-    }
 
     .request-form-privacy {
         font-size: 16px;
@@ -230,7 +151,7 @@
     }
 }
 
-.vacancies-form-input {
+.articles-form-input {
     display: block;
     width: 100%;
     height: 60px;
@@ -251,11 +172,36 @@
     }
 }
 
-.vacancies-form-input.invalid {
+.articles-form-input--textarea {
+    height: 160px!important;
+    padding: 16px;
+
+    @media (max-width: 1023px) {
+        height: 120px!important;
+    }
+
+    @media (max-width: 767px) {
+        padding-block: 8px;
+    }
+}
+
+.articles-form-input.invalid {
     border: 1px solid var(--accent-2);
     color: var(--accent-2);
 }
 
-.vacancies-form-input::placeholder {
+.articles-form-input::placeholder {
     color: var(--grey);
+  }
+
+.form-item-mb8 {
+    margin-bottom: 8px;
+  }
+
+.form-item-mb16 {
+    margin-bottom: 16px;
+}
+
+.form-item-mb24 {
+    margin-bottom: 24px;
   }

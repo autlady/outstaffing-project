@@ -110,6 +110,13 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
+textarea {
+  outline: none;
+  resize: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
 main {
   padding-bottom: 113px;
   background-color: var(--bg-color);

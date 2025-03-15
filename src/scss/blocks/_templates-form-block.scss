@@ -1,0 +1,131 @@
+.templates-form-block .section-wrapper {
+    position: relative;
+    padding: 82px 100px 102px 100px;
+    background-color: var(--light-grey);
+
+    @media (max-width: 1023px) {
+        padding-top: 40px;
+        padding-bottom: 56px;
+        margin-inline: -40px;
+    }
+
+    @media (max-width: 767px) {
+        padding-block: 32px;
+        padding-inline: 24px;
+        margin-inline: -16px;
+    }
+}
+
+.templates-form-block .section-wrapper::before {
+    content: "";
+    background-image: url('../img/outstaff/cta-bg.svg');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 43%;
+
+    @media (max-width: 1330px) {
+        display: none;
+    }
+}
+
+.templates-form-block .section-wrapper::after {
+    content: "";
+    background-size: cover;
+    background-image: url('../img/outstaff/cta-bg2.svg');
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 43%;
+
+    @media (max-width: 1330px) {
+        display: none;
+    }
+}
+
+.templates-form-block-row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 209px;
+
+    @media (max-width: 1330px) {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 44px;
+    }
+}
+
+.templates-form-block__col {
+    width: 30%;
+    flex-grow: 1;
+
+    @media (max-width: 1330px) {
+        max-width: 560px;
+        width: 100%;
+    }
+
+}
+
+
+.templates-form-block-content {
+    margin-top: 30px;
+    max-width: 506px;
+    margin-inline: auto;
+
+    @media (max-width: 1471px) {
+        margin-top: 0;
+    }
+
+    @media (max-width: 1330px) {
+        width: 100%;
+        max-width: 560px;
+    }
+}
+
+.templates-form-block__title {
+    text-align: center;
+
+    .title2 {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+
+        @media (max-width: 1330px) {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.templates-form-block__text {
+    font-size: 24px;
+    line-height: 1.33;
+    text-align: center;
+    color: var(--dark-grey);;
+
+    @media (max-width: 1440px) {
+        font-size: 20px;
+    }
+
+    @media (max-width: 1330px) {
+        margin: 0 auto;
+        max-width: 480px;
+    }
+
+    @media (max-width: 767px) {
+        max-width: 100%;
+    }
+}
+
+
+.templates-form-block-wrapper {
+    flex-grow: 1;
+    position: relative;
+    z-index: 3;
+
+    @media (max-width: 1330px) {
+        width: 100%;
+        max-width: 560px;
+    }
+}

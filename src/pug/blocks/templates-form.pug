@@ -1,0 +1,16 @@
+// FORM
+form.templates-form
+    input(type="hidden" name="form" value="form")
+    .templates-form-item.templates-form-item--border.form-item-mb30
+        input(class="templates-form-input" type="text" name="username" placeholder="Александр")
+        span.templates-fake-placeholder Имя
+    .templates-form-item.templates-form-item--border.form-item-tel
+        input(class="templates-form-input phone" type="text" name="username" placeholder="+7()")
+        span.templates-fake-placeholder Номер телефона
+    .templates-form-item
+        label.checkbox
+            input(type="checkbox" name="privacy").real-checkbox
+            span.custom-checkbox
+            span.templates-form-privacy Я согласен(на) на обработку персональных данных
+    .templates-form-item.form-item-btn
+        button(type="submit" class="btn-submit") Оставить заявку

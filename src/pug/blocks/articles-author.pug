@@ -1,0 +1,15 @@
+// ARTICLES AUTHOR
+.articles-author
+    // ARTICLES AUTHOR
+    h3.title3 Автор статьи
+    .author
+        .author__img
+            picture
+                source(srcset="./img/templates/avatar@2x.webp" media="(min-resolution: 192dpi)" width="80" height="80")
+                img(src="./img/templates/avatar.webp" width="80" height="80" alt="partner" loading="lazy")
+        .author__col
+            .author__name Шерстобитова Дарья
+            .author__role Специалист по охране труда ГК Труд
+    include ../blocks/articles-form-block.pug
+
+

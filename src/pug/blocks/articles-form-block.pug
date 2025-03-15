@@ -1,0 +1,26 @@
+// ARTICLES FORM BLOCK
+.articles-form-block
+    .articles-form-wrapper
+        // ARTICLES FORM TEXT
+        .articles-form-col
+            .articles-form-title
+                h2.title2 Вы можете задать свой вопрос автору статьи
+            .articles-form-text
+                p Не нашли ответ на свой вопрос?
+                p Заполните форму обратной связи, и наши специалисты помогут вам. Мы ответим письмом или подготовим новую статью по вашей теме и обязательно сообщим вам об этом!
+        // FORM
+        form(class="articles-form")
+            input(type="hidden" name="question" value="question")
+            .form-item.form-item-mb8
+                input(class="articles-form-input" required type="text" name="username" placeholder="Имя")
+            .form-item.form-item-mb8
+                input(class="articles-form-input" required type="email" name="email" placeholder="Электронная почта")
+            .form-item.form-item-mb16
+                textarea(class="articles-form-input articles-form-input--textarea" type="text" name="message" placeholder="Ваш вопрос")
+            .form-item.form-item-mb24
+                label.checkbox
+                    input(type="checkbox" name="privacy").real-checkbox
+                    span.custom-checkbox
+                    span.request-form-privacy Я согласен(a) на обработку персональных данных
+            .form-item.form-item-btn
+                button(type="submit" class="btn-submit") Отправить
