@@ -1,0 +1,23 @@
+// SOUT
+section.sout
+    .container
+        include ../blocks/fixed-menu.pug
+        .sout-wrapper
+            .sout__bg
+                img(src="./img/templates/sout-bg.svg" alt="logo")
+            h1.title1 Cпециальная оценка условий труда
+            .sout-row
+                // img
+                .sout__img
+                    picture
+                        source(srcset="./img/templates/sout-img@2x.webp" media="(min-resolution: 192dpi)" width="860" height="559")
+                        img(src="./img/templates/sout-img.webp" width="860" height="559" alt="logo" loading="lazy")
+                // content
+                .sout__col
+                    .sout__text
+                        ul.sout__list
+                            li Проводим СОУТ в соответствии с требованиями ФЗ № 426 от 28.12.2013
+                            li Полное сопровождение на всех этапах работы
+                            li Декларация в Подарок
+                        .sout__accent от 900 ₽/рабочее место
+                    a(href="#!").btn-sout Провести соут
