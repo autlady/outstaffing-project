@@ -1,5 +1,9 @@
 .accordeon-block, .accordeon-table-block {
-    padding-bottom: 60px;
+    padding-bottom: 80px;
+
+    @media (max-width: 767px) {
+        padding-bottom: 64px;
+    }
 }
 
 .accordeon__item {

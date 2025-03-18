@@ -1,5 +1,9 @@
 .main-privileges {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
+
+    @media (max-width: 767px) {
+        margin-bottom: 64px;
+    }
 }
 
 .main-privileges-wrapper {
@@ -9,22 +13,28 @@
 
     @media (max-width: 840px) {
         grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        justify-items: center;
     }
 }
 
 .privileges-row {
     display: flex;
-    align-items: center;
     column-gap: 31px;
 
     @media (max-width: 1400px) {
         flex-direction: column;
+        align-items: center;
         row-gap: 25px;
     }
 }
 
-.privileges-block4 {
-    margin-bottom: 60px;
+.privileges-block4, .privileges-block3 {
+    margin-bottom: 80px;
+
+    @media (max-width: 767px) {
+        margin-bottom: 64px;
+    }
 }
 
 .privileges4-slider .swiper-wrapper {

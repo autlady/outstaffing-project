@@ -1,3 +1,11 @@
+.other-services {
+    padding-bottom: 80px;
+
+    @media (max-width: 767px) {
+        padding-bottom: 64px;
+    }
+}
+
 .other-services,
 .slider-sout-block,
 .projects-block,

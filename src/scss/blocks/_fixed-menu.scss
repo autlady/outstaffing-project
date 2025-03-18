@@ -6,11 +6,11 @@
 
     background-color: rgba(69, 89, 102, 0.8);
     padding: 38px 15px;
-    border-radius: 0 50px 50px 0;
+    border-radius: 0 70px 70px 0;
 
     backdrop-filter: blur(14px);
 
-    transform: translateX(-77%);
+    transform: translateX(-76%);
     transition: 0.3s ease-in;
 
     &:hover {
@@ -32,7 +32,6 @@
     }
 
     @media (max-width: 1023px) {
-        // transform: translateX(0);
         top: auto;
         height: 83px;
         right: 0;

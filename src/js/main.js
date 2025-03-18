@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+  /* fancybox */
+  Fancybox.bind("[data-fancybox]", {
+    Thumbs: false,
+  });
+
+
   //ASIDE MENU
   const burger = document.querySelectorAll('.btn-open-menu');
   const asideMenu = document.querySelector('.aside-menu-wrapper');

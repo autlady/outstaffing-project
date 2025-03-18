@@ -4,7 +4,11 @@
 
 .table-col2, .table-col3 {
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
+
+    @media (max-width: 767px) {
+        margin-bottom: 64px;
+    }
 
     @media (max-width: 525px) {
         width: 82vw;

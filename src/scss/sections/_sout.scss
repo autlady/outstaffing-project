@@ -1,3 +1,7 @@
+.sout {
+    padding-bottom: 40px;
+}
+
 .sout-wrapper {
     position: relative;
     background-color: #f1f1f1;
@@ -21,6 +25,10 @@
         border-radius: 52px;
     }
 
+    @media (max-width: 1023px) {
+        border-radius: 32px;
+    }
+
     @media (max-width: 860px) {
         padding-block: 40px;
         padding-right: 15px;
@@ -32,7 +40,7 @@
     position: absolute;
     top: 50px;
     bottom: 50px;
-    left: 50px;
+    left: 141px;
     right: 50px;
 
     @media (max-width: 1364px) {
@@ -51,7 +59,12 @@
 }
 
 .sout__img {
+
     @media (max-width: 1460px) {
+        width: 50%;
+    }
+
+    @media (max-width: 1360px) {
         display: none;
     }
 }

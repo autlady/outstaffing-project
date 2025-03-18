@@ -7,9 +7,12 @@
         color: var(--primary);
     }
 
+    @media (max-width: 1500px) {
+        padding: 16px;
+    }
+
     @media (max-width: 767px) {
         width: 100%;
-        padding: 16px;
     }
 }
 
@@ -19,8 +22,11 @@
     align-items: center;
     column-gap: 25px;
 
-    @media (max-width: 767px) {
+    @media (max-width: 1500px) {
         column-gap: 7px;
+    }
+
+    @media (max-width: 767px) {
         margin-bottom: 8px;
     }
 }

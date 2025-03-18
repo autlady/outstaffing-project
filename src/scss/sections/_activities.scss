@@ -1,5 +1,12 @@
+.activities {
+    padding-bottom: 80px;
+
+    @media (max-width: 767px) {
+        padding-bottom: 64px;
+    }
+}
+
 .activities-wrapper {
-    margin-bottom: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;

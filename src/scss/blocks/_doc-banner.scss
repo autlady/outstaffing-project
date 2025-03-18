@@ -1,5 +1,9 @@
 .doc-banner {
-    padding-block: 60px;
+    padding-bottom: 80px;
+
+    @media (max-width: 767px) {
+        padding-bottom: 64px;
+    }
 }
 
 .doc-banner__wrapper {
@@ -86,6 +90,7 @@
     @media (max-width: 1423px) {
         display: none;
     }
+
 
     img {
         width: 100%;

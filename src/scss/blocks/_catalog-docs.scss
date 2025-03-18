@@ -1,3 +1,15 @@
+.catalog-docs {
+    padding-bottom: 80px;
+
+    .download-docs {
+        padding-bottom: 40px;
+    }
+
+    @media (max-width: 767px) {
+        padding-bottom: 64px;
+    }
+}
+
 .catalog-docs__title {
     margin-bottom: 40px;
 

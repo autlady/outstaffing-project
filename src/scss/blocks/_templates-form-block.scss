@@ -1,3 +1,11 @@
+.templates-form-block {
+    padding-bottom: 80px;
+
+    @media (max-width: 767px) {
+        padding-bottom: 64px;
+    }
+}
+
 .templates-form-block .section-wrapper {
     position: relative;
     padding: 82px 100px 102px 100px;
