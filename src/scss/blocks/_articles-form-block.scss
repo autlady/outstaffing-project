@@ -36,7 +36,8 @@
 
 .articles-form-wrapper {
     display: flex;
-    column-gap: 72px;
+    justify-content: space-between;
+    column-gap: 56px;
 
     @media (max-width: 1324px) {
         flex-direction: column;
@@ -50,8 +51,7 @@
 }
 
 .articles-form-col {
-    width: 45%;
-    flex-shrink: 0;
+    flex-grow: 1;
 
     .articles-form-title {
         @media (max-width: 1324px) {
@@ -64,6 +64,7 @@
     }
 
     .articles-form-text {
+
         @media (max-width: 1324px) {
             text-align: center;
         }
@@ -83,7 +84,12 @@
 }
 
 .articles-form {
-    width: 100%;
+    width: 516px;
+    flex-shrink: 0;
+
+    @media (max-width: 1420px) {
+        width: 50%;
+    }
 
     @media (max-width: 1324px) {
         width: 66%;

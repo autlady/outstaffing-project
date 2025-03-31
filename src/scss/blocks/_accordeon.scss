@@ -167,11 +167,22 @@
         padding-top: 10px;
         padding-left: 0;
         padding-right: 150px;
+
+        @media (max-width: 767px) {
+            padding-right: 0;
+        }
     }
 
     .table-acc {
         width: 100%;
         padding-bottom: 30px;
+
+        @media (max-width: 575px) {
+            width: 76vw;
+            overflow: hidden;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
     }
 
     .table-acc-head {
@@ -182,10 +193,10 @@
         background-color: var(--primary);
         border-radius: 12px;
 
-        // @media (max-width: 1023px) {
-        //     margin-bottom: 8px;
-        //     column-gap: 8px;
-        // }
+        @media (max-width: 575px) {
+            justify-content: flex-start;
+            width: 520px;
+    }
     }
 
     .table-acc-head__sell {
@@ -221,6 +232,11 @@
         @media (max-width: 1023px) {
             column-gap: 8px;
         }
+
+        @media (max-width: 575px) {
+            justify-content: flex-start;
+            width: 520px;
+    }
     }
 
     .table-acc-row + .table-acc-row {
